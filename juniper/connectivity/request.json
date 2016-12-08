@@ -1,0 +1,124 @@
+{
+  "driverRequest": {
+    "actions": [
+      {
+        "connectionId": "395cbff7-f263-4942-934c-13a497c3513f",
+        "connectionParams": {
+          "vlanId": "4",
+          "mode": "Access",
+          "vlanServiceAttributes": [
+            {
+              "attributeName": "QnQ",
+              "attributeValue": "False",
+              "type": "vlanServiceAttribute"
+            },
+            {
+              "attributeName": "CTag",
+              "attributeValue": "",
+              "type": "vlanServiceAttribute"
+            },
+            {
+              "attributeName": "Allocation Ranges",
+              "attributeValue": "2-4094",
+              "type": "vlanServiceAttribute"
+            },
+            {
+              "attributeName": "Isolation Level",
+              "attributeValue": "Exclusive",
+              "type": "vlanServiceAttribute"
+            },
+            {
+              "attributeName": "Access Mode",
+              "attributeValue": "Access",
+              "type": "vlanServiceAttribute"
+            },
+            {
+              "attributeName": "VLAN ID",
+              "attributeValue": "",
+              "type": "vlanServiceAttribute"
+            },
+            {
+              "attributeName": "Pool Name",
+              "attributeValue": "",
+              "type": "vlanServiceAttribute"
+            },
+            {
+              "attributeName": "Virtual Network",
+              "attributeValue": "4",
+              "type": "vlanServiceAttribute"
+            }
+          ],
+          "type": "setVlanParameter"
+        },
+        "connectorAttributes": [],
+        "actionId": "395cbff7-f263-4942-934c-13a497c3513f_ac37198c-95b9-4e8f-9e41-4c50df7c16e3",
+        "actionTarget": {
+          "fullName": "Cisco 2950/Chassis 0/FastEthernet0-20",
+          "fullAddress": "192.168.42.235/0/20",
+          "type": "actionTarget"
+        },
+        "customActionAttributes": [],
+        "type": "setVlan"
+      },
+      {
+        "connectionId": "fd23f8f7-9a45-4585-a618-c7147c33e18f",
+        "connectionParams": {
+          "vlanId": "5",
+          "mode": "Trunk",
+          "vlanServiceAttributes": [
+            {
+              "attributeName": "Access Mode",
+              "attributeValue": "Trunk",
+              "type": "vlanServiceAttribute"
+            },
+            {
+              "attributeName": "VLAN ID",
+              "attributeValue": "",
+              "type": "vlanServiceAttribute"
+            },
+            {
+              "attributeName": "Pool Name",
+              "attributeValue": "",
+              "type": "vlanServiceAttribute"
+            },
+            {
+              "attributeName": "Virtual Network",
+              "attributeValue": "5",
+              "type": "vlanServiceAttribute"
+            },
+            {
+              "attributeName": "QnQ",
+              "attributeValue": "False",
+              "type": "vlanServiceAttribute"
+            },
+            {
+              "attributeName": "CTag",
+              "attributeValue": "",
+              "type": "vlanServiceAttribute"
+            },
+            {
+              "attributeName": "Allocation Ranges",
+              "attributeValue": "2-4094",
+              "type": "vlanServiceAttribute"
+            },
+            {
+              "attributeName": "Isolation Level",
+              "attributeValue": "Exclusive",
+              "type": "vlanServiceAttribute"
+            }
+          ],
+          "type": "setVlanParameter"
+        },
+        "connectorAttributes": [],
+        "actionId": "fd23f8f7-9a45-4585-a618-c7147c33e18f_b6f638da-64ec-40b1-bf6c-03881d32ff28",
+        "actionTarget": {
+          "fullName": "Cisco 2950/Chassis 0/FastEthernet0-16",
+          "fullAddress": "192.168.42.235/0/16",
+          "type": "actionTarget"
+        },
+        "customActionAttributes": [],
+        "type": "setVlan"
+      }
+    ]
+  }
+}
