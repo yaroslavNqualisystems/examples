@@ -36,20 +36,20 @@ class SaveCachedChanges(QualiSnmpCached):
         # def __del__(self):
         #     self.save_cache_to_file_if_changed(file_path)
 
-    # def create_snmp_handler():
-    #     kwargs = {}
-    #     for key, value in QUALISNMP_INIT_PARAMS.iteritems():
-    #         if callable(value):
-    #             kwargs[key] = value()
-    #         else:
-    #             kwargs[key] = value
-    # snmp_instance = SaveCachedChanges(**kwargs)
-    # snmp_instance = QualiSnmp(**kwargs)
-    # return snmp_instance
+    def create_snmp_handler(self):
+        kwargs = {}
+        for key, value in QUALISNMP_INIT_PARAMS.iteritems():
+            if callable(value):
+                kwargs[key] = value()
+            else:
+                kwargs[key] = value
+        # snmp_instance = SaveCachedChanges(**kwargs)
+        snmp_instance = QualiSnmp(**kwargs)
+        return snmp_instance
 
 
 # SNMP_HANDLER_FACTORY = create_snmp_handler
-
+#
 # ssh_session = SessionCreator(SSHSession)
 # ssh_session.proxy = ReturnToPoolProxy
 # ssh_session.kwargs = {'username': get_attribute_by_name_wrapper('User'),
