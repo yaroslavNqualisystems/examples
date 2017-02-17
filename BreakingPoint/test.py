@@ -1,23 +1,13 @@
-class FF(object):
-    def __init__(self, idd, name, *args, **kwargs):
-        self.idd = idd
-        self.name = name
+import re
 
-    @property
-    def text(self):
-        return 'fdfdfdf'
-
-    def __str__(self):
-        return str(self.idd) + str(self.name)
-
-    def __add__(self, other):
-        return str(self) + other
-
-    def __unicode__(self):
-        return str(self.idd) + str(self.name)
+# def claculate(ss):
+#     for part in re.findall(r'\[slot=\d+,port=\d+\]', ss):
+#         slot = re.match('')
 
 
 if __name__ == '__main__':
-    dd = FF('dsdsd', 'fdf')
+    ss = '{[slot=1,port=1]=1, [slot=1,port=0]=0:[reserved=admin,group=1,number=1]}'
 
-    print('fdfdf gregre  ' + dd)
+
+    dd = re.findall(r'\[slot=(\d+),port=(\d+)\]=(\d+)', ss)
+    print(dd)

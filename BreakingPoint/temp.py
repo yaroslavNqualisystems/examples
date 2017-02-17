@@ -1,7 +1,7 @@
 import json
 from logging import Logger
-from cloudshell.traffic_generator.ixia.breaking_point.flows.bp_autoload import BPAutoload
-from cloudshell.traffic_generator.ixia.breaking_point.rest_api.rest_session_manager import RestSessionManager
+from cloudshell.tg.ixia.breaking_point.flows.bp_autoload_flow import BPAutoload
+from cloudshell.tg.ixia.breaking_point.rest_api.rest_session_manager import RestSessionManager
 import requests
 
 url = "https://10.5.1.127/api/v1/auth/session"

@@ -103,7 +103,7 @@ context.resource.attributes['SNMP Read Community'] = 'public'
 context.resource.attributes['CLI Connection Type'] = 'ssh'
 context.resource.attributes['Enable SNMP'] = 'False'
 context.resource.attributes['Disable SNMP'] = 'False'
-# context.resource.attributes['CLI Connection Type'] = 'telnet'
+context.resource.attributes['CLI Connection Type'] = 'ssh'
 context.resource.attributes['Sessions Concurrency Limit'] = '1'
 
 
@@ -126,11 +126,12 @@ if __name__ == '__main__':
     with patch('juniper_junos_resource_driver.get_api') as get_api:
         get_api.return_value = type('api', (object,), {
             'DecryptPassword': lambda self, pw: type('Password', (object,), {'Value': pw})()})()
-        out = driver.get_inventory(context)
+        # out = driver.get_inventory(context)
         # print(inv)
         # out = driver.save(context, '', '', None)
         # out = driver.restore(context, 'ftp://junos:junos@192.168.85.23/dsada-running-040117-144312', None, None, None)
         # out = driver.load_firmware(context, 'dsadas', None)
+        out = driver.send_custom_command(context, 'show interfaces')
         print(out)
 
         # inventory = driver.get_inventory(context)
