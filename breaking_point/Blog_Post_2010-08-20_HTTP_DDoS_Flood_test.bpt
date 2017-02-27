@@ -1,0 +1,131 @@
+<modelExport swconfig="version:8.20.0 build number:293495 strikebuild:292260" serialno="BPSC4VM0000"
+             schemaver="293495.292260">
+    <testmodel group="1" network="BreakingPoint Switching" dut="BreakingPoint Default" bandwidth="2000" duration="63"
+               name="Blog Post 2010-08-20 HTTP DDoS Flood Test" result="" rcvBandwidth="2000" schemaver="293495.292260"
+               category="User" class="canned">
+        <interface number="1" bandwidth="1000" rcvBandwidth="1000" rcvMaxBandwidth="0"/>
+        <interface number="2" bandwidth="1000" rcvBandwidth="1000" rcvMaxBandwidth="0"/>
+        <component type="appsim" id="appsim_1" active="true" reportResults="true">
+            <interfaces>
+                <interface type="client" domain="default" number="1"/>
+                <interface type="server" domain="default" number="2"/>
+                <interface type="none" domain="default" number="3"/>
+                <interface type="none" domain="default" number="4"/>
+                <interface type="none" domain="default" number="5"/>
+                <interface type="none" domain="default" number="6"/>
+                <interface type="none" domain="default" number="7"/>
+                <interface type="none" domain="default" number="8"/>
+                <interface type="none" domain="default" number="9"/>
+                <interface type="none" domain="default" number="10"/>
+                <interface type="none" domain="default" number="11"/>
+                <interface type="none" domain="default" number="12"/>
+                <interface type="none" domain="default" number="13"/>
+                <interface type="none" domain="default" number="14"/>
+                <interface type="none" domain="default" number="15"/>
+                <interface type="none" domain="default" number="16"/>
+            </interfaces>
+            <tags>
+                <tag type="client" id="i1_default"/>
+                <tag type="server" id="i2_default"/>
+            </tags>
+            <label>
+                <string>Blog Post 2010-08-20 Application Simulator 3730</string>
+            </label>
+            <description>
+                <string>Blog Post 2010-08-20 A reasonable starting-point for a custom test. The stack parameters are
+                    tuned a bit less aggressively than other presets, but still achieves high bandwidth and packet
+                    rates.
+                </string>
+            </description>
+            <struct id="ip">
+                <param id="ttl">32</param>
+                <param id="tos">0</param>
+            </struct>
+            <struct id="srcPortDist">
+                <param id="type">random</param>
+                <param id="min">1024</param>
+                <param id="max">65535</param>
+            </struct>
+            <struct id="tcp">
+                <param id="mss">1460</param>
+                <param id="retry_quantum_ms">500</param>
+                <param id="retries">3</param>
+                <param id="delay_acks">true</param>
+                <param id="initial_receive_window">5792</param>
+                <param id="reset_at_end">true</param>
+                <param id="aging_time">0</param>
+                <param id="add_timestamps">true</param>
+                <param id="aging_time_data_type">aging_time_data_type_sc</param>
+                <param id="tcp_window_scale">0</param>
+                <param id="handshake_data">false</param>
+                <param id="shutdown_data">false</param>
+                <param id="initial_congestion_window">4</param>
+                <param id="ecn">support_ecn</param>
+                <param id="raw_flags">-1</param>
+                <param id="tcp_connect_delay_ms">0</param>
+                <param id="tcp_keepalive_timer">0</param>
+            </struct>
+            <struct id="rampUpProfile">
+                <param id="type">calculated</param>
+                <param id="min">1</param>
+                <param id="max">1</param>
+                <param id="increment">1</param>
+                <param id="interval">00:00:01</param>
+            </struct>
+            <struct id="rampDist">
+                <param id="up">00:00:01</param>
+                <param id="steady">00:01:00</param>
+                <param id="down">00:00:01</param>
+                <param id="upBehavior">full</param>
+                <param id="synRetryMode">obey_retry</param>
+                <param id="steadyBehavior">cycle</param>
+                <param id="downBehavior">full</param>
+            </struct>
+            <struct id="app">
+                <param id="streamsPerSuperflow">2</param>
+                <param id="removedns">false</param>
+                <param id="fidelity">normal</param>
+                <param id="replace_streams">true</param>
+            </struct>
+            <param id="delayStart">00:00:00</param>
+            <struct id="rateDist">
+                <param id="unlimited">false</param>
+                <param id="scope">per_if</param>
+                <param id="unit">mbps</param>
+                <param id="type">constant</param>
+                <param id="min">10000</param>
+                <param id="max"/>
+            </struct>
+            <param id="profile">Blog Post 2010-08-20 HTTP DoS</param>
+            <struct id="sessions">
+                <param id="max">100000</param>
+                <param id="maxPerSecond">11000</param>
+                <param id="openFast">false</param>
+                <param id="closeFast">true</param>
+                <param id="target">1</param>
+                <param id="targetPerSecond">1</param>
+                <param id="maxActive">0</param>
+                <param id="targetMatches">0</param>
+                <param id="engine">advanced</param>
+                <param id="emphasis">balanced</param>
+                <param id="allocationOverride">auto</param>
+                <param id="statDetail">maximum</param>
+            </struct>
+            <struct id="ip6">
+                <param id="hop_limit">64</param>
+                <param id="traffic_class">0</param>
+                <param id="flowlabel">0</param>
+            </struct>
+            <struct id="loadprofile">
+                <param id="name">None</param>
+                <param id="label"/>
+            </struct>
+        </component>
+        <exerciseit duration="300"/>
+        <params/>
+        <summary/>
+        <label>
+            <string>Blog Post 2010-08-20 HTTP DDoS Flood</string>
+        </label>
+    </testmodel>
+</modelExport>

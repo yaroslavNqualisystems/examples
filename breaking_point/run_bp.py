@@ -1,7 +1,8 @@
 from logging import Logger
 from cloudshell.core.logger.qs_logger import get_qs_logger
 from cloudshell.shell.core.context import ResourceCommandContext, ResourceContextDetails, ReservationContextDetails
-from driver import BreakingPointChassisDriver
+# from driver import BreakingPointChassisDriver, BreakingPointControllerDriver
+from driver import BreakingPointControllerDriver
 from mock import patch
 
 
@@ -43,13 +44,12 @@ def get_context():
     return context
 
 
-
-
 if __name__ == '__main__':
     logger = get_qs_logger()
-    driver = BreakingPointChassisDriver()
+    # driver = BreakingPointChassisDriver()
+    driver = BreakingPointControllerDriver()
     with patch('driver.get_api') as get_api:
         get_api.return_value = type('api', (object,), {
             'DecryptPassword': lambda self, pw: type('Password', (object,), {'Value': pw})()})()
-        result = driver.get_inventory(get_context())
+        result = driver.load_config(get_context(), '0VM_RESTART_CS_AS.bpt')
         print(result)

@@ -1,0 +1,252 @@
+<modelExport swconfig="version:8.20.0 build number:293495 strikebuild:292260" serialno="BPSC4VM0000"
+             schemaver="293495.292260">
+    <testmodel group="1" network="BreakingPoint DDoS Reflection" dut="BreakingPoint Default" bandwidth="800"
+               duration="11" name="BreakingPoint DDoS NTP Mode7 Reflection Attack" result="" rcvBandwidth="800"
+               schemaver="293495.292260" category="User" class="canned">
+        <interface number="1" bandwidth="200" rcvBandwidth="200"/>
+        <interface number="2" bandwidth="200" rcvBandwidth="200"/>
+        <interface number="3" bandwidth="200" rcvBandwidth="200"/>
+        <interface number="4" bandwidth="200" rcvBandwidth="200"/>
+        <component type="playback" id="recreate_1" active="true" reportResults="true" originalPreset="recreate"
+                   schemaver="181557.190038">
+            <interfaces>
+                <interface type="client" domain="default" number="1"/>
+                <interface type="server" domain="default" number="2"/>
+            </interfaces>
+            <tags>
+                <tag type="client" id="Spoofers"/>
+                <tag type="server" id="OpenNTPRcv"/>
+            </tags>
+            <originalPresetLabel>
+                <string>Recreate</string>
+            </originalPresetLabel>
+            <label>
+                <string>MON_GETLIST Requests</string>
+            </label>
+            <description>
+                <string>This component simulates NTP Mode7 MON_GETLIST Requests. The requests all use the same source IP
+                    address, to which responses will be directed.
+                </string>
+            </description>
+            <param id="file">BreakingPoint NTP MON_GETLIST Request</param>
+            <struct id="rateDist">
+                <param id="scope">aggregate</param>
+                <param id="unit">mbps</param>
+                <param id="type">constant</param>
+                <param id="min">200</param>
+                <param id="unlimited">false</param>
+                <param id="max">200</param>
+            </struct>
+            <param id="behavior">user</param>
+            <struct id="sessions">
+                <param id="max">1000</param>
+                <param id="maxPerSecond">2000</param>
+                <param id="openFast">true</param>
+                <param id="closeFast">true</param>
+                <param id="target">0</param>
+                <param id="targetPerSecond">0</param>
+                <param id="engine">simple</param>
+                <param id="emphasis">balanced</param>
+                <param id="allocationOverride">auto</param>
+                <param id="statDetail">maximum</param>
+                <param id="maxActive">0</param>
+            </struct>
+            <struct id="ip">
+                <param id="ttl">32</param>
+                <param id="tos">0</param>
+            </struct>
+            <struct id="srcPortDist">
+                <param id="type">random</param>
+                <param id="min">1024</param>
+                <param id="max">65535</param>
+            </struct>
+            <struct id="tcp">
+                <param id="mss">1460</param>
+                <param id="retry_quantum_ms">250</param>
+                <param id="retries">3</param>
+                <param id="delay_acks">false</param>
+                <param id="initial_receive_window">5792</param>
+                <param id="add_timestamps">true</param>
+                <param id="aging_time">0</param>
+                <param id="reset_at_end">false</param>
+                <param id="handshake_data">false</param>
+                <param id="aging_time_data_type">aging_time_data_type_sc</param>
+                <param id="tcp_window_scale">0</param>
+                <param id="shutdown_data">false</param>
+                <param id="initial_congestion_window">4</param>
+                <param id="ecn">support_ecn</param>
+                <param id="raw_flags">-1</param>
+                <param id="tcp_connect_delay_ms">0</param>
+                <param id="tcp_keepalive_timer">0</param>
+            </struct>
+            <struct id="rampUpProfile">
+                <param id="type">calculated</param>
+                <param id="min">1</param>
+                <param id="max">1</param>
+                <param id="increment">1</param>
+                <param id="interval">00:00:01</param>
+            </struct>
+            <struct id="rampDist">
+                <param id="upBehavior">full</param>
+                <param id="synRetryMode">obey_retry</param>
+                <param id="up">00:00:00</param>
+                <param id="steadyBehavior">cycle</param>
+                <param id="steady">00:00:10</param>
+                <param id="downBehavior">full</param>
+                <param id="down">00:00:01</param>
+            </struct>
+            <param id="delayStart">00:00:00</param>
+            <struct id="modification">
+                <param id="replay">false</param>
+                <param id="startpacket">1</param>
+                <param id="single">false</param>
+                <param id="originalport">0</param>
+                <param id="newport">0</param>
+                <param id="bpfstring"/>
+                <param id="loopcount">1</param>
+                <param id="endpacket"/>
+            </struct>
+            <struct id="ip6">
+                <param id="hop_limit">64</param>
+                <param id="traffic_class">0</param>
+                <param id="flowlabel">0</param>
+            </struct>
+            <struct id="loadprofile">
+                <param id="name">None</param>
+                <param id="label"/>
+            </struct>
+        </component>
+        <component type="playback" id="recreate_2" active="true" reportResults="true" originalPreset="recreate"
+                   schemaver="181557.190038">
+            <interfaces>
+                <interface type="client" domain="default" number="3"/>
+                <interface type="server" domain="default" number="4"/>
+            </interfaces>
+            <tags>
+                <tag type="client" id="OpenNTPSend"/>
+                <tag type="server" id="TargetNTP"/>
+            </tags>
+            <originalPresetLabel>
+                <string>Recreate</string>
+            </originalPresetLabel>
+            <label>
+                <string>MON_GETLIST Responses</string>
+            </label>
+            <description>
+                <string>This component simulates NTP Mode7 MON_GETLIST Responses (a list of up to the last 600 NTP
+                    peers). The responses are all directed at a single IP address.
+                </string>
+            </description>
+            <param id="file">BreakingPoint NTP MON_GETLIST Response</param>
+            <struct id="rateDist">
+                <param id="unlimited">true</param>
+                <param id="scope">aggregate</param>
+                <param id="unit">mbps</param>
+                <param id="type">constant</param>
+                <param id="min">200</param>
+                <param id="max">1</param>
+            </struct>
+            <param id="behavior">user</param>
+            <struct id="sessions">
+                <param id="max">200000</param>
+                <param id="maxPerSecond">100000</param>
+                <param id="openFast">true</param>
+                <param id="closeFast">true</param>
+                <param id="target">0</param>
+                <param id="targetPerSecond">0</param>
+                <param id="engine">advanced</param>
+                <param id="emphasis">balanced</param>
+                <param id="allocationOverride">auto</param>
+                <param id="statDetail">maximum</param>
+                <param id="maxActive">0</param>
+            </struct>
+            <struct id="ip">
+                <param id="ttl">32</param>
+                <param id="tos">0</param>
+            </struct>
+            <struct id="srcPortDist">
+                <param id="type">constant</param>
+                <param id="min">123</param>
+                <param id="max">65535</param>
+            </struct>
+            <struct id="tcp">
+                <param id="mss">1460</param>
+                <param id="retry_quantum_ms">250</param>
+                <param id="retries">3</param>
+                <param id="delay_acks">false</param>
+                <param id="initial_receive_window">5792</param>
+                <param id="add_timestamps">true</param>
+                <param id="aging_time">0</param>
+                <param id="reset_at_end">false</param>
+                <param id="handshake_data">false</param>
+                <param id="aging_time_data_type">aging_time_data_type_sc</param>
+                <param id="tcp_window_scale">0</param>
+                <param id="shutdown_data">false</param>
+                <param id="initial_congestion_window">4</param>
+                <param id="ecn">support_ecn</param>
+                <param id="raw_flags">-1</param>
+                <param id="tcp_connect_delay_ms">0</param>
+                <param id="tcp_keepalive_timer">0</param>
+            </struct>
+            <struct id="rampUpProfile">
+                <param id="type">calculated</param>
+                <param id="min">1</param>
+                <param id="max">1</param>
+                <param id="increment">1</param>
+                <param id="interval">00:00:01</param>
+            </struct>
+            <struct id="rampDist">
+                <param id="upBehavior">full</param>
+                <param id="synRetryMode">obey_retry</param>
+                <param id="up">00:00:00</param>
+                <param id="steadyBehavior">cycle</param>
+                <param id="steady">00:00:10</param>
+                <param id="downBehavior">full</param>
+                <param id="down">00:00:01</param>
+            </struct>
+            <param id="delayStart">00:00:00</param>
+            <struct id="modification">
+                <param id="replay">false</param>
+                <param id="single">true</param>
+                <param id="originalport">0</param>
+                <param id="newport">0</param>
+                <param id="bpfstring"/>
+                <param id="loopcount">1</param>
+                <param id="startpacket">1</param>
+                <param id="endpacket"/>
+            </struct>
+            <struct id="ip6">
+                <param id="hop_limit">64</param>
+                <param id="traffic_class">0</param>
+                <param id="flowlabel">0</param>
+            </struct>
+            <struct id="loadprofile">
+                <param id="name">None</param>
+                <param id="label"/>
+            </struct>
+        </component>
+        <exerciseit duration="300"/>
+        <params>
+            <param origval="102000" currval="102000" id="maxFlowCreationRate">100</param>
+            <param origval="800.0" currval="800.0" id="totalBandwidth">100</param>
+            <param origval="201000" currval="201000" id="maximumConcurrentFlows">100</param>
+            <param origval="0" currval="0" id="totalAttacks">100</param>
+            <param origval="32" currval="32" id="totalAddresses">100</param>
+        </params>
+        <summary>
+            <param id="totalUniqueSuperflows">0</param>
+            <param id="totalUniqueStrikes">0</param>
+            <param id="totalSubnets">4</param>
+            <param id="totalMacAddresses">32</param>
+            <param id="requiredMTU">576</param>
+        </summary>
+        <label>
+            <string>DDoS NTP Mode7 Reflection Attack</string>
+        </label>
+        <description>
+            <string>This test simulates an NTP Mode7 Reflection DDoS Attack. Multiple NTP servers respond to the target
+                IP address with MON_GETLIST Responses (up to 48200 bytes per response).
+            </string>
+        </description>
+    </testmodel>
+</modelExport>
