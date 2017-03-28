@@ -1,0 +1,5281 @@
+Test Results for Cleanup Application Server
+1. Cleanup Application Server
+
+
+
+
+
+
+
+
+
+Test Model: 0VM_RESTART_CS_AS
+Version: 31
+Result: passed
+Date: March 10, 2017 12:36:26 AM PST
+Test Duration: 00:01:25.818
+2. Revision History
+Version,Run ID,Date,Author,Test Results
+31,34,"Mar 10, 2017 12:37:51 AM",The Admin,Test passed
+30,33,"Mar 10, 2017 12:25:18 AM",The Admin,Test passed
+29,32,"Mar 10, 2017 12:13:57 AM",The Admin,Test passed
+28,31,"Mar 10, 2017 12:01:13 AM",The Admin,Test passed
+27,30,"Mar 9, 2017 11:48:06 PM",The Admin,Test passed
+26,29,"Mar 9, 2017 11:39:32 PM",The Admin,Test passed
+25,28,"Mar 9, 2017 11:09:41 PM",The Admin,Test passed
+24,27,"Mar 9, 2017 11:06:35 PM",The Admin,Test canceled
+23,26,"Mar 9, 2017 11:02:31 PM",The Admin,Test passed
+22,24,"Mar 7, 2017 9:57:47 AM",The Admin,Test canceled
+21,23,"Mar 7, 2017 9:50:08 AM",The Admin,Test passed
+20,22,"Mar 7, 2017 8:48:25 AM",The Admin,Test canceled
+19,21,"Mar 7, 2017 8:22:22 AM",The Admin,Test canceled
+18,20,"Mar 7, 2017 8:21:22 AM",The Admin,Test canceled
+17,19,"Mar 7, 2017 6:47:47 AM",The Admin,Test passed
+16,18,"Mar 7, 2017 6:43:04 AM",The Admin,Test passed
+15,17,"Mar 7, 2017 6:41:17 AM",The Admin,Test passed
+14,16,"Feb 27, 2017 9:44:01 PM",The Admin,Test passed
+13,15,"Feb 27, 2017 7:51:12 AM",The Admin,Test canceled
+12,14,"Feb 27, 2017 7:50:12 AM",The Admin,Test canceled
+11,13,"Feb 27, 2017 7:48:13 AM",The Admin,Test canceled
+10,12,"Feb 27, 2017 4:53:22 AM",The Admin,Test passed
+9,11,"Feb 27, 2017 2:35:20 AM",The Admin,Test canceled
+8,10,"Feb 27, 2017 12:33:57 AM",The Admin,Test canceled
+7,9,"Feb 24, 2017 7:01:35 AM",The Admin,Test passed
+6,8,"Feb 24, 2017 6:58:32 AM",The Admin,Test canceled
+5,7,"Feb 24, 2017 6:57:58 AM",The Admin,Test passed
+4,6,"Feb 24, 2017 6:55:28 AM",The Admin,Test canceled
+3,5,"Feb 24, 2017 6:54:26 AM",The Admin,Test canceled
+2,4,"Feb 24, 2017 6:52:33 AM",The Admin,Test canceled
+1,3,"Feb 24, 2017 6:51:44 AM",The Admin,Test canceled
+3. Synopsis
+3.1. Component Description
+This test will remove any leftovers from the last test.
+3.2. Test parameters
+3.3. Test Criteria
+3.4. Summary of Results
+Component,Test Results,Explanation
+Cleanup data,Test passed,
+Overall,Test passed,
+4. Table of Contents
+Section ID,Section Name,,
+1,Cleanup Application Server,,
+2,Revision History,,
+3,Synopsis,,
+3.1,Component Description,,
+3.2,Test parameters,,
+3.3,Test Criteria,,
+3.4,Summary of Results,,
+4,Table of Contents,,
+5,Test Environment,,
+5.1,Settings,,
+5.2,Interfaces,,
+5.3,Impairments,,
+5.4,Packet Filtering,,
+5.5,Test Components,,
+5.6,Test Device,,
+5.7,Device Under Test Profile,,
+5.7.1,Device Settings,,
+5.7.2,Commands,,
+5.7.3,Connection Settings,,
+5.8,Network Neighborhood,,
+5.8.1,BreakingPoint Application Server,,
+5.8.1.1,Interface : Interface 1,,
+5.8.1.2,IPv4 External Hosts,,
+5.8.1.3,IPv4 Static Hosts : Static Hosts i1_default,,
+6,Detailed Summarized Statistics,,
+6.1,Interface (layer 1-2),,
+6.1.1,[all],,
+6.1.1.1,Frame bytes,,
+6.1.1.2,Frames,,
+6.1.1.3,Frames/s,,
+6.1.1.4,Megabits/s,,
+6.1.2,[interface=1],,
+6.1.2.1,Frame bytes,,
+6.1.2.2,Frames,,
+6.1.2.3,Frames/s,,
+6.1.2.4,Megabits/s,,
+6.2,Application (layer7),,
+6.2.1,[all],,
+6.2.1.1,Frame bytes,,
+6.2.1.2,Megabits/s,,
+6.2.1.3,Sessions,,
+6.2.2,[protocol=Resiliency Init Server],,
+6.2.2.1,Frame bytes,,
+6.2.2.2,Megabits/s,,
+6.2.2.3,Sessions,,
+6.3,IP (layer 4-7),,
+6.3.1,TCP Sessions,,
+6.3.2,TCP Sessions/s,,
+6.4,Resources,,
+6.4.1,[cpu=np2-0],,
+6.4.1.1,Percent,,
+6.4.2,[cpu=sc0],,
+6.4.2.1,Percent,,
+6.5,Flow Exceptions (layer 1-7),,
+6.5.1,[all],,
+6.5.1.1,exceptions,,
+6.5.2,[interface=1],,
+6.5.2.1,exceptions,,
+7,Test Results for Cleanup data,,
+7.1,Component Description,,
+7.2,Test Component Criteria,,
+7.3,Settings,,
+7.4,Traffic Appearance,,
+7.5,Component Results,,
+7.6,Super Flow Data,,
+7.7,Super Flow Iterations,,
+7.8,Frame Data Rate Summary,,
+7.9,TCP Setup Time,,
+7.10,TCP Response Time,,
+7.11,TCP Close Time,,
+7.12,TCP Summary,,
+7.13,Component Flow Counts,,
+7.14,Component Summary,,
+7.15,Detail,,
+7.15.1,Response Summary,,
+7.15.1.1,Response Summary: Resiliency Init Server,,
+7.15.2,Super Flow Data Throughput,,
+7.15.2.1,Super Flow Data Throughput: Resiliency Init Server,,
+7.15.3,Superflow Iterations,,
+7.15.3.1,Superflow Iterations: Resiliency Init Server,,
+7.15.4,Flow Exceptions (All),,
+7.15.4.1,Flow Exceptions (All): 1,,
+7.15.5,Concurrent Flows,,
+7.15.6,Flow Rate,,
+7.15.7,TCP Concurrent Connections,,
+7.15.7.1,TCP Concurrent Connections: 1,,
+7.15.8,TCP Connection Rate,,
+7.15.9,TCP Aggregate Connections,,
+7.15.10,TCP Average Time to Open,,
+7.15.11,TCP Average Time to Response Packet,,
+7.15.12,TCP Average Time to Close,,
+7.15.13,TCP Average Session Duration,,
+7.15.13.1,TCP Average Session Duration: 1,,
+7.15.14,TCP Client State Machine,,
+7.15.14.1,TCP Client State Machine: 1,,
+7.15.15,TCP Server State Machine,,
+7.15.15.1,TCP Server State Machine: 1,,
+7.15.16,Frame Latency Distribution,,
+8,Aggregate Stats,,
+8.1,Component Description,,
+8.2,Ethernet Summary,,
+8.3,ARP Summary,,
+8.4,Router Summary,,
+8.5,Detail,,
+8.5.1,System Resource Usage,,
+8.5.2,Router Exceptions,,
+8.5.2.1,Router Exceptions: 1,,
+8.5.3,Ethernet Frames,,
+8.5.3.1,Ethernet Frames: 1,,
+8.5.4,Ethernet Frame Rates,,
+8.5.4.1,Ethernet Frame Rates: 1,,
+8.5.5,Ethernet Data,,
+8.5.5.1,Ethernet Data: 1,,
+8.5.6,Ethernet Data Rates,,
+8.5.6.1,Ethernet Data Rates: 1,,
+8.5.7,Ethernet Errors,,
+8.5.7.1,Ethernet Errors: 1,,
+8.5.8,Concurrent Flows,,
+8.5.9,Flow Rates,,
+8.5.10,ARP,,
+8.5.10.1,ARP: 1,,
+8.5.11,Router,,
+8.5.11.1,Router: 1,,
+8.6,Slot 2 NP np2-0 statistics,,
+8.6.1,Component Description,,
+8.6.2,Ethernet Summary,,
+8.6.3,ARP Summary,,
+8.6.4,Router Summary,,
+8.6.5,Detail,,
+8.6.5.1,System Resource Usage,,
+8.6.5.2,Router Exceptions,,
+8.6.5.2.1,Router Exceptions: 1,,
+8.6.5.3,Ethernet Frames,,
+8.6.5.3.1,Ethernet Frames: 1,,
+8.6.5.4,Ethernet Frame Rates,,
+8.6.5.4.1,Ethernet Frame Rates: 1,,
+8.6.5.5,Ethernet Data,,
+8.6.5.5.1,Ethernet Data: 1,,
+8.6.5.6,Ethernet Data Rates,,
+8.6.5.6.1,Ethernet Data Rates: 1,,
+8.6.5.7,Ethernet Errors,,
+8.6.5.7.1,Ethernet Errors: 1,,
+8.6.5.8,Concurrent Flows,,
+8.6.5.9,Flow Rates,,
+8.6.5.10,ARP,,
+8.6.5.10.1,ARP: 1,,
+8.6.5.11,Router,,
+8.6.5.11.1,Router: 1,,
+8.7,System Controller 0 statistics,,
+8.7.1,Component Description,,
+8.7.2,Detail,,
+8.7.2.1,System Resource Usage,,
+5. Test Environment
+5.1. Settings
+Parameter,Value
+Seed override,no override
+Data rate reporting type,layer1 (includes IPG)
+5.2. Interfaces
+Number,Auto,Speed,Slot,Serial #,Slot HW,OpMode,Port,Capture Enabled,Snap Length,Note
+1,false,10000Mb full,2,NA,vCard,NA,1,false,NA,
+5.3. Impairments
+Interface,Rate,Corrupt IP checksum,Corrupt (257-END),Corrupted (65-256),Corrupted (1-64),Corrupt (random),Drop,Fragment
+5.4. Packet Filtering
+Interface,Filter criteria
+5.5. Test Components
+The test utilizes traffic from the set of components described below.
+Type,Description
+clientsim,"This component measures an external device's ability to handle a variety of client-side application layer traffic flows. It generates realistic client-side application traffic flows, and responds to external server activity.  "
+5.6. Test Device
+When,Version,Build Number,Strike Build Number
+At the time the test ran.,8.20.0,293495,292260
+At the time the report was created.,8.20.0,293495,292260
+5.7. Device Under Test Profile
+The test utilizes traffic from the set of components described below.
+5.7.1. Device Settings
+Setting,Value
+Name,BreakingPoint Default
+Category,Generic
+5.7.2. Commands
+When to execute,Command
+5.7.3. Connection Settings
+Setting,Value
+Type,serial
+Flow Control,none
+Speed,"38,400"
+Parity,n
+Data Bits,8
+Stop Bits,1
+5.8. Network Neighborhood
+5.8.1. BreakingPoint Application Server
+5.8.1.1. Interface : Interface 1
+ID,Number,MTU,Use vNIC MAC Address,MAC Address,Duplicate MAC Address,VLAN Key,Ignore Pause Frames,Description,Impairments
+Interface 1,1,"1,500",true,02:1a:c5:f5:00:00,false,outer_vlan,false,,
+Packet Filter
+
+
+
+5.8.1.2. IPv4 External Hosts
+External hosts used as a test target
+ID,Tags,Base IP Address,Count,NAT,Proxy
+External Hosts extv5_default,"[Lab Server, ext_default]",192.168.215.200,1,false,false
+5.8.1.3. IPv4 Static Hosts : Static Hosts i1_default
+ID,Container,Tags,Base IP Address,Count,Gateway IP Address,Netmask,PSN Address,PSN Netmask,DNS Settings
+Static Hosts i1_default,Interface 1,"[Lab Client, i1_default]",192.168.215.1,199,192.168.215.254,24,,8,
+Conditional DNS Settings,LDAP Settings,MPLS Settings List,Maximum bandwidth per host (Kbps),Per-host Stats,NAT,Proxy,IP Address Algorithm
+,,,,false,false,false,random_ip
+
+
+6. Detailed Summarized Statistics
+A summary of the statistics across the entire test.
+6.1. Interface (layer 1-2)
+6.1.1. [all]
+6.1.1.1. Frame bytes
+time
+6.1.1.2. Frames
+time
+6.1.1.3. Frames/s
+time
+6.1.1.4. Megabits/s
+time
+6.1.2. [interface=1]
+6.1.2.1. Frame bytes
+time
+6.1.2.2. Frames
+time
+6.1.2.3. Frames/s
+time
+6.1.2.4. Megabits/s
+time
+6.2. Application (layer7)
+6.2.1. [all]
+6.2.1.1. Frame bytes
+time
+6.2.1.2. Megabits/s
+time
+6.2.1.3. Sessions
+time
+6.2.2. [protocol=Resiliency Init Server]
+6.2.2.1. Frame bytes
+time
+6.2.2.2. Megabits/s
+time
+6.2.2.3. Sessions
+time
+6.3. IP (layer 4-7)
+6.3.1. TCP Sessions
+time
+6.3.2. TCP Sessions/s
+time
+6.4. Resources
+6.4.1. [cpu=np2-0]
+6.4.1.1. Percent
+time
+6.4.2. [cpu=sc0]
+6.4.2.1. Percent
+time
+6.5. Flow Exceptions (layer 1-7)
+6.5.1. [all]
+6.5.1.1. exceptions
+time
+6.5.2. [interface=1]
+6.5.2.1. exceptions
+time
+7. Test Results for Cleanup data
+7.1. Component Description
+Component: Client Simulator
+
+Removes any files left over from last test.
+Component,Resource Used
+Cleanup data,np2-0
+7.2. Test Component Criteria
+Number,Description
+1,No predefined test criteria.
+7.3. Settings
+Parameter,Value
+Super Flow,Resiliency Init Server
+Delay Start,00:00:00
+Data Rate/Data Rate Unlimited,false
+Data Rate/Data Rate Scope,Limit Per-Interface Throughput
+Data Rate/Data Rate Unit,Megabits / Second
+Data Rate/Data Rate Type,Constant
+Data Rate/Minimum Data Rate,100
+Data Rate/Maximum Data Rate,100
+Session/Super Flow Configuration/Maximum Simultaneous Super Flows,1
+Session/Super Flow Configuration/Maximum Simultaneous Active Flows,0
+Session/Super Flow Configuration/Maximum Super Flows Per Second,1
+Session/Super Flow Configuration/Unlimited Super Flow Open Rate,false
+Session/Super Flow Configuration/Unlimited Super Flow Close Rate,false
+Session/Super Flow Configuration/Target Minimum Simultaneous Flows,1
+Session/Super Flow Configuration/Target Minimum Super Flows Per Second,1
+Session/Super Flow Configuration/Target Number of Successful Matches,0
+Session/Super Flow Configuration/Engine Selection,Advanced (Max Features)
+Session/Super Flow Configuration/Performance Emphasis,Balanced
+Session/Super Flow Configuration/Resource Allocation Override,Automatic
+Session/Super Flow Configuration/Statistic Detail,Maximum
+App Configuration/Remove all DNS actions,false
+App Configuration/Streams Per Super Flow,8
+App Configuration/Content Fidelity,Normal
+App Configuration/SSL Session Reuse Capacity,Low
+App Configuration/Replace Streams at Runtime,true
+Source Port/Port Distribution Type,Range
+Source Port/Minimum Port Number,1024
+Source Port/Maximum Port Number,1024
+TCP Configuration/Maximum Segment Size (MSS),1460
+TCP Configuration/Aging Time Data Type,Seconds
+TCP Configuration/Aging Time,0
+TCP Configuration/Reset at End,true
+TCP Configuration/Retry Quantum,250
+TCP Configuration/Retry Count,3
+TCP Configuration/Delay ACKs,false
+TCP Configuration/Initial Receive Window,5792
+TCP Configuration/TCP Window Scale,0
+TCP Configuration/Add Segment Timestamps,true
+TCP Configuration/Piggy-back Data on 3-way Handshake ACK,false
+TCP Configuration/Piggy-back Data on Shutdown FIN,false
+TCP Configuration/Initial Congestion Window,4
+TCP Configuration/Explicit Congestion Notification,Support ECN
+TCP Configuration/Raw Flags,-1
+TCP Configuration/Connect Delay,0
+TCP Configuration/TCP Keepalive Timer,0
+IPv4 Configuration/TTL,32
+IPv4 Configuration/TOS/DSCP,0x0
+IPv6 Configuration/Hop Limit,64
+IPv6 Configuration/Traffic Class,0x0
+IPv6 Configuration/Flow Label,0x0
+Ramp Up Profile/Ramp Up Profile Type,Calculated
+Ramp Up Profile/Min Connection Rate,1
+Ramp Up Profile/Max Connection Rate,1
+Ramp Up Profile/Increment n Connections per Interval,1
+Ramp Up Profile/Fixed Time Interval,00:00:01
+Session Ramp Distribution/Ramp Up Behavior,Full Open
+Session Ramp Distribution/SYN Only Retry Mode,Obey Retry Count
+Session Ramp Distribution/Ramp Up Duration,00:00:00
+Session Ramp Distribution/Steady-State Behavior,Hold Sessions Open
+Session Ramp Distribution/Steady-State Time Interval,00:01:00
+Session Ramp Distribution/Ramp Down Behavior,Full Close
+Session Ramp Distribution/Ramp Down Time Interval,00:00:20
+Load Profile/,None
+7.4. Traffic Appearance
+Traffic was addressed as defined in the "BreakingPoint Application Server" network neighborhood.
+Interface,Traffic Direction,Network Domain,VLAN,Address Range
+,External,default,,192.168.215.200 - 192.168.215.200
+1,Client,default,,192.168.215.1 - 192.168.215.199
+7.5. Component Results
+Component,Result
+Cleanup data,passed
+7.6. Super Flow Data
+
+
+There may be slices in this graph that are too small to be displayed.
+Super Flow,Data Transmitted (Bytes),Data Transmitted (%),Data Received (Bytes),Data Received (%),Delta Received (Tx - Rx) (Bytes),% Received (%)
+Resiliency Init Server,0,0,0,,,
+7.7. Super Flow Iterations
+
+There may be slices in this graph that are too small to be displayed.
+Super Flow,Iterations (Sessions),Iterations (%)
+Resiliency Init Server,35,100.000%
+7.8. Frame Data Rate Summary
+Measurement,Value (Mb/s)
+7.9. TCP Setup Time
+
+Measurement,Value (TCP Sessions)
+< 10ms,0
+10 < 100ms,0
+100 < 1000ms,0
+1000 < 10000ms,0
+>= 10000ms,0
+7.10. TCP Response Time
+
+Measurement,Value (TCP Sessions)
+< 10ms,0
+10 < 100ms,0
+100 < 1000ms,0
+1000 < 10000ms,0
+>= 10000ms,0
+7.11. TCP Close Time
+
+Measurement,Value (TCP Sessions)
+< 10ms,0
+10 < 100ms,0
+100 < 1000ms,0
+1000 < 10000ms,0
+>= 10000ms,0
+7.12. TCP Summary
+Measurement,Value
+Frames transmitted,0
+Frames received,0
+Frame data transmitted,0
+Frame data received,0
+Client attempted,0
+Client established,0
+Client closed normally,0
+Client received FIN,0
+Client closed by sending RST,0
+Client received RST,0
+Aggregate open retries,0
+Aggregate data retries,0
+Aggregate close retries,0
+Aggregate closed normally,0
+Aggregate closed by sending RST,0
+7.13. Component Flow Counts
+Measurement,Value
+UDP Flows,0
+TCP Flows,0
+SCTP Flows,0
+Flow Exceptions,35
+7.14. Component Summary
+Measurement,Value
+Frames transmitted,0
+Frames received,0
+Frame bytes transmitted,0
+Frame bytes received,0
+Maximum frame transmit rate,0
+Maximum frame receive rate,0
+Maximum frame data transmit rate,0
+Maximum frame data receive rate,0
+Maximum client establish rate,0
+Maximum client concurrent,0
+Maximum server concurrent,0
+Concurrent TCP Flows,0
+Concurrent UDP Flows,0
+Concurrent ICMP Flows,0
+TCP flow rate,0
+UDP flow rate,0
+ICMP flow rate,0
+Concurrent Network Flows Max,0
+Network Flow Rate Max,0
+7.15. Detail
+7.15.1. Response Summary
+Protocol,Action ID,Match Id,Matching String,Matching Type,Matching Count
+,,,,,Transactions
+Resiliency Init Server,2,match1,SERVER RESTART SUCCESSFUL,Simple String,0
+Resiliency Init Server,2,match2,COULD NOT GET LOCK,Simple String,0
+Resiliency Init Server,2,match3,FAILED,Simple String,0
+Resiliency Init Server,2,no match,,,0
+7.15.1.1. Response Summary: Resiliency Init Server
+Protocol,Action ID,Match Id,Matching String,Matching Type,Matching Count
+,,,,,Transactions
+Resiliency Init Server,2,match1,SERVER RESTART SUCCESSFUL,Simple String,0
+Resiliency Init Server,2,match2,COULD NOT GET LOCK,Simple String,0
+Resiliency Init Server,2,match3,FAILED,Simple String,0
+Resiliency Init Server,2,no match,,,0
+7.15.2. Super Flow Data Throughput
+
+Data Rate shown includes Ethernet overhead.
+Rates can fluctuate slightly above the physical maximum due to round-off errors in calculations.
+Physical speeds on fiber optic can legitimately exceed 10Gbps.
+Timestamp,Transmit rate,Receive rate
+Seconds,Megabits/s,
+0.170,0.00,0.00
+1.168,0.00,0.00
+2.167,0.00,0.00
+3.168,0.00,0.00
+4.161,0.00,0.00
+5.167,0.00,0.00
+6.167,0.00,0.00
+7.164,0.00,0.00
+8.159,0.00,0.00
+9.167,0.00,0.00
+10.164,0.00,0.00
+11.171,0.00,0.00
+12.161,0.00,0.00
+13.171,0.00,0.00
+14.161,0.00,0.00
+15.167,0.00,0.00
+16.166,0.00,0.00
+17.174,0.00,0.00
+18.160,0.00,0.00
+19.167,0.00,0.00
+20.175,0.00,0.00
+21.159,0.00,0.00
+22.162,0.00,0.00
+23.163,0.00,0.00
+24.164,0.00,0.00
+25.168,0.00,0.00
+26.171,0.00,0.00
+27.167,0.00,0.00
+28.166,0.00,0.00
+29.169,0.00,0.00
+30.167,0.00,0.00
+31.163,0.00,0.00
+32.173,0.00,0.00
+33.168,0.00,0.00
+34.168,0.00,0.00
+35.166,0.00,0.00
+36.167,0.00,0.00
+37.166,0.00,0.00
+38.160,0.00,0.00
+39.168,0.00,0.00
+40.164,0.00,0.00
+41.160,0.00,0.00
+42.161,0.00,0.00
+43.160,0.00,0.00
+44.163,0.00,0.00
+45.163,0.00,0.00
+46.171,0.00,0.00
+47.159,0.00,0.00
+48.161,0.00,0.00
+49.168,0.00,0.00
+50.160,0.00,0.00
+51.163,0.00,0.00
+52.161,0.00,0.00
+53.160,0.00,0.00
+54.166,0.00,0.00
+55.158,0.00,0.00
+56.161,0.00,0.00
+57.159,0.00,0.00
+58.167,0.00,0.00
+59.160,0.00,0.00
+60.159,0.00,0.00
+61.160,0.00,0.00
+62.170,0.00,0.00
+63.170,0.00,0.00
+64.162,0.00,0.00
+65.161,0.00,0.00
+66.161,0.00,0.00
+67.172,0.00,0.00
+68.163,0.00,0.00
+69.161,0.00,0.00
+70.164,0.00,0.00
+71.161,0.00,0.00
+72.169,0.00,0.00
+73.168,0.00,0.00
+74.159,0.00,0.00
+75.170,0.00,0.00
+76.167,0.00,0.00
+77.165,0.00,0.00
+78.167,0.00,0.00
+79.161,0.00,0.00
+80.168,0.00,0.00
+80.614,0.00,0.00
+81.620,0.00,0.00
+7.15.2.1. Super Flow Data Throughput: Resiliency Init Server
+
+Data Rate shown includes Ethernet overhead.
+Rates can fluctuate slightly above the physical maximum due to round-off errors in calculations.
+Physical speeds on fiber optic can legitimately exceed 10Gbps.
+Timestamp,Transmit rate,Receive rate
+Seconds,Megabits/s,
+0.170,0.00,0.00
+1.168,0.00,0.00
+2.167,0.00,0.00
+3.168,0.00,0.00
+4.161,0.00,0.00
+5.167,0.00,0.00
+6.167,0.00,0.00
+7.164,0.00,0.00
+8.159,0.00,0.00
+9.167,0.00,0.00
+10.164,0.00,0.00
+11.171,0.00,0.00
+12.161,0.00,0.00
+13.171,0.00,0.00
+14.161,0.00,0.00
+15.167,0.00,0.00
+16.166,0.00,0.00
+17.174,0.00,0.00
+18.160,0.00,0.00
+19.167,0.00,0.00
+20.175,0.00,0.00
+21.159,0.00,0.00
+22.162,0.00,0.00
+23.163,0.00,0.00
+24.164,0.00,0.00
+25.168,0.00,0.00
+26.171,0.00,0.00
+27.167,0.00,0.00
+28.166,0.00,0.00
+29.169,0.00,0.00
+30.167,0.00,0.00
+31.163,0.00,0.00
+32.173,0.00,0.00
+33.168,0.00,0.00
+34.168,0.00,0.00
+35.166,0.00,0.00
+36.167,0.00,0.00
+37.166,0.00,0.00
+38.160,0.00,0.00
+39.168,0.00,0.00
+40.164,0.00,0.00
+41.160,0.00,0.00
+42.161,0.00,0.00
+43.160,0.00,0.00
+44.163,0.00,0.00
+45.163,0.00,0.00
+46.171,0.00,0.00
+47.159,0.00,0.00
+48.161,0.00,0.00
+49.168,0.00,0.00
+50.160,0.00,0.00
+51.163,0.00,0.00
+52.161,0.00,0.00
+53.160,0.00,0.00
+54.166,0.00,0.00
+55.158,0.00,0.00
+56.161,0.00,0.00
+57.159,0.00,0.00
+58.167,0.00,0.00
+59.160,0.00,0.00
+60.159,0.00,0.00
+61.160,0.00,0.00
+62.170,0.00,0.00
+63.170,0.00,0.00
+64.162,0.00,0.00
+65.161,0.00,0.00
+66.161,0.00,0.00
+67.172,0.00,0.00
+68.163,0.00,0.00
+69.161,0.00,0.00
+70.164,0.00,0.00
+71.161,0.00,0.00
+72.169,0.00,0.00
+73.168,0.00,0.00
+74.159,0.00,0.00
+75.170,0.00,0.00
+76.167,0.00,0.00
+77.165,0.00,0.00
+78.167,0.00,0.00
+79.161,0.00,0.00
+80.168,0.00,0.00
+80.614,0.00,0.00
+81.620,0.00,0.00
+7.15.3. Superflow Iterations
+
+Timestamp,Attempts,Successes,Failures
+Seconds,Sessions,,
+0.170,0,0,0
+1.168,1,0,0
+2.167,2,0,1
+3.168,2,0,1
+4.161,3,0,2
+5.167,3,0,2
+6.167,4,0,3
+7.164,4,0,3
+8.159,5,0,4
+9.167,6,0,5
+10.164,6,0,5
+11.171,7,0,6
+12.161,7,0,6
+13.171,8,0,7
+14.161,8,0,7
+15.167,9,0,8
+16.166,10,0,9
+17.174,10,0,9
+18.160,11,0,10
+19.167,11,0,10
+20.175,12,0,11
+21.159,12,0,11
+22.162,13,0,12
+23.163,14,0,13
+24.164,14,0,13
+25.168,15,0,14
+26.171,15,0,14
+27.167,16,0,15
+28.166,16,0,15
+29.169,17,0,16
+30.167,18,0,17
+31.163,18,0,17
+32.173,19,0,18
+33.168,19,0,18
+34.168,20,0,19
+35.166,20,0,19
+36.167,21,0,20
+37.166,22,0,21
+38.160,22,0,21
+39.168,23,0,22
+40.164,23,0,22
+41.160,24,0,23
+42.161,24,0,23
+43.160,25,0,24
+44.163,26,0,25
+45.163,26,0,25
+46.171,27,0,26
+47.159,27,0,26
+48.161,28,0,27
+49.168,28,0,27
+50.160,29,0,28
+51.163,30,0,29
+52.161,30,0,29
+53.160,31,0,30
+54.166,31,0,30
+55.158,32,0,31
+56.161,32,0,31
+57.159,33,0,32
+58.167,33,0,32
+59.160,34,0,33
+60.159,35,0,34
+61.160,35,0,34
+62.170,35,0,35
+63.170,35,0,35
+64.162,35,0,35
+65.161,35,0,35
+66.161,35,0,35
+67.172,35,0,35
+68.163,35,0,35
+69.161,35,0,35
+70.164,35,0,35
+71.161,35,0,35
+72.169,35,0,35
+73.168,35,0,35
+74.159,35,0,35
+75.170,35,0,35
+76.167,35,0,35
+77.165,35,0,35
+78.167,35,0,35
+79.161,35,0,35
+80.168,35,0,35
+80.614,35,0,35
+81.620,35,0,35
+7.15.3.1. Superflow Iterations: Resiliency Init Server
+
+Timestamp,Attempts,Successes,Failures
+Seconds,Sessions,,
+0.170,0,0,0
+1.168,1,0,0
+2.167,2,0,1
+3.168,2,0,1
+4.161,3,0,2
+5.167,3,0,2
+6.167,4,0,3
+7.164,4,0,3
+8.159,5,0,4
+9.167,6,0,5
+10.164,6,0,5
+11.171,7,0,6
+12.161,7,0,6
+13.171,8,0,7
+14.161,8,0,7
+15.167,9,0,8
+16.166,10,0,9
+17.174,10,0,9
+18.160,11,0,10
+19.167,11,0,10
+20.175,12,0,11
+21.159,12,0,11
+22.162,13,0,12
+23.163,14,0,13
+24.164,14,0,13
+25.168,15,0,14
+26.171,15,0,14
+27.167,16,0,15
+28.166,16,0,15
+29.169,17,0,16
+30.167,18,0,17
+31.163,18,0,17
+32.173,19,0,18
+33.168,19,0,18
+34.168,20,0,19
+35.166,20,0,19
+36.167,21,0,20
+37.166,22,0,21
+38.160,22,0,21
+39.168,23,0,22
+40.164,23,0,22
+41.160,24,0,23
+42.161,24,0,23
+43.160,25,0,24
+44.163,26,0,25
+45.163,26,0,25
+46.171,27,0,26
+47.159,27,0,26
+48.161,28,0,27
+49.168,28,0,27
+50.160,29,0,28
+51.163,30,0,29
+52.161,30,0,29
+53.160,31,0,30
+54.166,31,0,30
+55.158,32,0,31
+56.161,32,0,31
+57.159,33,0,32
+58.167,33,0,32
+59.160,34,0,33
+60.159,35,0,34
+61.160,35,0,34
+62.170,35,0,35
+63.170,35,0,35
+64.162,35,0,35
+65.161,35,0,35
+66.161,35,0,35
+67.172,35,0,35
+68.163,35,0,35
+69.161,35,0,35
+70.164,35,0,35
+71.161,35,0,35
+72.169,35,0,35
+73.168,35,0,35
+74.159,35,0,35
+75.170,35,0,35
+76.167,35,0,35
+77.165,35,0,35
+78.167,35,0,35
+79.161,35,0,35
+80.168,35,0,35
+80.614,35,0,35
+81.620,35,0,35
+7.15.4. Flow Exceptions (All)
+Timestamp,Type,VLAN,Source IP,Source Port,Destination IP,Destination Port,IP Protocol
+Seconds,,,,,,vlan,
+1.921,Destination Unreachable,,192.168.215.122,1024,192.168.215.200,5555,TCP
+3.680,Destination Unreachable,,192.168.215.133,1024,192.168.215.200,5555,TCP
+5.440,Destination Unreachable,,192.168.215.67,1024,192.168.215.200,5555,TCP
+7.194,Destination Unreachable,,192.168.215.34,1024,192.168.215.200,5555,TCP
+8.961,Destination Unreachable,,192.168.215.169,1024,192.168.215.200,5555,TCP
+10.717,Destination Unreachable,,192.168.215.85,1024,192.168.215.200,5555,TCP
+12.481,Destination Unreachable,,192.168.215.43,1024,192.168.215.200,5555,TCP
+14.247,Destination Unreachable,,192.168.215.22,1024,192.168.215.200,5555,TCP
+16.003,Destination Unreachable,,192.168.215.179,1024,192.168.215.200,5555,TCP
+17.765,Destination Unreachable,,192.168.215.90,1024,192.168.215.200,5555,TCP
+19.518,Destination Unreachable,,192.168.215.149,1024,192.168.215.200,5555,TCP
+21.284,Destination Unreachable,,192.168.215.75,1024,192.168.215.200,5555,TCP
+23.044,Destination Unreachable,,192.168.215.38,1024,192.168.215.200,5555,TCP
+24.797,Destination Unreachable,,192.168.215.171,1024,192.168.215.200,5555,TCP
+26.552,Destination Unreachable,,192.168.215.86,1024,192.168.215.200,5555,TCP
+28.312,Destination Unreachable,,192.168.215.147,1024,192.168.215.200,5555,TCP
+30.064,Destination Unreachable,,192.168.215.74,1024,192.168.215.200,5555,TCP
+31.818,Destination Unreachable,,192.168.215.157,1024,192.168.215.200,5555,TCP
+33.573,Destination Unreachable,,192.168.215.79,1024,192.168.215.200,5555,TCP
+35.341,Destination Unreachable,,192.168.215.40,1024,192.168.215.200,5555,TCP
+37.100,exceptions dropped due to high rate,,,,,,
+38.855,Destination Unreachable,,192.168.215.39,1024,192.168.215.200,5555,TCP
+40.613,Destination Unreachable,,192.168.215.8,1024,192.168.215.200,5555,TCP
+42.367,Destination Unreachable,,192.168.215.104,1024,192.168.215.200,5555,TCP
+44.121,Destination Unreachable,,192.168.215.140,1024,192.168.215.200,5555,TCP
+45.877,Destination Unreachable,,192.168.215.55,1024,192.168.215.200,5555,TCP
+47.629,Destination Unreachable,,192.168.215.199,1024,192.168.215.200,5555,TCP
+49.379,Destination Unreachable,,192.168.215.100,1024,192.168.215.200,5555,TCP
+51.131,Destination Unreachable,,192.168.215.138,1024,192.168.215.200,5555,TCP
+52.881,Destination Unreachable,,192.168.215.54,1024,192.168.215.200,5555,TCP
+54.648,Destination Unreachable,,192.168.215.127,1024,192.168.215.200,5555,TCP
+56.409,Destination Unreachable,,192.168.215.64,1024,192.168.215.200,5555,TCP
+58.176,Destination Unreachable,,192.168.215.168,1024,192.168.215.200,5555,TCP
+59.937,Destination Unreachable,,192.168.215.37,1024,192.168.215.200,5555,TCP
+61.690,Destination Unreachable,,192.168.215.7,1024,192.168.215.200,5555,TCP
+7.15.4.1. Flow Exceptions (All): 1
+Timestamp,Type,VLAN,Source IP,Source Port,Destination IP,Destination Port,IP Protocol
+Seconds,,,,,,vlan,
+1.921,Destination Unreachable,,192.168.215.122,1024,192.168.215.200,5555,TCP
+3.680,Destination Unreachable,,192.168.215.133,1024,192.168.215.200,5555,TCP
+5.440,Destination Unreachable,,192.168.215.67,1024,192.168.215.200,5555,TCP
+7.194,Destination Unreachable,,192.168.215.34,1024,192.168.215.200,5555,TCP
+8.961,Destination Unreachable,,192.168.215.169,1024,192.168.215.200,5555,TCP
+10.717,Destination Unreachable,,192.168.215.85,1024,192.168.215.200,5555,TCP
+12.481,Destination Unreachable,,192.168.215.43,1024,192.168.215.200,5555,TCP
+14.247,Destination Unreachable,,192.168.215.22,1024,192.168.215.200,5555,TCP
+16.003,Destination Unreachable,,192.168.215.179,1024,192.168.215.200,5555,TCP
+17.765,Destination Unreachable,,192.168.215.90,1024,192.168.215.200,5555,TCP
+19.518,Destination Unreachable,,192.168.215.149,1024,192.168.215.200,5555,TCP
+21.284,Destination Unreachable,,192.168.215.75,1024,192.168.215.200,5555,TCP
+23.044,Destination Unreachable,,192.168.215.38,1024,192.168.215.200,5555,TCP
+24.797,Destination Unreachable,,192.168.215.171,1024,192.168.215.200,5555,TCP
+26.552,Destination Unreachable,,192.168.215.86,1024,192.168.215.200,5555,TCP
+28.312,Destination Unreachable,,192.168.215.147,1024,192.168.215.200,5555,TCP
+30.064,Destination Unreachable,,192.168.215.74,1024,192.168.215.200,5555,TCP
+31.818,Destination Unreachable,,192.168.215.157,1024,192.168.215.200,5555,TCP
+33.573,Destination Unreachable,,192.168.215.79,1024,192.168.215.200,5555,TCP
+35.341,Destination Unreachable,,192.168.215.40,1024,192.168.215.200,5555,TCP
+37.100,exceptions dropped due to high rate,,,,,,
+38.855,Destination Unreachable,,192.168.215.39,1024,192.168.215.200,5555,TCP
+40.613,Destination Unreachable,,192.168.215.8,1024,192.168.215.200,5555,TCP
+42.367,Destination Unreachable,,192.168.215.104,1024,192.168.215.200,5555,TCP
+44.121,Destination Unreachable,,192.168.215.140,1024,192.168.215.200,5555,TCP
+45.877,Destination Unreachable,,192.168.215.55,1024,192.168.215.200,5555,TCP
+47.629,Destination Unreachable,,192.168.215.199,1024,192.168.215.200,5555,TCP
+49.379,Destination Unreachable,,192.168.215.100,1024,192.168.215.200,5555,TCP
+51.131,Destination Unreachable,,192.168.215.138,1024,192.168.215.200,5555,TCP
+52.881,Destination Unreachable,,192.168.215.54,1024,192.168.215.200,5555,TCP
+54.648,Destination Unreachable,,192.168.215.127,1024,192.168.215.200,5555,TCP
+56.409,Destination Unreachable,,192.168.215.64,1024,192.168.215.200,5555,TCP
+58.176,Destination Unreachable,,192.168.215.168,1024,192.168.215.200,5555,TCP
+59.937,Destination Unreachable,,192.168.215.37,1024,192.168.215.200,5555,TCP
+61.690,Destination Unreachable,,192.168.215.7,1024,192.168.215.200,5555,TCP
+7.15.5. Concurrent Flows
+
+Timestamp,UDP,TCP,Active
+Seconds,Flows,,
+1.168,0,0,1
+2.167,0,0,1
+3.168,0,0,1
+4.161,0,0,1
+5.167,0,0,1
+6.167,0,0,1
+7.164,0,0,1
+8.159,0,0,1
+9.167,0,0,1
+10.164,0,0,1
+11.171,0,0,1
+12.161,0,0,1
+13.171,0,0,1
+14.161,0,0,1
+15.167,0,0,1
+16.166,0,0,1
+17.174,0,0,1
+18.160,0,0,1
+19.167,0,0,1
+20.175,0,0,1
+21.159,0,0,1
+22.162,0,0,1
+23.163,0,0,1
+24.164,0,0,1
+25.168,0,0,1
+26.171,0,0,1
+27.167,0,0,1
+28.166,0,0,1
+29.169,0,0,1
+30.167,0,0,1
+31.163,0,0,1
+32.173,0,0,1
+33.168,0,0,1
+34.168,0,0,1
+35.166,0,0,1
+36.167,0,0,1
+37.166,0,0,1
+38.160,0,0,1
+39.168,0,0,1
+40.164,0,0,1
+41.160,0,0,1
+42.161,0,0,1
+43.160,0,0,1
+44.163,0,0,1
+45.163,0,0,1
+46.171,0,0,1
+47.159,0,0,1
+48.161,0,0,1
+49.168,0,0,1
+50.160,0,0,1
+51.163,0,0,1
+52.161,0,0,1
+53.160,0,0,1
+54.166,0,0,1
+55.158,0,0,1
+56.161,0,0,1
+57.159,0,0,1
+58.167,0,0,1
+59.160,0,0,1
+60.159,0,0,1
+61.160,0,0,1
+62.170,0,0,0
+63.170,0,0,0
+64.162,0,0,0
+65.161,0,0,0
+66.161,0,0,0
+67.172,0,0,0
+68.163,0,0,0
+69.161,0,0,0
+70.164,0,0,0
+71.161,0,0,0
+72.169,0,0,0
+73.168,0,0,0
+74.159,0,0,0
+75.170,0,0,0
+76.167,0,0,0
+77.165,0,0,0
+78.167,0,0,0
+79.161,0,0,0
+80.168,0,0,0
+80.614,0,0,0
+81.620,0,0,0
+7.15.6. Flow Rate
+
+Timestamp,UDP,TCP
+Seconds,Flows/s,
+1.168,0,0
+2.167,0,0
+3.168,0,0
+4.161,0,0
+5.167,0,0
+6.167,0,0
+7.164,0,0
+8.159,0,0
+9.167,0,0
+10.164,0,0
+11.171,0,0
+12.161,0,0
+13.171,0,0
+14.161,0,0
+15.167,0,0
+16.166,0,0
+17.174,0,0
+18.160,0,0
+19.167,0,0
+20.175,0,0
+21.159,0,0
+22.162,0,0
+23.163,0,0
+24.164,0,0
+25.168,0,0
+26.171,0,0
+27.167,0,0
+28.166,0,0
+29.169,0,0
+30.167,0,0
+31.163,0,0
+32.173,0,0
+33.168,0,0
+34.168,0,0
+35.166,0,0
+36.167,0,0
+37.166,0,0
+38.160,0,0
+39.168,0,0
+40.164,0,0
+41.160,0,0
+42.161,0,0
+43.160,0,0
+44.163,0,0
+45.163,0,0
+46.171,0,0
+47.159,0,0
+48.161,0,0
+49.168,0,0
+50.160,0,0
+51.163,0,0
+52.161,0,0
+53.160,0,0
+54.166,0,0
+55.158,0,0
+56.161,0,0
+57.159,0,0
+58.167,0,0
+59.160,0,0
+60.159,0,0
+61.160,0,0
+62.170,0,0
+63.170,0,0
+64.162,0,0
+65.161,0,0
+66.161,0,0
+67.172,0,0
+68.163,0,0
+69.161,0,0
+70.164,0,0
+71.161,0,0
+72.169,0,0
+73.168,0,0
+74.159,0,0
+75.170,0,0
+76.167,0,0
+77.165,0,0
+78.167,0,0
+79.161,0,0
+80.168,0,0
+80.614,0,0
+81.620,0,0
+7.15.7. TCP Concurrent Connections
+
+Timestamp,Client,Server
+Seconds,TCP Sessions,
+1.168,0,0
+2.167,0,0
+3.168,0,0
+4.161,0,0
+5.167,0,0
+6.167,0,0
+7.164,0,0
+8.159,0,0
+9.167,0,0
+10.164,0,0
+11.171,0,0
+12.161,0,0
+13.171,0,0
+14.161,0,0
+15.167,0,0
+16.166,0,0
+17.174,0,0
+18.160,0,0
+19.167,0,0
+20.175,0,0
+21.159,0,0
+22.162,0,0
+23.163,0,0
+24.164,0,0
+25.168,0,0
+26.171,0,0
+27.167,0,0
+28.166,0,0
+29.169,0,0
+30.167,0,0
+31.163,0,0
+32.173,0,0
+33.168,0,0
+34.168,0,0
+35.166,0,0
+36.167,0,0
+37.166,0,0
+38.160,0,0
+39.168,0,0
+40.164,0,0
+41.160,0,0
+42.161,0,0
+43.160,0,0
+44.163,0,0
+45.163,0,0
+46.171,0,0
+47.159,0,0
+48.161,0,0
+49.168,0,0
+50.160,0,0
+51.163,0,0
+52.161,0,0
+53.160,0,0
+54.166,0,0
+55.158,0,0
+56.161,0,0
+57.159,0,0
+58.167,0,0
+59.160,0,0
+60.159,0,0
+61.160,0,0
+62.170,0,0
+63.170,0,0
+64.162,0,0
+65.161,0,0
+66.161,0,0
+67.172,0,0
+68.163,0,0
+69.161,0,0
+70.164,0,0
+71.161,0,0
+72.169,0,0
+73.168,0,0
+74.159,0,0
+75.170,0,0
+76.167,0,0
+77.165,0,0
+78.167,0,0
+79.161,0,0
+80.168,0,0
+80.614,0,0
+81.620,0,0
+7.15.7.1. TCP Concurrent Connections: 1
+
+Timestamp,Client,Server
+Seconds,TCP Sessions,
+1.168,0,0
+2.167,0,0
+3.168,0,0
+4.161,0,0
+5.167,0,0
+6.167,0,0
+7.164,0,0
+8.159,0,0
+9.167,0,0
+10.164,0,0
+11.171,0,0
+12.161,0,0
+13.171,0,0
+14.161,0,0
+15.167,0,0
+16.166,0,0
+17.174,0,0
+18.160,0,0
+19.167,0,0
+20.175,0,0
+21.159,0,0
+22.162,0,0
+23.163,0,0
+24.164,0,0
+25.168,0,0
+26.171,0,0
+27.167,0,0
+28.166,0,0
+29.169,0,0
+30.167,0,0
+31.163,0,0
+32.173,0,0
+33.168,0,0
+34.168,0,0
+35.166,0,0
+36.167,0,0
+37.166,0,0
+38.160,0,0
+39.168,0,0
+40.164,0,0
+41.160,0,0
+42.161,0,0
+43.160,0,0
+44.163,0,0
+45.163,0,0
+46.171,0,0
+47.159,0,0
+48.161,0,0
+49.168,0,0
+50.160,0,0
+51.163,0,0
+52.161,0,0
+53.160,0,0
+54.166,0,0
+55.158,0,0
+56.161,0,0
+57.159,0,0
+58.167,0,0
+59.160,0,0
+60.159,0,0
+61.160,0,0
+62.170,0,0
+63.170,0,0
+64.162,0,0
+65.161,0,0
+66.161,0,0
+67.172,0,0
+68.163,0,0
+69.161,0,0
+70.164,0,0
+71.161,0,0
+72.169,0,0
+73.168,0,0
+74.159,0,0
+75.170,0,0
+76.167,0,0
+77.165,0,0
+78.167,0,0
+79.161,0,0
+80.168,0,0
+80.614,0,0
+81.620,0,0
+7.15.8. TCP Connection Rate
+
+Timestamp,Client attempt rate,Client establish rate,Client close rate,Client close by sending RST rate,Server establish rate,Server close rate,Server close by sending RST rate
+Seconds,TCP Sessions/s,,,,,,
+1.168,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+2.167,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+3.168,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+4.161,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+5.167,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+6.167,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+7.164,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+8.159,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+9.167,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+10.164,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+11.171,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+12.161,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+13.171,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+14.161,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+15.167,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+16.166,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+17.174,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+18.160,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+19.167,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+20.175,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+21.159,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+22.162,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+23.163,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+24.164,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+25.168,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+26.171,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+27.167,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+28.166,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+29.169,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+30.167,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+31.163,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+32.173,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+33.168,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+34.168,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+35.166,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+36.167,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+37.166,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+38.160,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+39.168,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+40.164,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+41.160,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+42.161,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+43.160,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+44.163,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+45.163,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+46.171,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+47.159,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+48.161,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+49.168,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+50.160,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+51.163,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+52.161,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+53.160,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+54.166,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+55.158,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+56.161,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+57.159,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+58.167,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+59.160,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+60.159,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+61.160,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+62.170,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+63.170,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+64.162,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+65.161,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+66.161,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+67.172,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+68.163,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+69.161,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+70.164,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+71.161,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+72.169,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+73.168,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+74.159,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+75.170,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+76.167,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+77.165,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+78.167,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+79.161,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+80.168,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+80.614,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+81.620,0.00,0.00,0.00,0.00,0.00,0.00,0.00
+7.15.9. TCP Aggregate Connections
+
+Timestamp,Client attempted,Client established,Client closed normally,Client closed by sending RST,Server established,Server closed normally,Server closed by sending RST,TCP open retries,TCP data retries,TCP close retries,Aggregate closed by sending RST
+Seconds,TCP Sessions,,,,,,,,,,
+1.168,0,0,0,0,0,0,0,0,0,0,0
+2.167,0,0,0,0,0,0,0,0,0,0,0
+3.168,0,0,0,0,0,0,0,0,0,0,0
+4.161,0,0,0,0,0,0,0,0,0,0,0
+5.167,0,0,0,0,0,0,0,0,0,0,0
+6.167,0,0,0,0,0,0,0,0,0,0,0
+7.164,0,0,0,0,0,0,0,0,0,0,0
+8.159,0,0,0,0,0,0,0,0,0,0,0
+9.167,0,0,0,0,0,0,0,0,0,0,0
+10.164,0,0,0,0,0,0,0,0,0,0,0
+11.171,0,0,0,0,0,0,0,0,0,0,0
+12.161,0,0,0,0,0,0,0,0,0,0,0
+13.171,0,0,0,0,0,0,0,0,0,0,0
+14.161,0,0,0,0,0,0,0,0,0,0,0
+15.167,0,0,0,0,0,0,0,0,0,0,0
+16.166,0,0,0,0,0,0,0,0,0,0,0
+17.174,0,0,0,0,0,0,0,0,0,0,0
+18.160,0,0,0,0,0,0,0,0,0,0,0
+19.167,0,0,0,0,0,0,0,0,0,0,0
+20.175,0,0,0,0,0,0,0,0,0,0,0
+21.159,0,0,0,0,0,0,0,0,0,0,0
+22.162,0,0,0,0,0,0,0,0,0,0,0
+23.163,0,0,0,0,0,0,0,0,0,0,0
+24.164,0,0,0,0,0,0,0,0,0,0,0
+25.168,0,0,0,0,0,0,0,0,0,0,0
+26.171,0,0,0,0,0,0,0,0,0,0,0
+27.167,0,0,0,0,0,0,0,0,0,0,0
+28.166,0,0,0,0,0,0,0,0,0,0,0
+29.169,0,0,0,0,0,0,0,0,0,0,0
+30.167,0,0,0,0,0,0,0,0,0,0,0
+31.163,0,0,0,0,0,0,0,0,0,0,0
+32.173,0,0,0,0,0,0,0,0,0,0,0
+33.168,0,0,0,0,0,0,0,0,0,0,0
+34.168,0,0,0,0,0,0,0,0,0,0,0
+35.166,0,0,0,0,0,0,0,0,0,0,0
+36.167,0,0,0,0,0,0,0,0,0,0,0
+37.166,0,0,0,0,0,0,0,0,0,0,0
+38.160,0,0,0,0,0,0,0,0,0,0,0
+39.168,0,0,0,0,0,0,0,0,0,0,0
+40.164,0,0,0,0,0,0,0,0,0,0,0
+41.160,0,0,0,0,0,0,0,0,0,0,0
+42.161,0,0,0,0,0,0,0,0,0,0,0
+43.160,0,0,0,0,0,0,0,0,0,0,0
+44.163,0,0,0,0,0,0,0,0,0,0,0
+45.163,0,0,0,0,0,0,0,0,0,0,0
+46.171,0,0,0,0,0,0,0,0,0,0,0
+47.159,0,0,0,0,0,0,0,0,0,0,0
+48.161,0,0,0,0,0,0,0,0,0,0,0
+49.168,0,0,0,0,0,0,0,0,0,0,0
+50.160,0,0,0,0,0,0,0,0,0,0,0
+51.163,0,0,0,0,0,0,0,0,0,0,0
+52.161,0,0,0,0,0,0,0,0,0,0,0
+53.160,0,0,0,0,0,0,0,0,0,0,0
+54.166,0,0,0,0,0,0,0,0,0,0,0
+55.158,0,0,0,0,0,0,0,0,0,0,0
+56.161,0,0,0,0,0,0,0,0,0,0,0
+57.159,0,0,0,0,0,0,0,0,0,0,0
+58.167,0,0,0,0,0,0,0,0,0,0,0
+59.160,0,0,0,0,0,0,0,0,0,0,0
+60.159,0,0,0,0,0,0,0,0,0,0,0
+61.160,0,0,0,0,0,0,0,0,0,0,0
+62.170,0,0,0,0,0,0,0,0,0,0,0
+63.170,0,0,0,0,0,0,0,0,0,0,0
+64.162,0,0,0,0,0,0,0,0,0,0,0
+65.161,0,0,0,0,0,0,0,0,0,0,0
+66.161,0,0,0,0,0,0,0,0,0,0,0
+67.172,0,0,0,0,0,0,0,0,0,0,0
+68.163,0,0,0,0,0,0,0,0,0,0,0
+69.161,0,0,0,0,0,0,0,0,0,0,0
+70.164,0,0,0,0,0,0,0,0,0,0,0
+71.161,0,0,0,0,0,0,0,0,0,0,0
+72.169,0,0,0,0,0,0,0,0,0,0,0
+73.168,0,0,0,0,0,0,0,0,0,0,0
+74.159,0,0,0,0,0,0,0,0,0,0,0
+75.170,0,0,0,0,0,0,0,0,0,0,0
+76.167,0,0,0,0,0,0,0,0,0,0,0
+77.165,0,0,0,0,0,0,0,0,0,0,0
+78.167,0,0,0,0,0,0,0,0,0,0,0
+79.161,0,0,0,0,0,0,0,0,0,0,0
+80.168,0,0,0,0,0,0,0,0,0,0,0
+80.614,0,0,0,0,0,0,0,0,0,0,0
+81.620,0,0,0,0,0,0,0,0,0,0,0
+7.15.10. TCP Average Time to Open
+
+TCP latency is measured to an accuracy of +/- 1 millisecond.
+Timestamp,Setup Time
+Seconds,Milliseconds
+1.168,0.0000
+2.167,0.0000
+3.168,0.0000
+4.161,0.0000
+5.167,0.0000
+6.167,0.0000
+7.164,0.0000
+8.159,0.0000
+9.167,0.0000
+10.164,0.0000
+11.171,0.0000
+12.161,0.0000
+13.171,0.0000
+14.161,0.0000
+15.167,0.0000
+16.166,0.0000
+17.174,0.0000
+18.160,0.0000
+19.167,0.0000
+20.175,0.0000
+21.159,0.0000
+22.162,0.0000
+23.163,0.0000
+24.164,0.0000
+25.168,0.0000
+26.171,0.0000
+27.167,0.0000
+28.166,0.0000
+29.169,0.0000
+30.167,0.0000
+31.163,0.0000
+32.173,0.0000
+33.168,0.0000
+34.168,0.0000
+35.166,0.0000
+36.167,0.0000
+37.166,0.0000
+38.160,0.0000
+39.168,0.0000
+40.164,0.0000
+41.160,0.0000
+42.161,0.0000
+43.160,0.0000
+44.163,0.0000
+45.163,0.0000
+46.171,0.0000
+47.159,0.0000
+48.161,0.0000
+49.168,0.0000
+50.160,0.0000
+51.163,0.0000
+52.161,0.0000
+53.160,0.0000
+54.166,0.0000
+55.158,0.0000
+56.161,0.0000
+57.159,0.0000
+58.167,0.0000
+59.160,0.0000
+60.159,0.0000
+61.160,0.0000
+62.170,0.0000
+63.170,0.0000
+64.162,0.0000
+65.161,0.0000
+66.161,0.0000
+67.172,0.0000
+68.163,0.0000
+69.161,0.0000
+70.164,0.0000
+71.161,0.0000
+72.169,0.0000
+73.168,0.0000
+74.159,0.0000
+75.170,0.0000
+76.167,0.0000
+77.165,0.0000
+78.167,0.0000
+79.161,0.0000
+80.168,0.0000
+80.614,0.0000
+81.620,0.0000
+7.15.11. TCP Average Time to Response Packet
+
+TCP latency is measured to an accuracy of +/- 1 millisecond.
+Timestamp,Response Time
+Seconds,Milliseconds
+1.168,0.0000
+2.167,0.0000
+3.168,0.0000
+4.161,0.0000
+5.167,0.0000
+6.167,0.0000
+7.164,0.0000
+8.159,0.0000
+9.167,0.0000
+10.164,0.0000
+11.171,0.0000
+12.161,0.0000
+13.171,0.0000
+14.161,0.0000
+15.167,0.0000
+16.166,0.0000
+17.174,0.0000
+18.160,0.0000
+19.167,0.0000
+20.175,0.0000
+21.159,0.0000
+22.162,0.0000
+23.163,0.0000
+24.164,0.0000
+25.168,0.0000
+26.171,0.0000
+27.167,0.0000
+28.166,0.0000
+29.169,0.0000
+30.167,0.0000
+31.163,0.0000
+32.173,0.0000
+33.168,0.0000
+34.168,0.0000
+35.166,0.0000
+36.167,0.0000
+37.166,0.0000
+38.160,0.0000
+39.168,0.0000
+40.164,0.0000
+41.160,0.0000
+42.161,0.0000
+43.160,0.0000
+44.163,0.0000
+45.163,0.0000
+46.171,0.0000
+47.159,0.0000
+48.161,0.0000
+49.168,0.0000
+50.160,0.0000
+51.163,0.0000
+52.161,0.0000
+53.160,0.0000
+54.166,0.0000
+55.158,0.0000
+56.161,0.0000
+57.159,0.0000
+58.167,0.0000
+59.160,0.0000
+60.159,0.0000
+61.160,0.0000
+62.170,0.0000
+63.170,0.0000
+64.162,0.0000
+65.161,0.0000
+66.161,0.0000
+67.172,0.0000
+68.163,0.0000
+69.161,0.0000
+70.164,0.0000
+71.161,0.0000
+72.169,0.0000
+73.168,0.0000
+74.159,0.0000
+75.170,0.0000
+76.167,0.0000
+77.165,0.0000
+78.167,0.0000
+79.161,0.0000
+80.168,0.0000
+80.614,0.0000
+81.620,0.0000
+7.15.12. TCP Average Time to Close
+
+TCP latency is measured to an accuracy of +/- 1 millisecond.
+Timestamp,Close Time
+Seconds,Milliseconds
+1.168,0.0000
+2.167,0.0000
+3.168,0.0000
+4.161,0.0000
+5.167,0.0000
+6.167,0.0000
+7.164,0.0000
+8.159,0.0000
+9.167,0.0000
+10.164,0.0000
+11.171,0.0000
+12.161,0.0000
+13.171,0.0000
+14.161,0.0000
+15.167,0.0000
+16.166,0.0000
+17.174,0.0000
+18.160,0.0000
+19.167,0.0000
+20.175,0.0000
+21.159,0.0000
+22.162,0.0000
+23.163,0.0000
+24.164,0.0000
+25.168,0.0000
+26.171,0.0000
+27.167,0.0000
+28.166,0.0000
+29.169,0.0000
+30.167,0.0000
+31.163,0.0000
+32.173,0.0000
+33.168,0.0000
+34.168,0.0000
+35.166,0.0000
+36.167,0.0000
+37.166,0.0000
+38.160,0.0000
+39.168,0.0000
+40.164,0.0000
+41.160,0.0000
+42.161,0.0000
+43.160,0.0000
+44.163,0.0000
+45.163,0.0000
+46.171,0.0000
+47.159,0.0000
+48.161,0.0000
+49.168,0.0000
+50.160,0.0000
+51.163,0.0000
+52.161,0.0000
+53.160,0.0000
+54.166,0.0000
+55.158,0.0000
+56.161,0.0000
+57.159,0.0000
+58.167,0.0000
+59.160,0.0000
+60.159,0.0000
+61.160,0.0000
+62.170,0.0000
+63.170,0.0000
+64.162,0.0000
+65.161,0.0000
+66.161,0.0000
+67.172,0.0000
+68.163,0.0000
+69.161,0.0000
+70.164,0.0000
+71.161,0.0000
+72.169,0.0000
+73.168,0.0000
+74.159,0.0000
+75.170,0.0000
+76.167,0.0000
+77.165,0.0000
+78.167,0.0000
+79.161,0.0000
+80.168,0.0000
+80.614,0.0000
+81.620,0.0000
+7.15.13. TCP Average Session Duration
+Timestamp,Avg Session Duration
+seconds,milliseconds
+7.15.13.1. TCP Average Session Duration: 1
+Timestamp,Avg Session Duration
+seconds,milliseconds
+7.15.14. TCP Client State Machine
+
+Timestamp,SYN_SENT,ESTABLISHED,CLOSING,CLOSE_WAIT,FIN_WAIT_1,FIN_WAIT_2,LAST_ACK,TIME_WAIT
+Seconds,TCP Sessions,,,,,,,
+1.168,1,0,0,0,0,0,0,0
+2.167,2,0,0,0,0,0,0,0
+3.168,2,0,0,0,0,0,0,0
+4.161,3,0,0,0,0,0,0,0
+5.167,3,0,0,0,0,0,0,0
+6.167,4,0,0,0,0,0,0,0
+7.164,4,0,0,0,0,0,0,0
+8.159,5,0,0,0,0,0,0,0
+9.167,6,0,0,0,0,0,0,0
+10.164,6,0,0,0,0,0,0,0
+11.171,7,0,0,0,0,0,0,0
+12.161,7,0,0,0,0,0,0,0
+13.171,8,0,0,0,0,0,0,0
+14.161,8,0,0,0,0,0,0,0
+15.167,9,0,0,0,0,0,0,0
+16.166,10,0,0,0,0,0,0,0
+17.174,10,0,0,0,0,0,0,0
+18.160,11,0,0,0,0,0,0,0
+19.167,11,0,0,0,0,0,0,0
+20.175,12,0,0,0,0,0,0,0
+21.159,12,0,0,0,0,0,0,0
+22.162,13,0,0,0,0,0,0,0
+23.163,14,0,0,0,0,0,0,0
+24.164,14,0,0,0,0,0,0,0
+25.168,15,0,0,0,0,0,0,0
+26.171,15,0,0,0,0,0,0,0
+27.167,16,0,0,0,0,0,0,0
+28.166,16,0,0,0,0,0,0,0
+29.169,17,0,0,0,0,0,0,0
+30.167,18,0,0,0,0,0,0,0
+31.163,18,0,0,0,0,0,0,0
+32.173,19,0,0,0,0,0,0,0
+33.168,19,0,0,0,0,0,0,0
+34.168,20,0,0,0,0,0,0,0
+35.166,20,0,0,0,0,0,0,0
+36.167,21,0,0,0,0,0,0,0
+37.166,22,0,0,0,0,0,0,0
+38.160,22,0,0,0,0,0,0,0
+39.168,23,0,0,0,0,0,0,0
+40.164,23,0,0,0,0,0,0,0
+41.160,24,0,0,0,0,0,0,0
+42.161,24,0,0,0,0,0,0,0
+43.160,25,0,0,0,0,0,0,0
+44.163,26,0,0,0,0,0,0,0
+45.163,26,0,0,0,0,0,0,0
+46.171,27,0,0,0,0,0,0,0
+47.159,27,0,0,0,0,0,0,0
+48.161,28,0,0,0,0,0,0,0
+49.168,28,0,0,0,0,0,0,0
+50.160,29,0,0,0,0,0,0,0
+51.163,30,0,0,0,0,0,0,0
+52.161,30,0,0,0,0,0,0,0
+53.160,31,0,0,0,0,0,0,0
+54.166,31,0,0,0,0,0,0,0
+55.158,32,0,0,0,0,0,0,0
+56.161,32,0,0,0,0,0,0,0
+57.159,33,0,0,0,0,0,0,0
+58.167,33,0,0,0,0,0,0,0
+59.160,34,0,0,0,0,0,0,0
+60.159,35,0,0,0,0,0,0,0
+61.160,35,0,0,0,0,0,0,0
+62.170,35,0,0,0,0,0,0,0
+63.170,35,0,0,0,0,0,0,0
+64.162,35,0,0,0,0,0,0,0
+65.161,35,0,0,0,0,0,0,0
+66.161,35,0,0,0,0,0,0,0
+67.172,35,0,0,0,0,0,0,0
+68.163,35,0,0,0,0,0,0,0
+69.161,35,0,0,0,0,0,0,0
+70.164,35,0,0,0,0,0,0,0
+71.161,35,0,0,0,0,0,0,0
+72.169,35,0,0,0,0,0,0,0
+73.168,35,0,0,0,0,0,0,0
+74.159,35,0,0,0,0,0,0,0
+75.170,35,0,0,0,0,0,0,0
+76.167,35,0,0,0,0,0,0,0
+77.165,35,0,0,0,0,0,0,0
+78.167,35,0,0,0,0,0,0,0
+79.161,35,0,0,0,0,0,0,0
+80.168,35,0,0,0,0,0,0,0
+80.614,35,0,0,0,0,0,0,0
+81.620,35,0,0,0,0,0,0,0
+7.15.14.1. TCP Client State Machine: 1
+
+Timestamp,SYN_SENT,ESTABLISHED,CLOSING,CLOSE_WAIT,FIN_WAIT_1,FIN_WAIT_2,LAST_ACK,TIME_WAIT
+Seconds,TCP Sessions,,,,,,,
+1.168,1,0,0,0,0,0,0,0
+2.167,2,0,0,0,0,0,0,0
+3.168,2,0,0,0,0,0,0,0
+4.161,3,0,0,0,0,0,0,0
+5.167,3,0,0,0,0,0,0,0
+6.167,4,0,0,0,0,0,0,0
+7.164,4,0,0,0,0,0,0,0
+8.159,5,0,0,0,0,0,0,0
+9.167,6,0,0,0,0,0,0,0
+10.164,6,0,0,0,0,0,0,0
+11.171,7,0,0,0,0,0,0,0
+12.161,7,0,0,0,0,0,0,0
+13.171,8,0,0,0,0,0,0,0
+14.161,8,0,0,0,0,0,0,0
+15.167,9,0,0,0,0,0,0,0
+16.166,10,0,0,0,0,0,0,0
+17.174,10,0,0,0,0,0,0,0
+18.160,11,0,0,0,0,0,0,0
+19.167,11,0,0,0,0,0,0,0
+20.175,12,0,0,0,0,0,0,0
+21.159,12,0,0,0,0,0,0,0
+22.162,13,0,0,0,0,0,0,0
+23.163,14,0,0,0,0,0,0,0
+24.164,14,0,0,0,0,0,0,0
+25.168,15,0,0,0,0,0,0,0
+26.171,15,0,0,0,0,0,0,0
+27.167,16,0,0,0,0,0,0,0
+28.166,16,0,0,0,0,0,0,0
+29.169,17,0,0,0,0,0,0,0
+30.167,18,0,0,0,0,0,0,0
+31.163,18,0,0,0,0,0,0,0
+32.173,19,0,0,0,0,0,0,0
+33.168,19,0,0,0,0,0,0,0
+34.168,20,0,0,0,0,0,0,0
+35.166,20,0,0,0,0,0,0,0
+36.167,21,0,0,0,0,0,0,0
+37.166,22,0,0,0,0,0,0,0
+38.160,22,0,0,0,0,0,0,0
+39.168,23,0,0,0,0,0,0,0
+40.164,23,0,0,0,0,0,0,0
+41.160,24,0,0,0,0,0,0,0
+42.161,24,0,0,0,0,0,0,0
+43.160,25,0,0,0,0,0,0,0
+44.163,26,0,0,0,0,0,0,0
+45.163,26,0,0,0,0,0,0,0
+46.171,27,0,0,0,0,0,0,0
+47.159,27,0,0,0,0,0,0,0
+48.161,28,0,0,0,0,0,0,0
+49.168,28,0,0,0,0,0,0,0
+50.160,29,0,0,0,0,0,0,0
+51.163,30,0,0,0,0,0,0,0
+52.161,30,0,0,0,0,0,0,0
+53.160,31,0,0,0,0,0,0,0
+54.166,31,0,0,0,0,0,0,0
+55.158,32,0,0,0,0,0,0,0
+56.161,32,0,0,0,0,0,0,0
+57.159,33,0,0,0,0,0,0,0
+58.167,33,0,0,0,0,0,0,0
+59.160,34,0,0,0,0,0,0,0
+60.159,35,0,0,0,0,0,0,0
+61.160,35,0,0,0,0,0,0,0
+62.170,35,0,0,0,0,0,0,0
+63.170,35,0,0,0,0,0,0,0
+64.162,35,0,0,0,0,0,0,0
+65.161,35,0,0,0,0,0,0,0
+66.161,35,0,0,0,0,0,0,0
+67.172,35,0,0,0,0,0,0,0
+68.163,35,0,0,0,0,0,0,0
+69.161,35,0,0,0,0,0,0,0
+70.164,35,0,0,0,0,0,0,0
+71.161,35,0,0,0,0,0,0,0
+72.169,35,0,0,0,0,0,0,0
+73.168,35,0,0,0,0,0,0,0
+74.159,35,0,0,0,0,0,0,0
+75.170,35,0,0,0,0,0,0,0
+76.167,35,0,0,0,0,0,0,0
+77.165,35,0,0,0,0,0,0,0
+78.167,35,0,0,0,0,0,0,0
+79.161,35,0,0,0,0,0,0,0
+80.168,35,0,0,0,0,0,0,0
+80.614,35,0,0,0,0,0,0,0
+81.620,35,0,0,0,0,0,0,0
+7.15.15. TCP Server State Machine
+
+Timestamp,SYN_RECEIVED,ESTABLISHED,CLOSING,CLOSE_WAIT,FIN_WAIT_1,FIN_WAIT_2,LAST_ACK,TIME_WAIT
+Seconds,TCP Sessions,,,,,,,
+1.168,0,0,0,0,0,0,0,0
+2.167,0,0,0,0,0,0,0,0
+3.168,0,0,0,0,0,0,0,0
+4.161,0,0,0,0,0,0,0,0
+5.167,0,0,0,0,0,0,0,0
+6.167,0,0,0,0,0,0,0,0
+7.164,0,0,0,0,0,0,0,0
+8.159,0,0,0,0,0,0,0,0
+9.167,0,0,0,0,0,0,0,0
+10.164,0,0,0,0,0,0,0,0
+11.171,0,0,0,0,0,0,0,0
+12.161,0,0,0,0,0,0,0,0
+13.171,0,0,0,0,0,0,0,0
+14.161,0,0,0,0,0,0,0,0
+15.167,0,0,0,0,0,0,0,0
+16.166,0,0,0,0,0,0,0,0
+17.174,0,0,0,0,0,0,0,0
+18.160,0,0,0,0,0,0,0,0
+19.167,0,0,0,0,0,0,0,0
+20.175,0,0,0,0,0,0,0,0
+21.159,0,0,0,0,0,0,0,0
+22.162,0,0,0,0,0,0,0,0
+23.163,0,0,0,0,0,0,0,0
+24.164,0,0,0,0,0,0,0,0
+25.168,0,0,0,0,0,0,0,0
+26.171,0,0,0,0,0,0,0,0
+27.167,0,0,0,0,0,0,0,0
+28.166,0,0,0,0,0,0,0,0
+29.169,0,0,0,0,0,0,0,0
+30.167,0,0,0,0,0,0,0,0
+31.163,0,0,0,0,0,0,0,0
+32.173,0,0,0,0,0,0,0,0
+33.168,0,0,0,0,0,0,0,0
+34.168,0,0,0,0,0,0,0,0
+35.166,0,0,0,0,0,0,0,0
+36.167,0,0,0,0,0,0,0,0
+37.166,0,0,0,0,0,0,0,0
+38.160,0,0,0,0,0,0,0,0
+39.168,0,0,0,0,0,0,0,0
+40.164,0,0,0,0,0,0,0,0
+41.160,0,0,0,0,0,0,0,0
+42.161,0,0,0,0,0,0,0,0
+43.160,0,0,0,0,0,0,0,0
+44.163,0,0,0,0,0,0,0,0
+45.163,0,0,0,0,0,0,0,0
+46.171,0,0,0,0,0,0,0,0
+47.159,0,0,0,0,0,0,0,0
+48.161,0,0,0,0,0,0,0,0
+49.168,0,0,0,0,0,0,0,0
+50.160,0,0,0,0,0,0,0,0
+51.163,0,0,0,0,0,0,0,0
+52.161,0,0,0,0,0,0,0,0
+53.160,0,0,0,0,0,0,0,0
+54.166,0,0,0,0,0,0,0,0
+55.158,0,0,0,0,0,0,0,0
+56.161,0,0,0,0,0,0,0,0
+57.159,0,0,0,0,0,0,0,0
+58.167,0,0,0,0,0,0,0,0
+59.160,0,0,0,0,0,0,0,0
+60.159,0,0,0,0,0,0,0,0
+61.160,0,0,0,0,0,0,0,0
+62.170,0,0,0,0,0,0,0,0
+63.170,0,0,0,0,0,0,0,0
+64.162,0,0,0,0,0,0,0,0
+65.161,0,0,0,0,0,0,0,0
+66.161,0,0,0,0,0,0,0,0
+67.172,0,0,0,0,0,0,0,0
+68.163,0,0,0,0,0,0,0,0
+69.161,0,0,0,0,0,0,0,0
+70.164,0,0,0,0,0,0,0,0
+71.161,0,0,0,0,0,0,0,0
+72.169,0,0,0,0,0,0,0,0
+73.168,0,0,0,0,0,0,0,0
+74.159,0,0,0,0,0,0,0,0
+75.170,0,0,0,0,0,0,0,0
+76.167,0,0,0,0,0,0,0,0
+77.165,0,0,0,0,0,0,0,0
+78.167,0,0,0,0,0,0,0,0
+79.161,0,0,0,0,0,0,0,0
+80.168,0,0,0,0,0,0,0,0
+80.614,0,0,0,0,0,0,0,0
+81.620,0,0,0,0,0,0,0,0
+7.15.15.1. TCP Server State Machine: 1
+
+Timestamp,SYN_RECEIVED,ESTABLISHED,CLOSING,CLOSE_WAIT,FIN_WAIT_1,FIN_WAIT_2,LAST_ACK,TIME_WAIT
+Seconds,TCP Sessions,,,,,,,
+1.168,0,0,0,0,0,0,0,0
+2.167,0,0,0,0,0,0,0,0
+3.168,0,0,0,0,0,0,0,0
+4.161,0,0,0,0,0,0,0,0
+5.167,0,0,0,0,0,0,0,0
+6.167,0,0,0,0,0,0,0,0
+7.164,0,0,0,0,0,0,0,0
+8.159,0,0,0,0,0,0,0,0
+9.167,0,0,0,0,0,0,0,0
+10.164,0,0,0,0,0,0,0,0
+11.171,0,0,0,0,0,0,0,0
+12.161,0,0,0,0,0,0,0,0
+13.171,0,0,0,0,0,0,0,0
+14.161,0,0,0,0,0,0,0,0
+15.167,0,0,0,0,0,0,0,0
+16.166,0,0,0,0,0,0,0,0
+17.174,0,0,0,0,0,0,0,0
+18.160,0,0,0,0,0,0,0,0
+19.167,0,0,0,0,0,0,0,0
+20.175,0,0,0,0,0,0,0,0
+21.159,0,0,0,0,0,0,0,0
+22.162,0,0,0,0,0,0,0,0
+23.163,0,0,0,0,0,0,0,0
+24.164,0,0,0,0,0,0,0,0
+25.168,0,0,0,0,0,0,0,0
+26.171,0,0,0,0,0,0,0,0
+27.167,0,0,0,0,0,0,0,0
+28.166,0,0,0,0,0,0,0,0
+29.169,0,0,0,0,0,0,0,0
+30.167,0,0,0,0,0,0,0,0
+31.163,0,0,0,0,0,0,0,0
+32.173,0,0,0,0,0,0,0,0
+33.168,0,0,0,0,0,0,0,0
+34.168,0,0,0,0,0,0,0,0
+35.166,0,0,0,0,0,0,0,0
+36.167,0,0,0,0,0,0,0,0
+37.166,0,0,0,0,0,0,0,0
+38.160,0,0,0,0,0,0,0,0
+39.168,0,0,0,0,0,0,0,0
+40.164,0,0,0,0,0,0,0,0
+41.160,0,0,0,0,0,0,0,0
+42.161,0,0,0,0,0,0,0,0
+43.160,0,0,0,0,0,0,0,0
+44.163,0,0,0,0,0,0,0,0
+45.163,0,0,0,0,0,0,0,0
+46.171,0,0,0,0,0,0,0,0
+47.159,0,0,0,0,0,0,0,0
+48.161,0,0,0,0,0,0,0,0
+49.168,0,0,0,0,0,0,0,0
+50.160,0,0,0,0,0,0,0,0
+51.163,0,0,0,0,0,0,0,0
+52.161,0,0,0,0,0,0,0,0
+53.160,0,0,0,0,0,0,0,0
+54.166,0,0,0,0,0,0,0,0
+55.158,0,0,0,0,0,0,0,0
+56.161,0,0,0,0,0,0,0,0
+57.159,0,0,0,0,0,0,0,0
+58.167,0,0,0,0,0,0,0,0
+59.160,0,0,0,0,0,0,0,0
+60.159,0,0,0,0,0,0,0,0
+61.160,0,0,0,0,0,0,0,0
+62.170,0,0,0,0,0,0,0,0
+63.170,0,0,0,0,0,0,0,0
+64.162,0,0,0,0,0,0,0,0
+65.161,0,0,0,0,0,0,0,0
+66.161,0,0,0,0,0,0,0,0
+67.172,0,0,0,0,0,0,0,0
+68.163,0,0,0,0,0,0,0,0
+69.161,0,0,0,0,0,0,0,0
+70.164,0,0,0,0,0,0,0,0
+71.161,0,0,0,0,0,0,0,0
+72.169,0,0,0,0,0,0,0,0
+73.168,0,0,0,0,0,0,0,0
+74.159,0,0,0,0,0,0,0,0
+75.170,0,0,0,0,0,0,0,0
+76.167,0,0,0,0,0,0,0,0
+77.165,0,0,0,0,0,0,0,0
+78.167,0,0,0,0,0,0,0,0
+79.161,0,0,0,0,0,0,0,0
+80.168,0,0,0,0,0,0,0,0
+80.614,0,0,0,0,0,0,0,0
+81.620,0,0,0,0,0,0,0,0
+7.15.16. Frame Latency Distribution
+This chart shows latency ranges on the Y axis.  The length of a colored bucket signifies its size relative to the total latency spread.  It does not correspond to the number of packets.
+The latency buckets are generated each second to an ideal normal curve, real packet latencies should be close but not exactly normal.
+Buckets are generated as - bucket1 (dark blue): lowest 2.2%; bucket2 (light blue): low 13.7%; bucket3 (green): middle 68.2%; bucket4 (light blue): high 13.7%; bucket5 (dark blue): highest 2.2%
+68.2% of packets sent during the interval (ideally) will be in the middle bucket (green).
+Layer 2 and 3 tests on 1Gig blades do not support dynamic latency.  These tests will have static 10,100,1000,10000,10000+ ms buckets.
+Timestamp,Average Latency,lowest latency,low latency,middle latency,high latency,highest latency,lowest count,low count,middle count,high count,highest count
+microseconds,,,,,,,packets,,,,
+8. Aggregate Stats
+8.1. Component Description
+Component: aggregate_statisticsThis component measures aggregate system and network statistics.
+Component,Resource Used
+Slot 2 NP np2-0 statistics,np2-0
+System Controller 0 statistics,sc0
+8.2. Ethernet Summary
+Measurement,Value
+Transmitted  Bytes,"4,224"
+Received  Bytes,"2,352  55.682%"
+Transmit  Frame Rate,2.004
+Receive  Frame Rate,1.016  50.711%
+Transmit  Megabit/s,0.001347
+Receive  Megabit/s,0.0006179  45.882%
+Transmitted  Frames,66
+Received  Frames,42  63.636%
+Transmit Pause  Frames,0
+Receive Pause  Frames,0
+Transmit errors  Frames,0
+FCS errors  Frames,0
+Alignment errors  Frames,0
+Undersize  Frames,0
+Oversize  Frames,0
+Drop Events  Frames,0
+8.3. ARP Summary
+
+Measurement,Value (Frames)
+Request TX,66
+Reply RX,0
+Request RX,0
+Reply TX,0
+Bad Length,0
+Ignored Request,0
+Ignored Reply,0
+Duplicate Address,0
+8.4. Router Summary
+
+Measurement,Value (Frames)
+Router Discards,42
+Unroutable IP Address,0
+Bad IP Checksum,0
+Bad Layer 4 Checksum,0
+Bad IP Version,0
+Bad IP Length,0
+Bad IP Header Length,0
+Bad IP Fragment,0
+Bad IP TTL,0
+Bad Ethernet FCS,0
+No RX Queue,0
+Unknown Ethertype,0
+8.5. Detail
+8.5.1. System Resource Usage
+
+Timestamp,CPU Usage,Memory Usage,Disk Usage
+Seconds,Percent,,
+0.175,211.43,149.69,17.65
+1.167,112.05,74.82,8.83
+2.167,110.15,74.82,8.83
+3.167,108.08,74.81,8.83
+4.167,110.19,74.81,8.83
+5.167,108.08,74.80,8.83
+6.167,109.95,74.84,8.83
+7.167,113.66,74.85,8.83
+8.167,110.40,74.85,8.83
+9.167,108.87,74.85,8.83
+10.167,108.67,74.85,8.83
+11.167,109.50,74.83,8.83
+12.169,110.33,74.82,8.83
+13.168,110.20,74.83,8.83
+14.167,109.60,74.86,8.83
+15.167,109.90,74.86,8.83
+16.167,110.50,74.86,8.83
+17.167,107.53,74.86,8.83
+18.167,115.58,74.87,8.83
+19.167,108.50,74.85,8.83
+20.177,108.08,74.86,8.83
+21.170,110.10,74.89,8.83
+22.168,109.63,74.90,8.83
+23.167,106.57,74.90,8.83
+24.168,110.89,74.90,8.83
+25.167,108.63,74.90,8.83
+26.167,110.50,74.90,8.83
+27.167,111.76,74.89,8.83
+28.167,110.42,74.91,8.83
+29.167,118,74.93,8.83
+30.167,109.45,74.93,8.83
+31.167,111.22,74.93,8.83
+32.167,107.49,74.93,8.83
+33.167,109.55,74.93,8.83
+34.167,108.59,74.91,8.83
+35.167,108.50,74.90,8.83
+36.167,112.69,74.95,8.83
+37.167,108.65,74.95,8.83
+38.167,111,74.97,8.83
+39.167,106.06,74.98,8.83
+40.167,108.12,74.98,8.83
+41.167,109.47,74.96,8.83
+42.167,110.27,74.96,8.83
+43.167,108.72,74.95,8.83
+44.169,111.82,74.98,8.83
+45.168,113.50,74.99,8.83
+46.167,110.20,75,8.83
+47.167,110.10,75,8.83
+48.167,123.43,75.01,8.83
+49.167,128.72,74.99,8.83
+50.168,107.85,75,8.83
+51.167,110.55,75.03,8.83
+52.168,108.67,75.03,8.83
+53.167,108.79,75.04,8.83
+54.167,109.50,75.04,8.83
+55.168,111.73,75.07,8.83
+56.167,114.57,75.02,8.83
+57.167,107.29,75.02,8.83
+58.167,109.63,75.02,8.83
+59.167,108.87,75.05,8.83
+60.167,110.20,75.05,8.83
+61.167,108.42,75.04,8.83
+62.168,106.60,75.04,8.83
+63.167,110.05,75.04,8.83
+64.168,108.63,75.01,8.83
+65.168,107.14,75.01,8.83
+66.167,109.14,75.05,8.83
+67.177,107.61,75.05,8.83
+68.167,106.56,75.05,8.83
+69.167,107.61,75.05,8.83
+70.168,109.95,75.05,8.83
+71.167,108.42,75.04,8.83
+72.167,109.90,75.03,8.83
+73.167,109.84,75.02,8.83
+74.168,107.11,75.06,8.83
+75.167,108.50,75.07,8.83
+76.169,108,75.07,8.83
+77.167,106.57,75.07,8.83
+78.167,108.60,75.07,8.83
+79.167,110.73,75.05,8.83
+80.167,109.55,75.05,8.83
+81.167,110.84,75.09,8.83
+81.685,109.80,74.22,8.83
+81.676,100,0,0
+8.5.2. Router Exceptions
+Timestamp,Type,Source IP,Source Port,Destination IP,Destination Port,IP Protocol
+Seconds,,,,,,
+6.196,Host Unreachable,192.168.215.122,,192.168.215.200,,0
+17.203,Host Unreachable,192.168.215.85,,192.168.215.200,,0
+28.195,Host Unreachable,192.168.215.38,,192.168.215.200,,0
+39.198,Host Unreachable,192.168.215.79,,192.168.215.200,,0
+50.191,Host Unreachable,192.168.215.140,,192.168.215.200,,0
+61.189,Host Unreachable,192.168.215.127,,192.168.215.200,,0
+8.5.2.1. Router Exceptions: 1
+Timestamp,Type,Source IP,Source Port,Destination IP,Destination Port,IP Protocol
+Seconds,,,,,,
+6.196,Host Unreachable,192.168.215.122,,192.168.215.200,,0
+17.203,Host Unreachable,192.168.215.85,,192.168.215.200,,0
+28.195,Host Unreachable,192.168.215.38,,192.168.215.200,,0
+39.198,Host Unreachable,192.168.215.79,,192.168.215.200,,0
+50.191,Host Unreachable,192.168.215.140,,192.168.215.200,,0
+61.189,Host Unreachable,192.168.215.127,,192.168.215.200,,0
+8.5.3. Ethernet Frames
+
+Timestamp,Transmitted,Received
+Seconds,Frames,
+0.200,0,1
+0.200,0,1
+1.197,2,2  100.000%
+2.197,3,2  66.667%
+3.197,4,3  75.000%
+4.189,5,3  60.000%
+5.197,6,4  66.667%
+6.196,7,4  57.143%
+7.193,8,5  62.500%
+8.189,9,5  55.556%
+9.210,10,6  60.000%
+10.197,11,6  54.545%
+11.381,12,7  58.333%
+12.190,13,7  53.846%
+13.209,14,8  57.143%
+14.196,15,8  53.333%
+15.196,16,9  56.250%
+16.195,17,9  52.941%
+17.203,18,10  55.556%
+18.188,19,10  52.632%
+19.196,20,11  55.000%
+20.213,21,11  52.381%
+21.248,22,12  54.545%
+22.191,23,12  52.174%
+23.195,24,13  54.167%
+24.197,25,13  52.000%
+25.197,26,14  53.846%
+26.291,27,14  51.852%
+27.201,28,15  53.571%
+28.195,29,15  51.724%
+29.198,30,16  53.333%
+30.197,31,16  51.613%
+31.193,32,17  53.125%
+32.202,33,17  51.515%
+33.198,34,18  52.941%
+34.197,35,18  51.429%
+35.194,36,19  52.778%
+36.197,37,19  51.351%
+37.195,38,20  52.632%
+38.191,39,20  51.282%
+39.198,40,21  52.500%
+40.194,41,21  51.220%
+41.190,42,22  52.381%
+42.196,43,22  51.163%
+43.189,44,23  52.273%
+44.197,45,23  51.111%
+45.192,46,24  52.174%
+46.201,47,24  51.064%
+47.358,48,25  52.083%
+48.191,49,25  51.020%
+49.197,50,26  52.000%
+50.191,51,26  50.980%
+51.192,52,27  51.923%
+52.199,53,27  50.943%
+53.190,54,28  51.852%
+54.196,55,28  50.909%
+55.189,56,29  51.786%
+56.208,57,29  50.877%
+57.189,58,30  51.724%
+58.196,59,30  50.847%
+59.189,60,31  51.667%
+60.189,61,31  50.820%
+61.189,62,32  51.613%
+62.198,63,32  50.794%
+63.200,64,33  51.563%
+64.191,65,33  50.769%
+65.195,66,34  51.515%
+66.190,66,34  51.515%
+67.201,66,35  53.030%
+68.192,66,35  53.030%
+69.190,66,36  54.545%
+70.193,66,36  54.545%
+71.190,66,37  56.061%
+72.199,66,37  56.061%
+73.198,66,38  57.576%
+74.188,66,38  57.576%
+75.199,66,39  59.091%
+76.196,66,39  59.091%
+77.202,66,40  60.606%
+78.196,66,40  60.606%
+79.199,66,41  62.121%
+80.197,66,41  62.121%
+81.196,66,42  63.636%
+81.694,66,42  63.636%
+8.5.3.1. Ethernet Frames: 1
+
+Timestamp,Transmitted,Received
+Seconds,Frames,
+0.200,0,1
+0.200,0,1
+1.197,2,2  100.000%
+2.197,3,2  66.667%
+3.197,4,3  75.000%
+4.189,5,3  60.000%
+5.197,6,4  66.667%
+6.196,7,4  57.143%
+7.193,8,5  62.500%
+8.189,9,5  55.556%
+9.210,10,6  60.000%
+10.197,11,6  54.545%
+11.381,12,7  58.333%
+12.190,13,7  53.846%
+13.209,14,8  57.143%
+14.196,15,8  53.333%
+15.196,16,9  56.250%
+16.195,17,9  52.941%
+17.203,18,10  55.556%
+18.188,19,10  52.632%
+19.196,20,11  55.000%
+20.213,21,11  52.381%
+21.248,22,12  54.545%
+22.191,23,12  52.174%
+23.195,24,13  54.167%
+24.197,25,13  52.000%
+25.197,26,14  53.846%
+26.291,27,14  51.852%
+27.201,28,15  53.571%
+28.195,29,15  51.724%
+29.198,30,16  53.333%
+30.197,31,16  51.613%
+31.193,32,17  53.125%
+32.202,33,17  51.515%
+33.198,34,18  52.941%
+34.197,35,18  51.429%
+35.194,36,19  52.778%
+36.197,37,19  51.351%
+37.195,38,20  52.632%
+38.191,39,20  51.282%
+39.198,40,21  52.500%
+40.194,41,21  51.220%
+41.190,42,22  52.381%
+42.196,43,22  51.163%
+43.189,44,23  52.273%
+44.197,45,23  51.111%
+45.192,46,24  52.174%
+46.201,47,24  51.064%
+47.358,48,25  52.083%
+48.191,49,25  51.020%
+49.197,50,26  52.000%
+50.191,51,26  50.980%
+51.192,52,27  51.923%
+52.199,53,27  50.943%
+53.190,54,28  51.852%
+54.196,55,28  50.909%
+55.189,56,29  51.786%
+56.208,57,29  50.877%
+57.189,58,30  51.724%
+58.196,59,30  50.847%
+59.189,60,31  51.667%
+60.189,61,31  50.820%
+61.189,62,32  51.613%
+62.198,63,32  50.794%
+63.200,64,33  51.563%
+64.191,65,33  50.769%
+65.195,66,34  51.515%
+66.190,66,34  51.515%
+67.201,66,35  53.030%
+68.192,66,35  53.030%
+69.190,66,36  54.545%
+70.193,66,36  54.545%
+71.190,66,37  56.061%
+72.199,66,37  56.061%
+73.198,66,38  57.576%
+74.188,66,38  57.576%
+75.199,66,39  59.091%
+76.196,66,39  59.091%
+77.202,66,40  60.606%
+78.196,66,40  60.606%
+79.199,66,41  62.121%
+80.197,66,41  62.121%
+81.196,66,42  63.636%
+81.694,66,42  63.636%
+8.5.4. Ethernet Frame Rates
+
+Timestamp,Transmit rate,Receive rate
+Seconds,Frames/s,
+0.200,0.00,0.00
+0.200,0.00,0.00
+1.197,2.004,1.002
+2.197,1,0.00
+3.197,1.001,1.001
+4.189,1.007,0.00
+5.197,0.9930,0.9930
+6.196,1.001,0.00
+7.193,1.003,1.003
+8.189,1.004,0.00
+9.210,0.9930,0.9930
+10.197,1.003,0.00
+11.381,0.9930,0.9930
+12.190,1.009,0.00
+13.209,0.9911,0.9911
+14.196,1.009,0.00
+15.196,0.9940,0.9940
+16.195,1.002,0.00
+17.203,0.9921,0.9921
+18.188,1.014,0.00
+19.196,0.9930,0.9930
+20.213,0.9921,0.00
+21.248,1.016,1.016
+22.191,0.9970,0.00
+23.195,0.9990,0.9990
+24.197,0.9990,0.00
+25.197,0.9960,0.9960
+26.291,0.9970,0.00
+27.201,1.003,1.003
+28.195,1.002,0.00
+29.198,0.9970,0.9970
+30.197,1.001,0.00
+31.193,1.004,1.004
+32.202,0.9911,0.00
+33.198,1.004,1.004
+34.197,1.001,0.00
+35.194,1.002,1.002
+36.197,0.9980,0.00
+37.195,1.001,1.001
+38.191,1.006,0.00
+39.198,0.9921,0.9921
+40.194,1.004,0.00
+41.190,1.004,1.004
+42.196,1,0.00
+43.189,1,1
+44.197,0.9980,0.00
+45.192,0.9990,0.9990
+46.201,0.9921,0.00
+47.358,1.013,1.013
+48.191,0.9980,0.00
+49.197,0.9921,0.9921
+50.191,1.008,0.00
+51.192,0.9980,0.9980
+52.199,1.001,0.00
+53.190,1.001,1.001
+54.196,0.9940,0.00
+55.189,1.007,1.007
+56.208,0.9980,0.00
+57.189,1.003,1.003
+58.196,0.9921,0.00
+59.189,1.008,1.008
+60.189,0.9990,0.00
+61.189,1,1
+62.198,0.9901,0.00
+63.200,0.9990,0.9990
+64.191,1.009,0.00
+65.195,1,1
+66.190,0.00,0.00
+67.201,0.00,0.9901
+68.192,0.00,0.00
+69.190,0.00,1.001
+70.193,0.00,0.00
+71.190,0.00,1.002
+72.199,0.00,0.00
+73.198,0.00,1.001
+74.188,0.00,0.00
+75.199,0.00,0.9891
+76.196,0.00,0.00
+77.202,0.00,1.001
+78.196,0.00,0.00
+79.199,0.00,1.006
+80.197,0.00,0.00
+81.196,0.00,1
+81.694,0.00,0.00
+8.5.4.1. Ethernet Frame Rates: 1
+
+Timestamp,Transmit rate,Receive rate
+Seconds,Frames/s,
+0.200,0.00,0.00
+0.200,0.00,0.00
+1.197,2.004,1.002
+2.197,1,0.00
+3.197,1.001,1.001
+4.189,1.007,0.00
+5.197,0.9930,0.9930
+6.196,1.001,0.00
+7.193,1.003,1.003
+8.189,1.004,0.00
+9.210,0.9930,0.9930
+10.197,1.003,0.00
+11.381,0.9930,0.9930
+12.190,1.009,0.00
+13.209,0.9911,0.9911
+14.196,1.009,0.00
+15.196,0.9940,0.9940
+16.195,1.002,0.00
+17.203,0.9921,0.9921
+18.188,1.014,0.00
+19.196,0.9930,0.9930
+20.213,0.9921,0.00
+21.248,1.016,1.016
+22.191,0.9970,0.00
+23.195,0.9990,0.9990
+24.197,0.9990,0.00
+25.197,0.9960,0.9960
+26.291,0.9970,0.00
+27.201,1.003,1.003
+28.195,1.002,0.00
+29.198,0.9970,0.9970
+30.197,1.001,0.00
+31.193,1.004,1.004
+32.202,0.9911,0.00
+33.198,1.004,1.004
+34.197,1.001,0.00
+35.194,1.002,1.002
+36.197,0.9980,0.00
+37.195,1.001,1.001
+38.191,1.006,0.00
+39.198,0.9921,0.9921
+40.194,1.004,0.00
+41.190,1.004,1.004
+42.196,1,0.00
+43.189,1,1
+44.197,0.9980,0.00
+45.192,0.9990,0.9990
+46.201,0.9921,0.00
+47.358,1.013,1.013
+48.191,0.9980,0.00
+49.197,0.9921,0.9921
+50.191,1.008,0.00
+51.192,0.9980,0.9980
+52.199,1.001,0.00
+53.190,1.001,1.001
+54.196,0.9940,0.00
+55.189,1.007,1.007
+56.208,0.9980,0.00
+57.189,1.003,1.003
+58.196,0.9921,0.00
+59.189,1.008,1.008
+60.189,0.9990,0.00
+61.189,1,1
+62.198,0.9901,0.00
+63.200,0.9990,0.9990
+64.191,1.009,0.00
+65.195,1,1
+66.190,0.00,0.00
+67.201,0.00,0.9901
+68.192,0.00,0.00
+69.190,0.00,1.001
+70.193,0.00,0.00
+71.190,0.00,1.002
+72.199,0.00,0.00
+73.198,0.00,1.001
+74.188,0.00,0.00
+75.199,0.00,0.9891
+76.196,0.00,0.00
+77.202,0.00,1.001
+78.196,0.00,0.00
+79.199,0.00,1.006
+80.197,0.00,0.00
+81.196,0.00,1
+81.694,0.00,0.00
+8.5.5. Ethernet Data
+
+Timestamp,Transmitted,Received
+Seconds,Frame bytes,
+0.200,0,56
+0.200,0,56
+1.197,128,112  87.500%
+2.197,192,112  58.333%
+3.197,256,168  65.625%
+4.189,320,168  52.500%
+5.197,384,224  58.333%
+6.196,448,224  50.000%
+7.193,512,280  54.688%
+8.189,576,280  48.611%
+9.210,640,336  52.500%
+10.197,704,336  47.727%
+11.381,768,392  51.042%
+12.190,832,392  47.115%
+13.209,896,448  50.000%
+14.196,960,448  46.667%
+15.196,"1,024",504  49.219%
+16.195,"1,088",504  46.324%
+17.203,"1,152",560  48.611%
+18.188,"1,216",560  46.053%
+19.196,"1,280",616  48.125%
+20.213,"1,344",616  45.833%
+21.248,"1,408",672  47.727%
+22.191,"1,472",672  45.652%
+23.195,"1,536",728  47.396%
+24.197,"1,600",728  45.500%
+25.197,"1,664",784  47.115%
+26.291,"1,728",784  45.370%
+27.201,"1,792",840  46.875%
+28.195,"1,856",840  45.259%
+29.198,"1,920",896  46.667%
+30.197,"1,984",896  45.161%
+31.193,"2,048",952  46.484%
+32.202,"2,112",952  45.076%
+33.198,"2,176","1,008  46.324%"
+34.197,"2,240","1,008  45.000%"
+35.194,"2,304","1,064  46.181%"
+36.197,"2,368","1,064  44.932%"
+37.195,"2,432","1,120  46.053%"
+38.191,"2,496","1,120  44.872%"
+39.198,"2,560","1,176  45.938%"
+40.194,"2,624","1,176  44.817%"
+41.190,"2,688","1,232  45.833%"
+42.196,"2,752","1,232  44.767%"
+43.189,"2,816","1,288  45.739%"
+44.197,"2,880","1,288  44.722%"
+45.192,"2,944","1,344  45.652%"
+46.201,"3,008","1,344  44.681%"
+47.358,"3,072","1,400  45.573%"
+48.191,"3,136","1,400  44.643%"
+49.197,"3,200","1,456  45.500%"
+50.191,"3,264","1,456  44.608%"
+51.192,"3,328","1,512  45.433%"
+52.199,"3,392","1,512  44.575%"
+53.190,"3,456","1,568  45.370%"
+54.196,"3,520","1,568  44.545%"
+55.189,"3,584","1,624  45.313%"
+56.208,"3,648","1,624  44.518%"
+57.189,"3,712","1,680  45.259%"
+58.196,"3,776","1,680  44.492%"
+59.189,"3,840","1,736  45.208%"
+60.189,"3,904","1,736  44.467%"
+61.189,"3,968","1,792  45.161%"
+62.198,"4,032","1,792  44.444%"
+63.200,"4,096","1,848  45.117%"
+64.191,"4,160","1,848  44.423%"
+65.195,"4,224","1,904  45.076%"
+66.190,"4,224","1,904  45.076%"
+67.201,"4,224","1,960  46.402%"
+68.192,"4,224","1,960  46.402%"
+69.190,"4,224","2,016  47.727%"
+70.193,"4,224","2,016  47.727%"
+71.190,"4,224","2,072  49.053%"
+72.199,"4,224","2,072  49.053%"
+73.198,"4,224","2,128  50.379%"
+74.188,"4,224","2,128  50.379%"
+75.199,"4,224","2,184  51.705%"
+76.196,"4,224","2,184  51.705%"
+77.202,"4,224","2,240  53.030%"
+78.196,"4,224","2,240  53.030%"
+79.199,"4,224","2,296  54.356%"
+80.197,"4,224","2,296  54.356%"
+81.196,"4,224","2,352  55.682%"
+81.694,"4,224","2,352  55.682%"
+8.5.5.1. Ethernet Data: 1
+
+Timestamp,Transmitted,Received
+Seconds,Frame bytes,
+0.200,0,56
+0.200,0,56
+1.197,128,112  87.500%
+2.197,192,112  58.333%
+3.197,256,168  65.625%
+4.189,320,168  52.500%
+5.197,384,224  58.333%
+6.196,448,224  50.000%
+7.193,512,280  54.688%
+8.189,576,280  48.611%
+9.210,640,336  52.500%
+10.197,704,336  47.727%
+11.381,768,392  51.042%
+12.190,832,392  47.115%
+13.209,896,448  50.000%
+14.196,960,448  46.667%
+15.196,"1,024",504  49.219%
+16.195,"1,088",504  46.324%
+17.203,"1,152",560  48.611%
+18.188,"1,216",560  46.053%
+19.196,"1,280",616  48.125%
+20.213,"1,344",616  45.833%
+21.248,"1,408",672  47.727%
+22.191,"1,472",672  45.652%
+23.195,"1,536",728  47.396%
+24.197,"1,600",728  45.500%
+25.197,"1,664",784  47.115%
+26.291,"1,728",784  45.370%
+27.201,"1,792",840  46.875%
+28.195,"1,856",840  45.259%
+29.198,"1,920",896  46.667%
+30.197,"1,984",896  45.161%
+31.193,"2,048",952  46.484%
+32.202,"2,112",952  45.076%
+33.198,"2,176","1,008  46.324%"
+34.197,"2,240","1,008  45.000%"
+35.194,"2,304","1,064  46.181%"
+36.197,"2,368","1,064  44.932%"
+37.195,"2,432","1,120  46.053%"
+38.191,"2,496","1,120  44.872%"
+39.198,"2,560","1,176  45.938%"
+40.194,"2,624","1,176  44.817%"
+41.190,"2,688","1,232  45.833%"
+42.196,"2,752","1,232  44.767%"
+43.189,"2,816","1,288  45.739%"
+44.197,"2,880","1,288  44.722%"
+45.192,"2,944","1,344  45.652%"
+46.201,"3,008","1,344  44.681%"
+47.358,"3,072","1,400  45.573%"
+48.191,"3,136","1,400  44.643%"
+49.197,"3,200","1,456  45.500%"
+50.191,"3,264","1,456  44.608%"
+51.192,"3,328","1,512  45.433%"
+52.199,"3,392","1,512  44.575%"
+53.190,"3,456","1,568  45.370%"
+54.196,"3,520","1,568  44.545%"
+55.189,"3,584","1,624  45.313%"
+56.208,"3,648","1,624  44.518%"
+57.189,"3,712","1,680  45.259%"
+58.196,"3,776","1,680  44.492%"
+59.189,"3,840","1,736  45.208%"
+60.189,"3,904","1,736  44.467%"
+61.189,"3,968","1,792  45.161%"
+62.198,"4,032","1,792  44.444%"
+63.200,"4,096","1,848  45.117%"
+64.191,"4,160","1,848  44.423%"
+65.195,"4,224","1,904  45.076%"
+66.190,"4,224","1,904  45.076%"
+67.201,"4,224","1,960  46.402%"
+68.192,"4,224","1,960  46.402%"
+69.190,"4,224","2,016  47.727%"
+70.193,"4,224","2,016  47.727%"
+71.190,"4,224","2,072  49.053%"
+72.199,"4,224","2,072  49.053%"
+73.198,"4,224","2,128  50.379%"
+74.188,"4,224","2,128  50.379%"
+75.199,"4,224","2,184  51.705%"
+76.196,"4,224","2,184  51.705%"
+77.202,"4,224","2,240  53.030%"
+78.196,"4,224","2,240  53.030%"
+79.199,"4,224","2,296  54.356%"
+80.197,"4,224","2,296  54.356%"
+81.196,"4,224","2,352  55.682%"
+81.694,"4,224","2,352  55.682%"
+8.5.6. Ethernet Data Rates
+
+Data Rate shown includes Ethernet overhead.
+Rates can fluctuate slightly above the physical maximum due to round-off errors in calculations.
+Physical speeds on fiber optic can legitimately exceed 10Gbps.
+Timestamp,Transmit rate,Receive rate
+Seconds,Megabits/s,
+0.200,0.00,0.00
+0.200,0.00,0.00
+1.197,0.001347,0.0006092
+2.197,0.0006720,0.00
+3.197,0.0006727,0.0006086
+4.189,0.0006767,0.00
+5.197,0.0006673,0.0006038
+6.196,0.0006727,0.00
+7.193,0.0006740,0.0006098
+8.189,0.0006747,0.00
+9.210,0.0006673,0.0006038
+10.197,0.0006740,0.00
+11.381,0.0006673,0.0006038
+12.190,0.0006781,0.00
+13.209,0.0006660,0.0006026
+14.196,0.0006781,0.00
+15.196,0.0006680,0.0006044
+16.195,0.0006733,0.00
+17.203,0.0006667,0.0006032
+18.188,0.0006815,0.00
+19.196,0.0006673,0.0006038
+20.213,0.0006667,0.00
+21.248,0.0006829,0.0006179
+22.191,0.0006700,0.00
+23.195,0.0006713,0.0006074
+24.197,0.0006713,0.00
+25.197,0.0006693,0.0006056
+26.291,0.0006700,0.00
+27.201,0.0006740,0.0006098
+28.195,0.0006733,0.00
+29.198,0.0006700,0.0006062
+30.197,0.0006727,0.00
+31.193,0.0006747,0.0006104
+32.202,0.0006660,0.00
+33.198,0.0006747,0.0006104
+34.197,0.0006727,0.00
+35.194,0.0006733,0.0006092
+36.197,0.0006707,0.00
+37.195,0.0006727,0.0006086
+38.191,0.0006761,0.00
+39.198,0.0006667,0.0006032
+40.194,0.0006747,0.00
+41.190,0.0006747,0.0006104
+42.196,0.0006720,0.00
+43.189,0.0006720,0.0006080
+44.197,0.0006707,0.00
+45.192,0.0006713,0.0006074
+46.201,0.0006667,0.00
+47.358,0.0006809,0.0006160
+48.191,0.0006707,0.00
+49.197,0.0006667,0.0006032
+50.191,0.0006774,0.00
+51.192,0.0006707,0.0006068
+52.199,0.0006727,0.00
+53.190,0.0006727,0.0006086
+54.196,0.0006680,0.00
+55.189,0.0006767,0.0006123
+56.208,0.0006707,0.00
+57.189,0.0006740,0.0006098
+58.196,0.0006667,0.00
+59.189,0.0006774,0.0006129
+60.189,0.0006713,0.00
+61.189,0.0006720,0.0006080
+62.198,0.0006653,0.00
+63.200,0.0006713,0.0006074
+64.191,0.0006781,0.00
+65.195,0.0006720,0.0006080
+66.190,0.00,0.00
+67.201,0.00,0.0006020
+68.192,0.00,0.00
+69.190,0.00,0.0006086
+70.193,0.00,0.00
+71.190,0.00,0.0006092
+72.199,0.00,0.00
+73.198,0.00,0.0006086
+74.188,0.00,0.00
+75.199,0.00,0.0006014
+76.196,0.00,0.00
+77.202,0.00,0.0006086
+78.196,0.00,0.00
+79.199,0.00,0.0006117
+80.197,0.00,0.00
+81.196,0.00,0.0006080
+81.694,0.00,0.00
+8.5.6.1. Ethernet Data Rates: 1
+
+Data Rate shown includes Ethernet overhead.
+Rates can fluctuate slightly above the physical maximum due to round-off errors in calculations.
+Physical speeds on fiber optic can legitimately exceed 10Gbps.
+Timestamp,Transmit rate,Receive rate
+Seconds,Megabits/s,
+0.200,0.00,0.00
+0.200,0.00,0.00
+1.197,0.001347,0.0006092
+2.197,0.0006720,0.00
+3.197,0.0006727,0.0006086
+4.189,0.0006767,0.00
+5.197,0.0006673,0.0006038
+6.196,0.0006727,0.00
+7.193,0.0006740,0.0006098
+8.189,0.0006747,0.00
+9.210,0.0006673,0.0006038
+10.197,0.0006740,0.00
+11.381,0.0006673,0.0006038
+12.190,0.0006781,0.00
+13.209,0.0006660,0.0006026
+14.196,0.0006781,0.00
+15.196,0.0006680,0.0006044
+16.195,0.0006733,0.00
+17.203,0.0006667,0.0006032
+18.188,0.0006815,0.00
+19.196,0.0006673,0.0006038
+20.213,0.0006667,0.00
+21.248,0.0006829,0.0006179
+22.191,0.0006700,0.00
+23.195,0.0006713,0.0006074
+24.197,0.0006713,0.00
+25.197,0.0006693,0.0006056
+26.291,0.0006700,0.00
+27.201,0.0006740,0.0006098
+28.195,0.0006733,0.00
+29.198,0.0006700,0.0006062
+30.197,0.0006727,0.00
+31.193,0.0006747,0.0006104
+32.202,0.0006660,0.00
+33.198,0.0006747,0.0006104
+34.197,0.0006727,0.00
+35.194,0.0006733,0.0006092
+36.197,0.0006707,0.00
+37.195,0.0006727,0.0006086
+38.191,0.0006761,0.00
+39.198,0.0006667,0.0006032
+40.194,0.0006747,0.00
+41.190,0.0006747,0.0006104
+42.196,0.0006720,0.00
+43.189,0.0006720,0.0006080
+44.197,0.0006707,0.00
+45.192,0.0006713,0.0006074
+46.201,0.0006667,0.00
+47.358,0.0006809,0.0006160
+48.191,0.0006707,0.00
+49.197,0.0006667,0.0006032
+50.191,0.0006774,0.00
+51.192,0.0006707,0.0006068
+52.199,0.0006727,0.00
+53.190,0.0006727,0.0006086
+54.196,0.0006680,0.00
+55.189,0.0006767,0.0006123
+56.208,0.0006707,0.00
+57.189,0.0006740,0.0006098
+58.196,0.0006667,0.00
+59.189,0.0006774,0.0006129
+60.189,0.0006713,0.00
+61.189,0.0006720,0.0006080
+62.198,0.0006653,0.00
+63.200,0.0006713,0.0006074
+64.191,0.0006781,0.00
+65.195,0.0006720,0.0006080
+66.190,0.00,0.00
+67.201,0.00,0.0006020
+68.192,0.00,0.00
+69.190,0.00,0.0006086
+70.193,0.00,0.00
+71.190,0.00,0.0006092
+72.199,0.00,0.00
+73.198,0.00,0.0006086
+74.188,0.00,0.00
+75.199,0.00,0.0006014
+76.196,0.00,0.00
+77.202,0.00,0.0006086
+78.196,0.00,0.00
+79.199,0.00,0.0006117
+80.197,0.00,0.00
+81.196,0.00,0.0006080
+81.694,0.00,0.00
+8.5.7. Ethernet Errors
+
+Timestamp,TX Pause frames,TX errors,RX Pause frames,FCS errors,Alignment errors,Undersize,Oversize,Drop Events
+Seconds,Frames,,,,,,,
+0.200,0,0,0,0,0,0,0,0
+0.200,0,0,0,0,0,0,0,0
+1.197,0,0,0,0,0,0,0,0
+2.197,0,0,0,0,0,0,0,0
+3.197,0,0,0,0,0,0,0,0
+4.189,0,0,0,0,0,0,0,0
+5.197,0,0,0,0,0,0,0,0
+6.196,0,0,0,0,0,0,0,0
+7.193,0,0,0,0,0,0,0,0
+8.189,0,0,0,0,0,0,0,0
+9.210,0,0,0,0,0,0,0,0
+10.197,0,0,0,0,0,0,0,0
+11.381,0,0,0,0,0,0,0,0
+12.190,0,0,0,0,0,0,0,0
+13.209,0,0,0,0,0,0,0,0
+14.196,0,0,0,0,0,0,0,0
+15.196,0,0,0,0,0,0,0,0
+16.195,0,0,0,0,0,0,0,0
+17.203,0,0,0,0,0,0,0,0
+18.188,0,0,0,0,0,0,0,0
+19.196,0,0,0,0,0,0,0,0
+20.213,0,0,0,0,0,0,0,0
+21.248,0,0,0,0,0,0,0,0
+22.191,0,0,0,0,0,0,0,0
+23.195,0,0,0,0,0,0,0,0
+24.197,0,0,0,0,0,0,0,0
+25.197,0,0,0,0,0,0,0,0
+26.291,0,0,0,0,0,0,0,0
+27.201,0,0,0,0,0,0,0,0
+28.195,0,0,0,0,0,0,0,0
+29.198,0,0,0,0,0,0,0,0
+30.197,0,0,0,0,0,0,0,0
+31.193,0,0,0,0,0,0,0,0
+32.202,0,0,0,0,0,0,0,0
+33.198,0,0,0,0,0,0,0,0
+34.197,0,0,0,0,0,0,0,0
+35.194,0,0,0,0,0,0,0,0
+36.197,0,0,0,0,0,0,0,0
+37.195,0,0,0,0,0,0,0,0
+38.191,0,0,0,0,0,0,0,0
+39.198,0,0,0,0,0,0,0,0
+40.194,0,0,0,0,0,0,0,0
+41.190,0,0,0,0,0,0,0,0
+42.196,0,0,0,0,0,0,0,0
+43.189,0,0,0,0,0,0,0,0
+44.197,0,0,0,0,0,0,0,0
+45.192,0,0,0,0,0,0,0,0
+46.201,0,0,0,0,0,0,0,0
+47.358,0,0,0,0,0,0,0,0
+48.191,0,0,0,0,0,0,0,0
+49.197,0,0,0,0,0,0,0,0
+50.191,0,0,0,0,0,0,0,0
+51.192,0,0,0,0,0,0,0,0
+52.199,0,0,0,0,0,0,0,0
+53.190,0,0,0,0,0,0,0,0
+54.196,0,0,0,0,0,0,0,0
+55.189,0,0,0,0,0,0,0,0
+56.208,0,0,0,0,0,0,0,0
+57.189,0,0,0,0,0,0,0,0
+58.196,0,0,0,0,0,0,0,0
+59.189,0,0,0,0,0,0,0,0
+60.189,0,0,0,0,0,0,0,0
+61.189,0,0,0,0,0,0,0,0
+62.198,0,0,0,0,0,0,0,0
+63.200,0,0,0,0,0,0,0,0
+64.191,0,0,0,0,0,0,0,0
+65.195,0,0,0,0,0,0,0,0
+66.190,0,0,0,0,0,0,0,0
+67.201,0,0,0,0,0,0,0,0
+68.192,0,0,0,0,0,0,0,0
+69.190,0,0,0,0,0,0,0,0
+70.193,0,0,0,0,0,0,0,0
+71.190,0,0,0,0,0,0,0,0
+72.199,0,0,0,0,0,0,0,0
+73.198,0,0,0,0,0,0,0,0
+74.188,0,0,0,0,0,0,0,0
+75.199,0,0,0,0,0,0,0,0
+76.196,0,0,0,0,0,0,0,0
+77.202,0,0,0,0,0,0,0,0
+78.196,0,0,0,0,0,0,0,0
+79.199,0,0,0,0,0,0,0,0
+80.197,0,0,0,0,0,0,0,0
+81.196,0,0,0,0,0,0,0,0
+81.694,0,0,0,0,0,0,0,0
+8.5.7.1. Ethernet Errors: 1
+
+Timestamp,TX Pause frames,TX errors,RX Pause frames,FCS errors,Alignment errors,Undersize,Oversize,Drop Events
+Seconds,Frames,,,,,,,
+0.200,0,0,0,0,0,0,0,0
+0.200,0,0,0,0,0,0,0,0
+1.197,0,0,0,0,0,0,0,0
+2.197,0,0,0,0,0,0,0,0
+3.197,0,0,0,0,0,0,0,0
+4.189,0,0,0,0,0,0,0,0
+5.197,0,0,0,0,0,0,0,0
+6.196,0,0,0,0,0,0,0,0
+7.193,0,0,0,0,0,0,0,0
+8.189,0,0,0,0,0,0,0,0
+9.210,0,0,0,0,0,0,0,0
+10.197,0,0,0,0,0,0,0,0
+11.381,0,0,0,0,0,0,0,0
+12.190,0,0,0,0,0,0,0,0
+13.209,0,0,0,0,0,0,0,0
+14.196,0,0,0,0,0,0,0,0
+15.196,0,0,0,0,0,0,0,0
+16.195,0,0,0,0,0,0,0,0
+17.203,0,0,0,0,0,0,0,0
+18.188,0,0,0,0,0,0,0,0
+19.196,0,0,0,0,0,0,0,0
+20.213,0,0,0,0,0,0,0,0
+21.248,0,0,0,0,0,0,0,0
+22.191,0,0,0,0,0,0,0,0
+23.195,0,0,0,0,0,0,0,0
+24.197,0,0,0,0,0,0,0,0
+25.197,0,0,0,0,0,0,0,0
+26.291,0,0,0,0,0,0,0,0
+27.201,0,0,0,0,0,0,0,0
+28.195,0,0,0,0,0,0,0,0
+29.198,0,0,0,0,0,0,0,0
+30.197,0,0,0,0,0,0,0,0
+31.193,0,0,0,0,0,0,0,0
+32.202,0,0,0,0,0,0,0,0
+33.198,0,0,0,0,0,0,0,0
+34.197,0,0,0,0,0,0,0,0
+35.194,0,0,0,0,0,0,0,0
+36.197,0,0,0,0,0,0,0,0
+37.195,0,0,0,0,0,0,0,0
+38.191,0,0,0,0,0,0,0,0
+39.198,0,0,0,0,0,0,0,0
+40.194,0,0,0,0,0,0,0,0
+41.190,0,0,0,0,0,0,0,0
+42.196,0,0,0,0,0,0,0,0
+43.189,0,0,0,0,0,0,0,0
+44.197,0,0,0,0,0,0,0,0
+45.192,0,0,0,0,0,0,0,0
+46.201,0,0,0,0,0,0,0,0
+47.358,0,0,0,0,0,0,0,0
+48.191,0,0,0,0,0,0,0,0
+49.197,0,0,0,0,0,0,0,0
+50.191,0,0,0,0,0,0,0,0
+51.192,0,0,0,0,0,0,0,0
+52.199,0,0,0,0,0,0,0,0
+53.190,0,0,0,0,0,0,0,0
+54.196,0,0,0,0,0,0,0,0
+55.189,0,0,0,0,0,0,0,0
+56.208,0,0,0,0,0,0,0,0
+57.189,0,0,0,0,0,0,0,0
+58.196,0,0,0,0,0,0,0,0
+59.189,0,0,0,0,0,0,0,0
+60.189,0,0,0,0,0,0,0,0
+61.189,0,0,0,0,0,0,0,0
+62.198,0,0,0,0,0,0,0,0
+63.200,0,0,0,0,0,0,0,0
+64.191,0,0,0,0,0,0,0,0
+65.195,0,0,0,0,0,0,0,0
+66.190,0,0,0,0,0,0,0,0
+67.201,0,0,0,0,0,0,0,0
+68.192,0,0,0,0,0,0,0,0
+69.190,0,0,0,0,0,0,0,0
+70.193,0,0,0,0,0,0,0,0
+71.190,0,0,0,0,0,0,0,0
+72.199,0,0,0,0,0,0,0,0
+73.198,0,0,0,0,0,0,0,0
+74.188,0,0,0,0,0,0,0,0
+75.199,0,0,0,0,0,0,0,0
+76.196,0,0,0,0,0,0,0,0
+77.202,0,0,0,0,0,0,0,0
+78.196,0,0,0,0,0,0,0,0
+79.199,0,0,0,0,0,0,0,0
+80.197,0,0,0,0,0,0,0,0
+81.196,0,0,0,0,0,0,0,0
+81.694,0,0,0,0,0,0,0,0
+8.5.8. Concurrent Flows
+
+Timestamp,TCP,UDP,SCTP,Total,Super Flow
+Seconds,Flows,,,,
+0,0,0,0,0,0
+0.181,0,0,0,0,0
+1.179,0,0,0,0,1
+2.179,0,0,0,0,1
+3.178,0,0,0,0,1
+4.171,0,0,0,0,1
+5.178,0,0,0,0,1
+6.177,0,0,0,0,1
+7.174,0,0,0,0,1
+8.170,0,0,0,0,1
+9.177,0,0,0,0,1
+10.174,0,0,0,0,1
+11.181,0,0,0,0,1
+12.172,0,0,0,0,1
+13.181,0,0,0,0,1
+14.172,0,0,0,0,1
+15.178,0,0,0,0,1
+16.176,0,0,0,0,1
+17.184,0,0,0,0,1
+18.170,0,0,0,0,1
+19.177,0,0,0,0,1
+20.185,0,0,0,0,1
+21.169,0,0,0,0,1
+22.172,0,0,0,0,1
+23.173,0,0,0,0,1
+24.174,0,0,0,0,1
+25.178,0,0,0,0,1
+26.181,0,0,0,0,1
+27.178,0,0,0,0,1
+28.176,0,0,0,0,1
+29.179,0,0,0,0,1
+30.178,0,0,0,0,1
+31.174,0,0,0,0,1
+32.183,0,0,0,0,1
+33.179,0,0,0,0,1
+34.178,0,0,0,0,1
+35.176,0,0,0,0,1
+36.178,0,0,0,0,1
+37.177,0,0,0,0,1
+38.171,0,0,0,0,1
+39.179,0,0,0,0,1
+40.175,0,0,0,0,1
+41.171,0,0,0,0,1
+42.171,0,0,0,0,1
+43.171,0,0,0,0,1
+44.173,0,0,0,0,1
+45.174,0,0,0,0,1
+46.182,0,0,0,0,1
+47.169,0,0,0,0,1
+48.171,0,0,0,0,1
+49.179,0,0,0,0,1
+50.171,0,0,0,0,1
+51.173,0,0,0,0,1
+52.172,0,0,0,0,1
+53.171,0,0,0,0,1
+54.177,0,0,0,0,1
+55.170,0,0,0,0,1
+56.172,0,0,0,0,1
+57.169,0,0,0,0,1
+58.177,0,0,0,0,1
+59.169,0,0,0,0,1
+60.170,0,0,0,0,1
+61.170,0,0,0,0,1
+62.180,0,0,0,0,0
+63.181,0,0,0,0,0
+64.172,0,0,0,0,0
+65.172,0,0,0,0,0
+66.172,0,0,0,0,0
+67.182,0,0,0,0,0
+68.173,0,0,0,0,0
+69.172,0,0,0,0,0
+70.174,0,0,0,0,0
+71.172,0,0,0,0,0
+72.180,0,0,0,0,0
+73.179,0,0,0,0,0
+74.169,0,0,0,0,0
+75.180,0,0,0,0,0
+76.177,0,0,0,0,0
+77.176,0,0,0,0,0
+78.177,0,0,0,0,0
+79.171,0,0,0,0,0
+80.178,0,0,0,0,0
+81.178,0,0,0,0,0
+8.5.9. Flow Rates
+
+Timestamp,TCP rate,UDP rate,SCTP rate,Total rate,Super Flow rate
+Seconds,Flows/s,,,,
+0,0.00,0.00,0.00,0.00,0.00
+0.181,0.00,0.00,0.00,0.00,0.00
+1.179,0.00,0.00,0.00,0.00,1.002
+2.179,0.00,0.00,0.00,0.00,1
+3.178,0.00,0.00,0.00,0.00,0.00
+4.171,0.00,0.00,0.00,0.00,1.007
+5.178,0.00,0.00,0.00,0.00,0.00
+6.177,0.00,0.00,0.00,0.00,1.001
+7.174,0.00,0.00,0.00,0.00,0.00
+8.170,0.00,0.00,0.00,0.00,1.004
+9.177,0.00,0.00,0.00,0.00,0.9930
+10.174,0.00,0.00,0.00,0.00,0.00
+11.181,0.00,0.00,0.00,0.00,0.9930
+12.172,0.00,0.00,0.00,0.00,0.00
+13.181,0.00,0.00,0.00,0.00,0.9911
+14.172,0.00,0.00,0.00,0.00,0.00
+15.178,0.00,0.00,0.00,0.00,0.9940
+16.176,0.00,0.00,0.00,0.00,1.002
+17.184,0.00,0.00,0.00,0.00,0.00
+18.170,0.00,0.00,0.00,0.00,1.014
+19.177,0.00,0.00,0.00,0.00,0.00
+20.185,0.00,0.00,0.00,0.00,0.9921
+21.169,0.00,0.00,0.00,0.00,0.00
+22.172,0.00,0.00,0.00,0.00,0.9970
+23.173,0.00,0.00,0.00,0.00,0.9990
+24.174,0.00,0.00,0.00,0.00,0.00
+25.178,0.00,0.00,0.00,0.00,0.9960
+26.181,0.00,0.00,0.00,0.00,0.00
+27.178,0.00,0.00,0.00,0.00,1.003
+28.176,0.00,0.00,0.00,0.00,0.00
+29.179,0.00,0.00,0.00,0.00,0.9970
+30.178,0.00,0.00,0.00,0.00,1.001
+31.174,0.00,0.00,0.00,0.00,0.00
+32.183,0.00,0.00,0.00,0.00,0.9911
+33.179,0.00,0.00,0.00,0.00,0.00
+34.178,0.00,0.00,0.00,0.00,1.001
+35.176,0.00,0.00,0.00,0.00,0.00
+36.178,0.00,0.00,0.00,0.00,0.9980
+37.177,0.00,0.00,0.00,0.00,1.001
+38.171,0.00,0.00,0.00,0.00,0.00
+39.179,0.00,0.00,0.00,0.00,0.9921
+40.175,0.00,0.00,0.00,0.00,0.00
+41.171,0.00,0.00,0.00,0.00,1.004
+42.171,0.00,0.00,0.00,0.00,0.00
+43.171,0.00,0.00,0.00,0.00,1
+44.173,0.00,0.00,0.00,0.00,0.9980
+45.174,0.00,0.00,0.00,0.00,0.00
+46.182,0.00,0.00,0.00,0.00,0.9921
+47.169,0.00,0.00,0.00,0.00,0.00
+48.171,0.00,0.00,0.00,0.00,0.9980
+49.179,0.00,0.00,0.00,0.00,0.00
+50.171,0.00,0.00,0.00,0.00,1.008
+51.173,0.00,0.00,0.00,0.00,0.9980
+52.172,0.00,0.00,0.00,0.00,0.00
+53.171,0.00,0.00,0.00,0.00,1.001
+54.177,0.00,0.00,0.00,0.00,0.00
+55.170,0.00,0.00,0.00,0.00,1.007
+56.172,0.00,0.00,0.00,0.00,0.00
+57.169,0.00,0.00,0.00,0.00,1.003
+58.177,0.00,0.00,0.00,0.00,0.00
+59.169,0.00,0.00,0.00,0.00,1.008
+60.170,0.00,0.00,0.00,0.00,0.9990
+61.170,0.00,0.00,0.00,0.00,0.00
+62.180,0.00,0.00,0.00,0.00,0.00
+63.181,0.00,0.00,0.00,0.00,0.00
+64.172,0.00,0.00,0.00,0.00,0.00
+65.172,0.00,0.00,0.00,0.00,0.00
+66.172,0.00,0.00,0.00,0.00,0.00
+67.182,0.00,0.00,0.00,0.00,0.00
+68.173,0.00,0.00,0.00,0.00,0.00
+69.172,0.00,0.00,0.00,0.00,0.00
+70.174,0.00,0.00,0.00,0.00,0.00
+71.172,0.00,0.00,0.00,0.00,0.00
+72.180,0.00,0.00,0.00,0.00,0.00
+73.179,0.00,0.00,0.00,0.00,0.00
+74.169,0.00,0.00,0.00,0.00,0.00
+75.180,0.00,0.00,0.00,0.00,0.00
+76.177,0.00,0.00,0.00,0.00,0.00
+77.176,0.00,0.00,0.00,0.00,0.00
+78.177,0.00,0.00,0.00,0.00,0.00
+79.171,0.00,0.00,0.00,0.00,0.00
+80.178,0.00,0.00,0.00,0.00,0.00
+81.178,0.00,0.00,0.00,0.00,0.00
+8.5.10. ARP
+Timestamp,Request TX,Reply RX,Request RX,Reply TX,Bad Length,Ignored Request,Ignored Reply,Duplicate Address
+Seconds,Frames,,,,,,,
+1.197,2,0,0,0,0,0,0,0
+2.197,3,0,0,0,0,0,0,0
+3.197,4,0,0,0,0,0,0,0
+4.189,5,0,0,0,0,0,0,0
+5.197,6,0,0,0,0,0,0,0
+6.196,7,0,0,0,0,0,0,0
+7.193,8,0,0,0,0,0,0,0
+8.189,9,0,0,0,0,0,0,0
+9.210,10,0,0,0,0,0,0,0
+10.197,11,0,0,0,0,0,0,0
+11.381,12,0,0,0,0,0,0,0
+12.190,13,0,0,0,0,0,0,0
+13.209,14,0,0,0,0,0,0,0
+14.196,15,0,0,0,0,0,0,0
+15.196,16,0,0,0,0,0,0,0
+16.195,17,0,0,0,0,0,0,0
+17.203,18,0,0,0,0,0,0,0
+18.188,19,0,0,0,0,0,0,0
+19.196,20,0,0,0,0,0,0,0
+20.213,21,0,0,0,0,0,0,0
+21.248,22,0,0,0,0,0,0,0
+22.191,23,0,0,0,0,0,0,0
+23.195,24,0,0,0,0,0,0,0
+24.197,25,0,0,0,0,0,0,0
+25.197,26,0,0,0,0,0,0,0
+26.291,27,0,0,0,0,0,0,0
+27.201,28,0,0,0,0,0,0,0
+28.195,29,0,0,0,0,0,0,0
+29.198,30,0,0,0,0,0,0,0
+30.197,31,0,0,0,0,0,0,0
+31.193,32,0,0,0,0,0,0,0
+32.202,33,0,0,0,0,0,0,0
+33.198,34,0,0,0,0,0,0,0
+34.197,35,0,0,0,0,0,0,0
+35.194,36,0,0,0,0,0,0,0
+36.197,37,0,0,0,0,0,0,0
+37.195,38,0,0,0,0,0,0,0
+38.191,39,0,0,0,0,0,0,0
+39.198,40,0,0,0,0,0,0,0
+40.194,41,0,0,0,0,0,0,0
+41.190,42,0,0,0,0,0,0,0
+42.196,43,0,0,0,0,0,0,0
+43.189,44,0,0,0,0,0,0,0
+44.197,45,0,0,0,0,0,0,0
+45.192,46,0,0,0,0,0,0,0
+46.201,47,0,0,0,0,0,0,0
+47.358,48,0,0,0,0,0,0,0
+48.191,49,0,0,0,0,0,0,0
+49.197,50,0,0,0,0,0,0,0
+50.191,51,0,0,0,0,0,0,0
+51.192,52,0,0,0,0,0,0,0
+52.199,53,0,0,0,0,0,0,0
+53.190,54,0,0,0,0,0,0,0
+54.196,55,0,0,0,0,0,0,0
+55.189,56,0,0,0,0,0,0,0
+56.208,57,0,0,0,0,0,0,0
+57.189,58,0,0,0,0,0,0,0
+58.196,59,0,0,0,0,0,0,0
+59.189,60,0,0,0,0,0,0,0
+60.189,61,0,0,0,0,0,0,0
+61.189,62,0,0,0,0,0,0,0
+62.198,63,0,0,0,0,0,0,0
+63.200,64,0,0,0,0,0,0,0
+64.191,65,0,0,0,0,0,0,0
+65.195,66,0,0,0,0,0,0,0
+66.190,66,0,0,0,0,0,0,0
+67.201,66,0,0,0,0,0,0,0
+68.192,66,0,0,0,0,0,0,0
+69.190,66,0,0,0,0,0,0,0
+70.193,66,0,0,0,0,0,0,0
+71.190,66,0,0,0,0,0,0,0
+72.199,66,0,0,0,0,0,0,0
+73.198,66,0,0,0,0,0,0,0
+74.188,66,0,0,0,0,0,0,0
+75.199,66,0,0,0,0,0,0,0
+76.196,66,0,0,0,0,0,0,0
+77.202,66,0,0,0,0,0,0,0
+78.196,66,0,0,0,0,0,0,0
+79.199,66,0,0,0,0,0,0,0
+80.197,66,0,0,0,0,0,0,0
+81.196,66,0,0,0,0,0,0,0
+81.694,66,0,0,0,0,0,0,0
+8.5.10.1. ARP: 1
+Timestamp,Request TX,Reply RX,Request RX,Reply TX,Bad Length,Ignored Request,Ignored Reply,Duplicate Address
+Seconds,Frames,,,,,,,
+1.197,2,0,0,0,0,0,0,0
+2.197,3,0,0,0,0,0,0,0
+3.197,4,0,0,0,0,0,0,0
+4.189,5,0,0,0,0,0,0,0
+5.197,6,0,0,0,0,0,0,0
+6.196,7,0,0,0,0,0,0,0
+7.193,8,0,0,0,0,0,0,0
+8.189,9,0,0,0,0,0,0,0
+9.210,10,0,0,0,0,0,0,0
+10.197,11,0,0,0,0,0,0,0
+11.381,12,0,0,0,0,0,0,0
+12.190,13,0,0,0,0,0,0,0
+13.209,14,0,0,0,0,0,0,0
+14.196,15,0,0,0,0,0,0,0
+15.196,16,0,0,0,0,0,0,0
+16.195,17,0,0,0,0,0,0,0
+17.203,18,0,0,0,0,0,0,0
+18.188,19,0,0,0,0,0,0,0
+19.196,20,0,0,0,0,0,0,0
+20.213,21,0,0,0,0,0,0,0
+21.248,22,0,0,0,0,0,0,0
+22.191,23,0,0,0,0,0,0,0
+23.195,24,0,0,0,0,0,0,0
+24.197,25,0,0,0,0,0,0,0
+25.197,26,0,0,0,0,0,0,0
+26.291,27,0,0,0,0,0,0,0
+27.201,28,0,0,0,0,0,0,0
+28.195,29,0,0,0,0,0,0,0
+29.198,30,0,0,0,0,0,0,0
+30.197,31,0,0,0,0,0,0,0
+31.193,32,0,0,0,0,0,0,0
+32.202,33,0,0,0,0,0,0,0
+33.198,34,0,0,0,0,0,0,0
+34.197,35,0,0,0,0,0,0,0
+35.194,36,0,0,0,0,0,0,0
+36.197,37,0,0,0,0,0,0,0
+37.195,38,0,0,0,0,0,0,0
+38.191,39,0,0,0,0,0,0,0
+39.198,40,0,0,0,0,0,0,0
+40.194,41,0,0,0,0,0,0,0
+41.190,42,0,0,0,0,0,0,0
+42.196,43,0,0,0,0,0,0,0
+43.189,44,0,0,0,0,0,0,0
+44.197,45,0,0,0,0,0,0,0
+45.192,46,0,0,0,0,0,0,0
+46.201,47,0,0,0,0,0,0,0
+47.358,48,0,0,0,0,0,0,0
+48.191,49,0,0,0,0,0,0,0
+49.197,50,0,0,0,0,0,0,0
+50.191,51,0,0,0,0,0,0,0
+51.192,52,0,0,0,0,0,0,0
+52.199,53,0,0,0,0,0,0,0
+53.190,54,0,0,0,0,0,0,0
+54.196,55,0,0,0,0,0,0,0
+55.189,56,0,0,0,0,0,0,0
+56.208,57,0,0,0,0,0,0,0
+57.189,58,0,0,0,0,0,0,0
+58.196,59,0,0,0,0,0,0,0
+59.189,60,0,0,0,0,0,0,0
+60.189,61,0,0,0,0,0,0,0
+61.189,62,0,0,0,0,0,0,0
+62.198,63,0,0,0,0,0,0,0
+63.200,64,0,0,0,0,0,0,0
+64.191,65,0,0,0,0,0,0,0
+65.195,66,0,0,0,0,0,0,0
+66.190,66,0,0,0,0,0,0,0
+67.201,66,0,0,0,0,0,0,0
+68.192,66,0,0,0,0,0,0,0
+69.190,66,0,0,0,0,0,0,0
+70.193,66,0,0,0,0,0,0,0
+71.190,66,0,0,0,0,0,0,0
+72.199,66,0,0,0,0,0,0,0
+73.198,66,0,0,0,0,0,0,0
+74.188,66,0,0,0,0,0,0,0
+75.199,66,0,0,0,0,0,0,0
+76.196,66,0,0,0,0,0,0,0
+77.202,66,0,0,0,0,0,0,0
+78.196,66,0,0,0,0,0,0,0
+79.199,66,0,0,0,0,0,0,0
+80.197,66,0,0,0,0,0,0,0
+81.196,66,0,0,0,0,0,0,0
+81.694,66,0,0,0,0,0,0,0
+8.5.11. Router
+Timestamp,Router Discards,Unroutable IP Address,Bad IP Checksum,Bad Layer 4 Checksum,Bad IP Version,Bad IP Length,Bad IP Header Length,Bad IP Fragment,Bad IP TTL,Bad Ethernet FCS,No RX Queue,Unknown Ethertype
+Seconds,Frames,,,,,,,,,,,
+0.200,1,0,0,0,0,0,0,0,0,0,0,0
+0.200,1,0,0,0,0,0,0,0,0,0,0,0
+1.197,2,0,0,0,0,0,0,0,0,0,0,0
+2.197,2,0,0,0,0,0,0,0,0,0,0,0
+3.197,3,0,0,0,0,0,0,0,0,0,0,0
+4.189,3,0,0,0,0,0,0,0,0,0,0,0
+5.197,4,0,0,0,0,0,0,0,0,0,0,0
+6.196,4,0,0,0,0,0,0,0,0,0,0,0
+7.193,5,0,0,0,0,0,0,0,0,0,0,0
+8.189,5,0,0,0,0,0,0,0,0,0,0,0
+9.210,6,0,0,0,0,0,0,0,0,0,0,0
+10.197,6,0,0,0,0,0,0,0,0,0,0,0
+11.381,7,0,0,0,0,0,0,0,0,0,0,0
+12.190,7,0,0,0,0,0,0,0,0,0,0,0
+13.209,8,0,0,0,0,0,0,0,0,0,0,0
+14.196,8,0,0,0,0,0,0,0,0,0,0,0
+15.196,9,0,0,0,0,0,0,0,0,0,0,0
+16.195,9,0,0,0,0,0,0,0,0,0,0,0
+17.203,10,0,0,0,0,0,0,0,0,0,0,0
+18.188,10,0,0,0,0,0,0,0,0,0,0,0
+19.196,11,0,0,0,0,0,0,0,0,0,0,0
+20.213,11,0,0,0,0,0,0,0,0,0,0,0
+21.248,12,0,0,0,0,0,0,0,0,0,0,0
+22.191,12,0,0,0,0,0,0,0,0,0,0,0
+23.195,13,0,0,0,0,0,0,0,0,0,0,0
+24.197,13,0,0,0,0,0,0,0,0,0,0,0
+25.197,14,0,0,0,0,0,0,0,0,0,0,0
+26.291,14,0,0,0,0,0,0,0,0,0,0,0
+27.201,15,0,0,0,0,0,0,0,0,0,0,0
+28.195,15,0,0,0,0,0,0,0,0,0,0,0
+29.198,16,0,0,0,0,0,0,0,0,0,0,0
+30.197,16,0,0,0,0,0,0,0,0,0,0,0
+31.193,17,0,0,0,0,0,0,0,0,0,0,0
+32.202,17,0,0,0,0,0,0,0,0,0,0,0
+33.198,18,0,0,0,0,0,0,0,0,0,0,0
+34.197,18,0,0,0,0,0,0,0,0,0,0,0
+35.194,19,0,0,0,0,0,0,0,0,0,0,0
+36.197,19,0,0,0,0,0,0,0,0,0,0,0
+37.195,20,0,0,0,0,0,0,0,0,0,0,0
+38.191,20,0,0,0,0,0,0,0,0,0,0,0
+39.198,21,0,0,0,0,0,0,0,0,0,0,0
+40.194,21,0,0,0,0,0,0,0,0,0,0,0
+41.190,22,0,0,0,0,0,0,0,0,0,0,0
+42.196,22,0,0,0,0,0,0,0,0,0,0,0
+43.189,23,0,0,0,0,0,0,0,0,0,0,0
+44.197,23,0,0,0,0,0,0,0,0,0,0,0
+45.192,24,0,0,0,0,0,0,0,0,0,0,0
+46.201,24,0,0,0,0,0,0,0,0,0,0,0
+47.358,25,0,0,0,0,0,0,0,0,0,0,0
+48.191,25,0,0,0,0,0,0,0,0,0,0,0
+49.197,26,0,0,0,0,0,0,0,0,0,0,0
+50.191,26,0,0,0,0,0,0,0,0,0,0,0
+51.192,27,0,0,0,0,0,0,0,0,0,0,0
+52.199,27,0,0,0,0,0,0,0,0,0,0,0
+53.190,28,0,0,0,0,0,0,0,0,0,0,0
+54.196,28,0,0,0,0,0,0,0,0,0,0,0
+55.189,29,0,0,0,0,0,0,0,0,0,0,0
+56.208,29,0,0,0,0,0,0,0,0,0,0,0
+57.189,30,0,0,0,0,0,0,0,0,0,0,0
+58.196,30,0,0,0,0,0,0,0,0,0,0,0
+59.189,31,0,0,0,0,0,0,0,0,0,0,0
+60.189,31,0,0,0,0,0,0,0,0,0,0,0
+61.189,32,0,0,0,0,0,0,0,0,0,0,0
+62.198,32,0,0,0,0,0,0,0,0,0,0,0
+63.200,33,0,0,0,0,0,0,0,0,0,0,0
+64.191,33,0,0,0,0,0,0,0,0,0,0,0
+65.195,34,0,0,0,0,0,0,0,0,0,0,0
+66.190,34,0,0,0,0,0,0,0,0,0,0,0
+67.201,35,0,0,0,0,0,0,0,0,0,0,0
+68.192,35,0,0,0,0,0,0,0,0,0,0,0
+69.190,36,0,0,0,0,0,0,0,0,0,0,0
+70.193,36,0,0,0,0,0,0,0,0,0,0,0
+71.190,37,0,0,0,0,0,0,0,0,0,0,0
+72.199,37,0,0,0,0,0,0,0,0,0,0,0
+73.198,38,0,0,0,0,0,0,0,0,0,0,0
+74.188,38,0,0,0,0,0,0,0,0,0,0,0
+75.199,39,0,0,0,0,0,0,0,0,0,0,0
+76.196,39,0,0,0,0,0,0,0,0,0,0,0
+77.202,40,0,0,0,0,0,0,0,0,0,0,0
+78.196,40,0,0,0,0,0,0,0,0,0,0,0
+79.199,41,0,0,0,0,0,0,0,0,0,0,0
+80.197,41,0,0,0,0,0,0,0,0,0,0,0
+81.196,42,0,0,0,0,0,0,0,0,0,0,0
+81.694,42,0,0,0,0,0,0,0,0,0,0,0
+8.5.11.1. Router: 1
+Timestamp,Router Discards,Unroutable IP Address,Bad IP Checksum,Bad Layer 4 Checksum,Bad IP Version,Bad IP Length,Bad IP Header Length,Bad IP Fragment,Bad IP TTL,Bad Ethernet FCS,No RX Queue,Unknown Ethertype
+Seconds,Frames,,,,,,,,,,,
+0.200,1,0,0,0,0,0,0,0,0,0,0,0
+0.200,1,0,0,0,0,0,0,0,0,0,0,0
+1.197,2,0,0,0,0,0,0,0,0,0,0,0
+2.197,2,0,0,0,0,0,0,0,0,0,0,0
+3.197,3,0,0,0,0,0,0,0,0,0,0,0
+4.189,3,0,0,0,0,0,0,0,0,0,0,0
+5.197,4,0,0,0,0,0,0,0,0,0,0,0
+6.196,4,0,0,0,0,0,0,0,0,0,0,0
+7.193,5,0,0,0,0,0,0,0,0,0,0,0
+8.189,5,0,0,0,0,0,0,0,0,0,0,0
+9.210,6,0,0,0,0,0,0,0,0,0,0,0
+10.197,6,0,0,0,0,0,0,0,0,0,0,0
+11.381,7,0,0,0,0,0,0,0,0,0,0,0
+12.190,7,0,0,0,0,0,0,0,0,0,0,0
+13.209,8,0,0,0,0,0,0,0,0,0,0,0
+14.196,8,0,0,0,0,0,0,0,0,0,0,0
+15.196,9,0,0,0,0,0,0,0,0,0,0,0
+16.195,9,0,0,0,0,0,0,0,0,0,0,0
+17.203,10,0,0,0,0,0,0,0,0,0,0,0
+18.188,10,0,0,0,0,0,0,0,0,0,0,0
+19.196,11,0,0,0,0,0,0,0,0,0,0,0
+20.213,11,0,0,0,0,0,0,0,0,0,0,0
+21.248,12,0,0,0,0,0,0,0,0,0,0,0
+22.191,12,0,0,0,0,0,0,0,0,0,0,0
+23.195,13,0,0,0,0,0,0,0,0,0,0,0
+24.197,13,0,0,0,0,0,0,0,0,0,0,0
+25.197,14,0,0,0,0,0,0,0,0,0,0,0
+26.291,14,0,0,0,0,0,0,0,0,0,0,0
+27.201,15,0,0,0,0,0,0,0,0,0,0,0
+28.195,15,0,0,0,0,0,0,0,0,0,0,0
+29.198,16,0,0,0,0,0,0,0,0,0,0,0
+30.197,16,0,0,0,0,0,0,0,0,0,0,0
+31.193,17,0,0,0,0,0,0,0,0,0,0,0
+32.202,17,0,0,0,0,0,0,0,0,0,0,0
+33.198,18,0,0,0,0,0,0,0,0,0,0,0
+34.197,18,0,0,0,0,0,0,0,0,0,0,0
+35.194,19,0,0,0,0,0,0,0,0,0,0,0
+36.197,19,0,0,0,0,0,0,0,0,0,0,0
+37.195,20,0,0,0,0,0,0,0,0,0,0,0
+38.191,20,0,0,0,0,0,0,0,0,0,0,0
+39.198,21,0,0,0,0,0,0,0,0,0,0,0
+40.194,21,0,0,0,0,0,0,0,0,0,0,0
+41.190,22,0,0,0,0,0,0,0,0,0,0,0
+42.196,22,0,0,0,0,0,0,0,0,0,0,0
+43.189,23,0,0,0,0,0,0,0,0,0,0,0
+44.197,23,0,0,0,0,0,0,0,0,0,0,0
+45.192,24,0,0,0,0,0,0,0,0,0,0,0
+46.201,24,0,0,0,0,0,0,0,0,0,0,0
+47.358,25,0,0,0,0,0,0,0,0,0,0,0
+48.191,25,0,0,0,0,0,0,0,0,0,0,0
+49.197,26,0,0,0,0,0,0,0,0,0,0,0
+50.191,26,0,0,0,0,0,0,0,0,0,0,0
+51.192,27,0,0,0,0,0,0,0,0,0,0,0
+52.199,27,0,0,0,0,0,0,0,0,0,0,0
+53.190,28,0,0,0,0,0,0,0,0,0,0,0
+54.196,28,0,0,0,0,0,0,0,0,0,0,0
+55.189,29,0,0,0,0,0,0,0,0,0,0,0
+56.208,29,0,0,0,0,0,0,0,0,0,0,0
+57.189,30,0,0,0,0,0,0,0,0,0,0,0
+58.196,30,0,0,0,0,0,0,0,0,0,0,0
+59.189,31,0,0,0,0,0,0,0,0,0,0,0
+60.189,31,0,0,0,0,0,0,0,0,0,0,0
+61.189,32,0,0,0,0,0,0,0,0,0,0,0
+62.198,32,0,0,0,0,0,0,0,0,0,0,0
+63.200,33,0,0,0,0,0,0,0,0,0,0,0
+64.191,33,0,0,0,0,0,0,0,0,0,0,0
+65.195,34,0,0,0,0,0,0,0,0,0,0,0
+66.190,34,0,0,0,0,0,0,0,0,0,0,0
+67.201,35,0,0,0,0,0,0,0,0,0,0,0
+68.192,35,0,0,0,0,0,0,0,0,0,0,0
+69.190,36,0,0,0,0,0,0,0,0,0,0,0
+70.193,36,0,0,0,0,0,0,0,0,0,0,0
+71.190,37,0,0,0,0,0,0,0,0,0,0,0
+72.199,37,0,0,0,0,0,0,0,0,0,0,0
+73.198,38,0,0,0,0,0,0,0,0,0,0,0
+74.188,38,0,0,0,0,0,0,0,0,0,0,0
+75.199,39,0,0,0,0,0,0,0,0,0,0,0
+76.196,39,0,0,0,0,0,0,0,0,0,0,0
+77.202,40,0,0,0,0,0,0,0,0,0,0,0
+78.196,40,0,0,0,0,0,0,0,0,0,0,0
+79.199,41,0,0,0,0,0,0,0,0,0,0,0
+80.197,41,0,0,0,0,0,0,0,0,0,0,0
+81.196,42,0,0,0,0,0,0,0,0,0,0,0
+81.694,42,0,0,0,0,0,0,0,0,0,0,0
+8.6. Slot 2 NP np2-0 statistics
+8.6.1. Component Description
+Component: aggregate_statisticsThis component measures aggregate system and network statistics.
+Component,Resource Used
+Slot 2 NP np2-0 statistics,np2-0
+8.6.2. Ethernet Summary
+Measurement,Value
+Transmitted  Bytes,"4,224"
+Received  Bytes,"2,352  55.682%"
+Transmit  Frame Rate,2.004
+Receive  Frame Rate,1.016  50.711%
+Transmit  Megabit/s,0.001347
+Receive  Megabit/s,0.0006179  45.882%
+Transmitted  Frames,66
+Received  Frames,42  63.636%
+Transmit Pause  Frames,0
+Receive Pause  Frames,0
+Transmit errors  Frames,0
+FCS errors  Frames,0
+Alignment errors  Frames,0
+Undersize  Frames,0
+Oversize  Frames,0
+Drop Events  Frames,0
+8.6.3. ARP Summary
+
+Measurement,Value (Frames)
+Request TX,66
+Reply RX,0
+Request RX,0
+Reply TX,0
+Bad Length,0
+Ignored Request,0
+Ignored Reply,0
+Duplicate Address,0
+8.6.4. Router Summary
+
+Measurement,Value (Frames)
+Router Discards,42
+Unroutable IP Address,0
+Bad IP Checksum,0
+Bad Layer 4 Checksum,0
+Bad IP Version,0
+Bad IP Length,0
+Bad IP Header Length,0
+Bad IP Fragment,0
+Bad IP TTL,0
+Bad Ethernet FCS,0
+No RX Queue,0
+Unknown Ethertype,0
+8.6.5. Detail
+8.6.5.1. System Resource Usage
+
+Timestamp,CPU Usage,Memory Usage,Disk Usage
+Seconds,Percent,,
+0,100,0,0
+0.181,100,0,0
+1.179,100,0,0
+2.179,100,0,0
+3.178,100,0,0
+4.171,100,0,0
+5.178,100,0,0
+6.177,100,0,0
+7.174,100,0,0
+8.170,100,0,0
+9.177,100,0,0
+10.174,100,0,0
+11.181,100,0,0
+12.172,100,0,0
+13.181,100,0,0
+14.172,100,0,0
+15.178,100,0,0
+16.176,100,0,0
+17.184,100,0,0
+18.170,100,0,0
+19.177,100,0,0
+20.185,100,0,0
+21.169,100,0,0
+22.172,100,0,0
+23.173,100,0,0
+24.174,100,0,0
+25.178,100,0,0
+26.181,100,0,0
+27.178,100,0,0
+28.176,100,0,0
+29.179,100,0,0
+30.178,100,0,0
+31.174,100,0,0
+32.183,100,0,0
+33.179,100,0,0
+34.178,100,0,0
+35.176,100,0,0
+36.178,100,0,0
+37.177,100,0,0
+38.171,100,0,0
+39.179,100,0,0
+40.175,100,0,0
+41.171,100,0,0
+42.171,100,0,0
+43.171,100,0,0
+44.173,100,0,0
+45.174,100,0,0
+46.182,100,0,0
+47.169,100,0,0
+48.171,100,0,0
+49.179,100,0,0
+50.171,100,0,0
+51.173,100,0,0
+52.172,100,0,0
+53.171,100,0,0
+54.177,100,0,0
+55.170,100,0,0
+56.172,100,0,0
+57.169,100,0,0
+58.177,100,0,0
+59.169,100,0,0
+60.170,100,0,0
+61.170,100,0,0
+62.180,100,0,0
+63.181,100,0,0
+64.172,100,0,0
+65.172,100,0,0
+66.172,100,0,0
+67.182,100,0,0
+68.173,100,0,0
+69.172,100,0,0
+70.174,100,0,0
+71.172,100,0,0
+72.180,100,0,0
+73.179,100,0,0
+74.169,100,0,0
+75.180,100,0,0
+76.177,100,0,0
+77.176,100,0,0
+78.177,100,0,0
+79.171,100,0,0
+80.178,100,0,0
+81.178,100,0,0
+81.676,100,0,0
+8.6.5.2. Router Exceptions
+Timestamp,Type,Source IP,Source Port,Destination IP,Destination Port,IP Protocol
+Seconds,,,,,,
+5.210,Host Unreachable,192.168.215.122,,192.168.215.200,,0
+16.218,Host Unreachable,192.168.215.85,,192.168.215.200,,0
+27.207,Host Unreachable,192.168.215.38,,192.168.215.200,,0
+38.226,Host Unreachable,192.168.215.79,,192.168.215.200,,0
+49.240,Host Unreachable,192.168.215.140,,192.168.215.200,,0
+60.270,Host Unreachable,192.168.215.127,,192.168.215.200,,0
+8.6.5.2.1. Router Exceptions: 1
+Timestamp,Type,Source IP,Source Port,Destination IP,Destination Port,IP Protocol
+Seconds,,,,,,
+5.210,Host Unreachable,192.168.215.122,,192.168.215.200,,0
+16.218,Host Unreachable,192.168.215.85,,192.168.215.200,,0
+27.207,Host Unreachable,192.168.215.38,,192.168.215.200,,0
+38.226,Host Unreachable,192.168.215.79,,192.168.215.200,,0
+49.240,Host Unreachable,192.168.215.140,,192.168.215.200,,0
+60.270,Host Unreachable,192.168.215.127,,192.168.215.200,,0
+8.6.5.3. Ethernet Frames
+
+Timestamp,Transmitted,Received
+Seconds,Frames,
+0,0,1
+0.181,0,1
+1.179,2,2  100.000%
+2.179,3,2  66.667%
+3.178,4,3  75.000%
+4.171,5,3  60.000%
+5.178,6,4  66.667%
+6.177,7,4  57.143%
+7.174,8,5  62.500%
+8.170,9,5  55.556%
+9.177,10,6  60.000%
+10.174,11,6  54.545%
+11.181,12,7  58.333%
+12.172,13,7  53.846%
+13.181,14,8  57.143%
+14.172,15,8  53.333%
+15.178,16,9  56.250%
+16.176,17,9  52.941%
+17.184,18,10  55.556%
+18.170,19,10  52.632%
+19.177,20,11  55.000%
+20.185,21,11  52.381%
+21.169,22,12  54.545%
+22.172,23,12  52.174%
+23.173,24,13  54.167%
+24.174,25,13  52.000%
+25.178,26,14  53.846%
+26.181,27,14  51.852%
+27.178,28,15  53.571%
+28.176,29,15  51.724%
+29.179,30,16  53.333%
+30.178,31,16  51.613%
+31.174,32,17  53.125%
+32.183,33,17  51.515%
+33.179,34,18  52.941%
+34.178,35,18  51.429%
+35.176,36,19  52.778%
+36.178,37,19  51.351%
+37.177,38,20  52.632%
+38.171,39,20  51.282%
+39.179,40,21  52.500%
+40.175,41,21  51.220%
+41.171,42,22  52.381%
+42.171,43,22  51.163%
+43.171,44,23  52.273%
+44.173,45,23  51.111%
+45.174,46,24  52.174%
+46.182,47,24  51.064%
+47.169,48,25  52.083%
+48.171,49,25  51.020%
+49.179,50,26  52.000%
+50.171,51,26  50.980%
+51.173,52,27  51.923%
+52.172,53,27  50.943%
+53.171,54,28  51.852%
+54.177,55,28  50.909%
+55.170,56,29  51.786%
+56.172,57,29  50.877%
+57.169,58,30  51.724%
+58.177,59,30  50.847%
+59.169,60,31  51.667%
+60.170,61,31  50.820%
+61.170,62,32  51.613%
+62.180,63,32  50.794%
+63.181,64,33  51.563%
+64.172,65,33  50.769%
+65.172,66,34  51.515%
+66.172,66,34  51.515%
+67.182,66,35  53.030%
+68.173,66,35  53.030%
+69.172,66,36  54.545%
+70.174,66,36  54.545%
+71.172,66,37  56.061%
+72.180,66,37  56.061%
+73.179,66,38  57.576%
+74.169,66,38  57.576%
+75.180,66,39  59.091%
+76.177,66,39  59.091%
+77.176,66,40  60.606%
+78.177,66,40  60.606%
+79.171,66,41  62.121%
+80.178,66,41  62.121%
+81.178,66,42  63.636%
+81.676,66,42  63.636%
+8.6.5.3.1. Ethernet Frames: 1
+
+Timestamp,Transmitted,Received
+Seconds,Frames,
+0,0,1
+0.181,0,1
+1.179,2,2  100.000%
+2.179,3,2  66.667%
+3.178,4,3  75.000%
+4.171,5,3  60.000%
+5.178,6,4  66.667%
+6.177,7,4  57.143%
+7.174,8,5  62.500%
+8.170,9,5  55.556%
+9.177,10,6  60.000%
+10.174,11,6  54.545%
+11.181,12,7  58.333%
+12.172,13,7  53.846%
+13.181,14,8  57.143%
+14.172,15,8  53.333%
+15.178,16,9  56.250%
+16.176,17,9  52.941%
+17.184,18,10  55.556%
+18.170,19,10  52.632%
+19.177,20,11  55.000%
+20.185,21,11  52.381%
+21.169,22,12  54.545%
+22.172,23,12  52.174%
+23.173,24,13  54.167%
+24.174,25,13  52.000%
+25.178,26,14  53.846%
+26.181,27,14  51.852%
+27.178,28,15  53.571%
+28.176,29,15  51.724%
+29.179,30,16  53.333%
+30.178,31,16  51.613%
+31.174,32,17  53.125%
+32.183,33,17  51.515%
+33.179,34,18  52.941%
+34.178,35,18  51.429%
+35.176,36,19  52.778%
+36.178,37,19  51.351%
+37.177,38,20  52.632%
+38.171,39,20  51.282%
+39.179,40,21  52.500%
+40.175,41,21  51.220%
+41.171,42,22  52.381%
+42.171,43,22  51.163%
+43.171,44,23  52.273%
+44.173,45,23  51.111%
+45.174,46,24  52.174%
+46.182,47,24  51.064%
+47.169,48,25  52.083%
+48.171,49,25  51.020%
+49.179,50,26  52.000%
+50.171,51,26  50.980%
+51.173,52,27  51.923%
+52.172,53,27  50.943%
+53.171,54,28  51.852%
+54.177,55,28  50.909%
+55.170,56,29  51.786%
+56.172,57,29  50.877%
+57.169,58,30  51.724%
+58.177,59,30  50.847%
+59.169,60,31  51.667%
+60.170,61,31  50.820%
+61.170,62,32  51.613%
+62.180,63,32  50.794%
+63.181,64,33  51.563%
+64.172,65,33  50.769%
+65.172,66,34  51.515%
+66.172,66,34  51.515%
+67.182,66,35  53.030%
+68.173,66,35  53.030%
+69.172,66,36  54.545%
+70.174,66,36  54.545%
+71.172,66,37  56.061%
+72.180,66,37  56.061%
+73.179,66,38  57.576%
+74.169,66,38  57.576%
+75.180,66,39  59.091%
+76.177,66,39  59.091%
+77.176,66,40  60.606%
+78.177,66,40  60.606%
+79.171,66,41  62.121%
+80.178,66,41  62.121%
+81.178,66,42  63.636%
+81.676,66,42  63.636%
+8.6.5.4. Ethernet Frame Rates
+
+Timestamp,Transmit rate,Receive rate
+Seconds,Frames/s,
+0,0.00,0.00
+0.181,0.00,0.00
+1.179,2.004,1.002
+2.179,1,0.00
+3.178,1.001,1.001
+4.171,1.007,0.00
+5.178,0.9930,0.9930
+6.177,1.001,0.00
+7.174,1.003,1.003
+8.170,1.004,0.00
+9.177,0.9930,0.9930
+10.174,1.003,0.00
+11.181,0.9930,0.9930
+12.172,1.009,0.00
+13.181,0.9911,0.9911
+14.172,1.009,0.00
+15.178,0.9940,0.9940
+16.176,1.002,0.00
+17.184,0.9921,0.9921
+18.170,1.014,0.00
+19.177,0.9930,0.9930
+20.185,0.9921,0.00
+21.169,1.016,1.016
+22.172,0.9970,0.00
+23.173,0.9990,0.9990
+24.174,0.9990,0.00
+25.178,0.9960,0.9960
+26.181,0.9970,0.00
+27.178,1.003,1.003
+28.176,1.002,0.00
+29.179,0.9970,0.9970
+30.178,1.001,0.00
+31.174,1.004,1.004
+32.183,0.9911,0.00
+33.179,1.004,1.004
+34.178,1.001,0.00
+35.176,1.002,1.002
+36.178,0.9980,0.00
+37.177,1.001,1.001
+38.171,1.006,0.00
+39.179,0.9921,0.9921
+40.175,1.004,0.00
+41.171,1.004,1.004
+42.171,1,0.00
+43.171,1,1
+44.173,0.9980,0.00
+45.174,0.9990,0.9990
+46.182,0.9921,0.00
+47.169,1.013,1.013
+48.171,0.9980,0.00
+49.179,0.9921,0.9921
+50.171,1.008,0.00
+51.173,0.9980,0.9980
+52.172,1.001,0.00
+53.171,1.001,1.001
+54.177,0.9940,0.00
+55.170,1.007,1.007
+56.172,0.9980,0.00
+57.169,1.003,1.003
+58.177,0.9921,0.00
+59.169,1.008,1.008
+60.170,0.9990,0.00
+61.170,1,1
+62.180,0.9901,0.00
+63.181,0.9990,0.9990
+64.172,1.009,0.00
+65.172,1,1
+66.172,0.00,0.00
+67.182,0.00,0.9901
+68.173,0.00,0.00
+69.172,0.00,1.001
+70.174,0.00,0.00
+71.172,0.00,1.002
+72.180,0.00,0.00
+73.179,0.00,1.001
+74.169,0.00,0.00
+75.180,0.00,0.9891
+76.177,0.00,0.00
+77.176,0.00,1.001
+78.177,0.00,0.00
+79.171,0.00,1.006
+80.178,0.00,0.00
+81.178,0.00,1
+81.676,0.00,0.00
+8.6.5.4.1. Ethernet Frame Rates: 1
+
+Timestamp,Transmit rate,Receive rate
+Seconds,Frames/s,
+0,0.00,0.00
+0.181,0.00,0.00
+1.179,2.004,1.002
+2.179,1,0.00
+3.178,1.001,1.001
+4.171,1.007,0.00
+5.178,0.9930,0.9930
+6.177,1.001,0.00
+7.174,1.003,1.003
+8.170,1.004,0.00
+9.177,0.9930,0.9930
+10.174,1.003,0.00
+11.181,0.9930,0.9930
+12.172,1.009,0.00
+13.181,0.9911,0.9911
+14.172,1.009,0.00
+15.178,0.9940,0.9940
+16.176,1.002,0.00
+17.184,0.9921,0.9921
+18.170,1.014,0.00
+19.177,0.9930,0.9930
+20.185,0.9921,0.00
+21.169,1.016,1.016
+22.172,0.9970,0.00
+23.173,0.9990,0.9990
+24.174,0.9990,0.00
+25.178,0.9960,0.9960
+26.181,0.9970,0.00
+27.178,1.003,1.003
+28.176,1.002,0.00
+29.179,0.9970,0.9970
+30.178,1.001,0.00
+31.174,1.004,1.004
+32.183,0.9911,0.00
+33.179,1.004,1.004
+34.178,1.001,0.00
+35.176,1.002,1.002
+36.178,0.9980,0.00
+37.177,1.001,1.001
+38.171,1.006,0.00
+39.179,0.9921,0.9921
+40.175,1.004,0.00
+41.171,1.004,1.004
+42.171,1,0.00
+43.171,1,1
+44.173,0.9980,0.00
+45.174,0.9990,0.9990
+46.182,0.9921,0.00
+47.169,1.013,1.013
+48.171,0.9980,0.00
+49.179,0.9921,0.9921
+50.171,1.008,0.00
+51.173,0.9980,0.9980
+52.172,1.001,0.00
+53.171,1.001,1.001
+54.177,0.9940,0.00
+55.170,1.007,1.007
+56.172,0.9980,0.00
+57.169,1.003,1.003
+58.177,0.9921,0.00
+59.169,1.008,1.008
+60.170,0.9990,0.00
+61.170,1,1
+62.180,0.9901,0.00
+63.181,0.9990,0.9990
+64.172,1.009,0.00
+65.172,1,1
+66.172,0.00,0.00
+67.182,0.00,0.9901
+68.173,0.00,0.00
+69.172,0.00,1.001
+70.174,0.00,0.00
+71.172,0.00,1.002
+72.180,0.00,0.00
+73.179,0.00,1.001
+74.169,0.00,0.00
+75.180,0.00,0.9891
+76.177,0.00,0.00
+77.176,0.00,1.001
+78.177,0.00,0.00
+79.171,0.00,1.006
+80.178,0.00,0.00
+81.178,0.00,1
+81.676,0.00,0.00
+8.6.5.5. Ethernet Data
+
+Timestamp,Transmitted,Received
+Seconds,Frame bytes,
+0,0,56
+0.181,0,56
+1.179,128,112  87.500%
+2.179,192,112  58.333%
+3.178,256,168  65.625%
+4.171,320,168  52.500%
+5.178,384,224  58.333%
+6.177,448,224  50.000%
+7.174,512,280  54.688%
+8.170,576,280  48.611%
+9.177,640,336  52.500%
+10.174,704,336  47.727%
+11.181,768,392  51.042%
+12.172,832,392  47.115%
+13.181,896,448  50.000%
+14.172,960,448  46.667%
+15.178,"1,024",504  49.219%
+16.176,"1,088",504  46.324%
+17.184,"1,152",560  48.611%
+18.170,"1,216",560  46.053%
+19.177,"1,280",616  48.125%
+20.185,"1,344",616  45.833%
+21.169,"1,408",672  47.727%
+22.172,"1,472",672  45.652%
+23.173,"1,536",728  47.396%
+24.174,"1,600",728  45.500%
+25.178,"1,664",784  47.115%
+26.181,"1,728",784  45.370%
+27.178,"1,792",840  46.875%
+28.176,"1,856",840  45.259%
+29.179,"1,920",896  46.667%
+30.178,"1,984",896  45.161%
+31.174,"2,048",952  46.484%
+32.183,"2,112",952  45.076%
+33.179,"2,176","1,008  46.324%"
+34.178,"2,240","1,008  45.000%"
+35.176,"2,304","1,064  46.181%"
+36.178,"2,368","1,064  44.932%"
+37.177,"2,432","1,120  46.053%"
+38.171,"2,496","1,120  44.872%"
+39.179,"2,560","1,176  45.938%"
+40.175,"2,624","1,176  44.817%"
+41.171,"2,688","1,232  45.833%"
+42.171,"2,752","1,232  44.767%"
+43.171,"2,816","1,288  45.739%"
+44.173,"2,880","1,288  44.722%"
+45.174,"2,944","1,344  45.652%"
+46.182,"3,008","1,344  44.681%"
+47.169,"3,072","1,400  45.573%"
+48.171,"3,136","1,400  44.643%"
+49.179,"3,200","1,456  45.500%"
+50.171,"3,264","1,456  44.608%"
+51.173,"3,328","1,512  45.433%"
+52.172,"3,392","1,512  44.575%"
+53.171,"3,456","1,568  45.370%"
+54.177,"3,520","1,568  44.545%"
+55.170,"3,584","1,624  45.313%"
+56.172,"3,648","1,624  44.518%"
+57.169,"3,712","1,680  45.259%"
+58.177,"3,776","1,680  44.492%"
+59.169,"3,840","1,736  45.208%"
+60.170,"3,904","1,736  44.467%"
+61.170,"3,968","1,792  45.161%"
+62.180,"4,032","1,792  44.444%"
+63.181,"4,096","1,848  45.117%"
+64.172,"4,160","1,848  44.423%"
+65.172,"4,224","1,904  45.076%"
+66.172,"4,224","1,904  45.076%"
+67.182,"4,224","1,960  46.402%"
+68.173,"4,224","1,960  46.402%"
+69.172,"4,224","2,016  47.727%"
+70.174,"4,224","2,016  47.727%"
+71.172,"4,224","2,072  49.053%"
+72.180,"4,224","2,072  49.053%"
+73.179,"4,224","2,128  50.379%"
+74.169,"4,224","2,128  50.379%"
+75.180,"4,224","2,184  51.705%"
+76.177,"4,224","2,184  51.705%"
+77.176,"4,224","2,240  53.030%"
+78.177,"4,224","2,240  53.030%"
+79.171,"4,224","2,296  54.356%"
+80.178,"4,224","2,296  54.356%"
+81.178,"4,224","2,352  55.682%"
+81.676,"4,224","2,352  55.682%"
+8.6.5.5.1. Ethernet Data: 1
+
+Timestamp,Transmitted,Received
+Seconds,Frame bytes,
+0,0,56
+0.181,0,56
+1.179,128,112  87.500%
+2.179,192,112  58.333%
+3.178,256,168  65.625%
+4.171,320,168  52.500%
+5.178,384,224  58.333%
+6.177,448,224  50.000%
+7.174,512,280  54.688%
+8.170,576,280  48.611%
+9.177,640,336  52.500%
+10.174,704,336  47.727%
+11.181,768,392  51.042%
+12.172,832,392  47.115%
+13.181,896,448  50.000%
+14.172,960,448  46.667%
+15.178,"1,024",504  49.219%
+16.176,"1,088",504  46.324%
+17.184,"1,152",560  48.611%
+18.170,"1,216",560  46.053%
+19.177,"1,280",616  48.125%
+20.185,"1,344",616  45.833%
+21.169,"1,408",672  47.727%
+22.172,"1,472",672  45.652%
+23.173,"1,536",728  47.396%
+24.174,"1,600",728  45.500%
+25.178,"1,664",784  47.115%
+26.181,"1,728",784  45.370%
+27.178,"1,792",840  46.875%
+28.176,"1,856",840  45.259%
+29.179,"1,920",896  46.667%
+30.178,"1,984",896  45.161%
+31.174,"2,048",952  46.484%
+32.183,"2,112",952  45.076%
+33.179,"2,176","1,008  46.324%"
+34.178,"2,240","1,008  45.000%"
+35.176,"2,304","1,064  46.181%"
+36.178,"2,368","1,064  44.932%"
+37.177,"2,432","1,120  46.053%"
+38.171,"2,496","1,120  44.872%"
+39.179,"2,560","1,176  45.938%"
+40.175,"2,624","1,176  44.817%"
+41.171,"2,688","1,232  45.833%"
+42.171,"2,752","1,232  44.767%"
+43.171,"2,816","1,288  45.739%"
+44.173,"2,880","1,288  44.722%"
+45.174,"2,944","1,344  45.652%"
+46.182,"3,008","1,344  44.681%"
+47.169,"3,072","1,400  45.573%"
+48.171,"3,136","1,400  44.643%"
+49.179,"3,200","1,456  45.500%"
+50.171,"3,264","1,456  44.608%"
+51.173,"3,328","1,512  45.433%"
+52.172,"3,392","1,512  44.575%"
+53.171,"3,456","1,568  45.370%"
+54.177,"3,520","1,568  44.545%"
+55.170,"3,584","1,624  45.313%"
+56.172,"3,648","1,624  44.518%"
+57.169,"3,712","1,680  45.259%"
+58.177,"3,776","1,680  44.492%"
+59.169,"3,840","1,736  45.208%"
+60.170,"3,904","1,736  44.467%"
+61.170,"3,968","1,792  45.161%"
+62.180,"4,032","1,792  44.444%"
+63.181,"4,096","1,848  45.117%"
+64.172,"4,160","1,848  44.423%"
+65.172,"4,224","1,904  45.076%"
+66.172,"4,224","1,904  45.076%"
+67.182,"4,224","1,960  46.402%"
+68.173,"4,224","1,960  46.402%"
+69.172,"4,224","2,016  47.727%"
+70.174,"4,224","2,016  47.727%"
+71.172,"4,224","2,072  49.053%"
+72.180,"4,224","2,072  49.053%"
+73.179,"4,224","2,128  50.379%"
+74.169,"4,224","2,128  50.379%"
+75.180,"4,224","2,184  51.705%"
+76.177,"4,224","2,184  51.705%"
+77.176,"4,224","2,240  53.030%"
+78.177,"4,224","2,240  53.030%"
+79.171,"4,224","2,296  54.356%"
+80.178,"4,224","2,296  54.356%"
+81.178,"4,224","2,352  55.682%"
+81.676,"4,224","2,352  55.682%"
+8.6.5.6. Ethernet Data Rates
+
+Data Rate shown includes Ethernet overhead.
+Rates can fluctuate slightly above the physical maximum due to round-off errors in calculations.
+Physical speeds on fiber optic can legitimately exceed 10Gbps.
+Timestamp,Transmit rate,Receive rate
+Seconds,Megabits/s,
+0,0.00,0.00
+0.181,0.00,0.00
+1.179,0.001347,0.0006092
+2.179,0.0006720,0.00
+3.178,0.0006727,0.0006086
+4.171,0.0006767,0.00
+5.178,0.0006673,0.0006038
+6.177,0.0006727,0.00
+7.174,0.0006740,0.0006098
+8.170,0.0006747,0.00
+9.177,0.0006673,0.0006038
+10.174,0.0006740,0.00
+11.181,0.0006673,0.0006038
+12.172,0.0006781,0.00
+13.181,0.0006660,0.0006026
+14.172,0.0006781,0.00
+15.178,0.0006680,0.0006044
+16.176,0.0006733,0.00
+17.184,0.0006667,0.0006032
+18.170,0.0006815,0.00
+19.177,0.0006673,0.0006038
+20.185,0.0006667,0.00
+21.169,0.0006829,0.0006179
+22.172,0.0006700,0.00
+23.173,0.0006713,0.0006074
+24.174,0.0006713,0.00
+25.178,0.0006693,0.0006056
+26.181,0.0006700,0.00
+27.178,0.0006740,0.0006098
+28.176,0.0006733,0.00
+29.179,0.0006700,0.0006062
+30.178,0.0006727,0.00
+31.174,0.0006747,0.0006104
+32.183,0.0006660,0.00
+33.179,0.0006747,0.0006104
+34.178,0.0006727,0.00
+35.176,0.0006733,0.0006092
+36.178,0.0006707,0.00
+37.177,0.0006727,0.0006086
+38.171,0.0006761,0.00
+39.179,0.0006667,0.0006032
+40.175,0.0006747,0.00
+41.171,0.0006747,0.0006104
+42.171,0.0006720,0.00
+43.171,0.0006720,0.0006080
+44.173,0.0006707,0.00
+45.174,0.0006713,0.0006074
+46.182,0.0006667,0.00
+47.169,0.0006809,0.0006160
+48.171,0.0006707,0.00
+49.179,0.0006667,0.0006032
+50.171,0.0006774,0.00
+51.173,0.0006707,0.0006068
+52.172,0.0006727,0.00
+53.171,0.0006727,0.0006086
+54.177,0.0006680,0.00
+55.170,0.0006767,0.0006123
+56.172,0.0006707,0.00
+57.169,0.0006740,0.0006098
+58.177,0.0006667,0.00
+59.169,0.0006774,0.0006129
+60.170,0.0006713,0.00
+61.170,0.0006720,0.0006080
+62.180,0.0006653,0.00
+63.181,0.0006713,0.0006074
+64.172,0.0006781,0.00
+65.172,0.0006720,0.0006080
+66.172,0.00,0.00
+67.182,0.00,0.0006020
+68.173,0.00,0.00
+69.172,0.00,0.0006086
+70.174,0.00,0.00
+71.172,0.00,0.0006092
+72.180,0.00,0.00
+73.179,0.00,0.0006086
+74.169,0.00,0.00
+75.180,0.00,0.0006014
+76.177,0.00,0.00
+77.176,0.00,0.0006086
+78.177,0.00,0.00
+79.171,0.00,0.0006117
+80.178,0.00,0.00
+81.178,0.00,0.0006080
+81.676,0.00,0.00
+8.6.5.6.1. Ethernet Data Rates: 1
+
+Data Rate shown includes Ethernet overhead.
+Rates can fluctuate slightly above the physical maximum due to round-off errors in calculations.
+Physical speeds on fiber optic can legitimately exceed 10Gbps.
+Timestamp,Transmit rate,Receive rate
+Seconds,Megabits/s,
+0,0.00,0.00
+0.181,0.00,0.00
+1.179,0.001347,0.0006092
+2.179,0.0006720,0.00
+3.178,0.0006727,0.0006086
+4.171,0.0006767,0.00
+5.178,0.0006673,0.0006038
+6.177,0.0006727,0.00
+7.174,0.0006740,0.0006098
+8.170,0.0006747,0.00
+9.177,0.0006673,0.0006038
+10.174,0.0006740,0.00
+11.181,0.0006673,0.0006038
+12.172,0.0006781,0.00
+13.181,0.0006660,0.0006026
+14.172,0.0006781,0.00
+15.178,0.0006680,0.0006044
+16.176,0.0006733,0.00
+17.184,0.0006667,0.0006032
+18.170,0.0006815,0.00
+19.177,0.0006673,0.0006038
+20.185,0.0006667,0.00
+21.169,0.0006829,0.0006179
+22.172,0.0006700,0.00
+23.173,0.0006713,0.0006074
+24.174,0.0006713,0.00
+25.178,0.0006693,0.0006056
+26.181,0.0006700,0.00
+27.178,0.0006740,0.0006098
+28.176,0.0006733,0.00
+29.179,0.0006700,0.0006062
+30.178,0.0006727,0.00
+31.174,0.0006747,0.0006104
+32.183,0.0006660,0.00
+33.179,0.0006747,0.0006104
+34.178,0.0006727,0.00
+35.176,0.0006733,0.0006092
+36.178,0.0006707,0.00
+37.177,0.0006727,0.0006086
+38.171,0.0006761,0.00
+39.179,0.0006667,0.0006032
+40.175,0.0006747,0.00
+41.171,0.0006747,0.0006104
+42.171,0.0006720,0.00
+43.171,0.0006720,0.0006080
+44.173,0.0006707,0.00
+45.174,0.0006713,0.0006074
+46.182,0.0006667,0.00
+47.169,0.0006809,0.0006160
+48.171,0.0006707,0.00
+49.179,0.0006667,0.0006032
+50.171,0.0006774,0.00
+51.173,0.0006707,0.0006068
+52.172,0.0006727,0.00
+53.171,0.0006727,0.0006086
+54.177,0.0006680,0.00
+55.170,0.0006767,0.0006123
+56.172,0.0006707,0.00
+57.169,0.0006740,0.0006098
+58.177,0.0006667,0.00
+59.169,0.0006774,0.0006129
+60.170,0.0006713,0.00
+61.170,0.0006720,0.0006080
+62.180,0.0006653,0.00
+63.181,0.0006713,0.0006074
+64.172,0.0006781,0.00
+65.172,0.0006720,0.0006080
+66.172,0.00,0.00
+67.182,0.00,0.0006020
+68.173,0.00,0.00
+69.172,0.00,0.0006086
+70.174,0.00,0.00
+71.172,0.00,0.0006092
+72.180,0.00,0.00
+73.179,0.00,0.0006086
+74.169,0.00,0.00
+75.180,0.00,0.0006014
+76.177,0.00,0.00
+77.176,0.00,0.0006086
+78.177,0.00,0.00
+79.171,0.00,0.0006117
+80.178,0.00,0.00
+81.178,0.00,0.0006080
+81.676,0.00,0.00
+8.6.5.7. Ethernet Errors
+
+Timestamp,TX Pause frames,TX errors,RX Pause frames,FCS errors,Alignment errors,Undersize,Oversize,Drop Events
+Seconds,Frames,,,,,,,
+0,0,0,0,0,0,0,0,0
+0.181,0,0,0,0,0,0,0,0
+1.179,0,0,0,0,0,0,0,0
+2.179,0,0,0,0,0,0,0,0
+3.178,0,0,0,0,0,0,0,0
+4.171,0,0,0,0,0,0,0,0
+5.178,0,0,0,0,0,0,0,0
+6.177,0,0,0,0,0,0,0,0
+7.174,0,0,0,0,0,0,0,0
+8.170,0,0,0,0,0,0,0,0
+9.177,0,0,0,0,0,0,0,0
+10.174,0,0,0,0,0,0,0,0
+11.181,0,0,0,0,0,0,0,0
+12.172,0,0,0,0,0,0,0,0
+13.181,0,0,0,0,0,0,0,0
+14.172,0,0,0,0,0,0,0,0
+15.178,0,0,0,0,0,0,0,0
+16.176,0,0,0,0,0,0,0,0
+17.184,0,0,0,0,0,0,0,0
+18.170,0,0,0,0,0,0,0,0
+19.177,0,0,0,0,0,0,0,0
+20.185,0,0,0,0,0,0,0,0
+21.169,0,0,0,0,0,0,0,0
+22.172,0,0,0,0,0,0,0,0
+23.173,0,0,0,0,0,0,0,0
+24.174,0,0,0,0,0,0,0,0
+25.178,0,0,0,0,0,0,0,0
+26.181,0,0,0,0,0,0,0,0
+27.178,0,0,0,0,0,0,0,0
+28.176,0,0,0,0,0,0,0,0
+29.179,0,0,0,0,0,0,0,0
+30.178,0,0,0,0,0,0,0,0
+31.174,0,0,0,0,0,0,0,0
+32.183,0,0,0,0,0,0,0,0
+33.179,0,0,0,0,0,0,0,0
+34.178,0,0,0,0,0,0,0,0
+35.176,0,0,0,0,0,0,0,0
+36.178,0,0,0,0,0,0,0,0
+37.177,0,0,0,0,0,0,0,0
+38.171,0,0,0,0,0,0,0,0
+39.179,0,0,0,0,0,0,0,0
+40.175,0,0,0,0,0,0,0,0
+41.171,0,0,0,0,0,0,0,0
+42.171,0,0,0,0,0,0,0,0
+43.171,0,0,0,0,0,0,0,0
+44.173,0,0,0,0,0,0,0,0
+45.174,0,0,0,0,0,0,0,0
+46.182,0,0,0,0,0,0,0,0
+47.169,0,0,0,0,0,0,0,0
+48.171,0,0,0,0,0,0,0,0
+49.179,0,0,0,0,0,0,0,0
+50.171,0,0,0,0,0,0,0,0
+51.173,0,0,0,0,0,0,0,0
+52.172,0,0,0,0,0,0,0,0
+53.171,0,0,0,0,0,0,0,0
+54.177,0,0,0,0,0,0,0,0
+55.170,0,0,0,0,0,0,0,0
+56.172,0,0,0,0,0,0,0,0
+57.169,0,0,0,0,0,0,0,0
+58.177,0,0,0,0,0,0,0,0
+59.169,0,0,0,0,0,0,0,0
+60.170,0,0,0,0,0,0,0,0
+61.170,0,0,0,0,0,0,0,0
+62.180,0,0,0,0,0,0,0,0
+63.181,0,0,0,0,0,0,0,0
+64.172,0,0,0,0,0,0,0,0
+65.172,0,0,0,0,0,0,0,0
+66.172,0,0,0,0,0,0,0,0
+67.182,0,0,0,0,0,0,0,0
+68.173,0,0,0,0,0,0,0,0
+69.172,0,0,0,0,0,0,0,0
+70.174,0,0,0,0,0,0,0,0
+71.172,0,0,0,0,0,0,0,0
+72.180,0,0,0,0,0,0,0,0
+73.179,0,0,0,0,0,0,0,0
+74.169,0,0,0,0,0,0,0,0
+75.180,0,0,0,0,0,0,0,0
+76.177,0,0,0,0,0,0,0,0
+77.176,0,0,0,0,0,0,0,0
+78.177,0,0,0,0,0,0,0,0
+79.171,0,0,0,0,0,0,0,0
+80.178,0,0,0,0,0,0,0,0
+81.178,0,0,0,0,0,0,0,0
+81.676,0,0,0,0,0,0,0,0
+8.6.5.7.1. Ethernet Errors: 1
+
+Timestamp,TX Pause frames,TX errors,RX Pause frames,FCS errors,Alignment errors,Undersize,Oversize,Drop Events
+Seconds,Frames,,,,,,,
+0,0,0,0,0,0,0,0,0
+0.181,0,0,0,0,0,0,0,0
+1.179,0,0,0,0,0,0,0,0
+2.179,0,0,0,0,0,0,0,0
+3.178,0,0,0,0,0,0,0,0
+4.171,0,0,0,0,0,0,0,0
+5.178,0,0,0,0,0,0,0,0
+6.177,0,0,0,0,0,0,0,0
+7.174,0,0,0,0,0,0,0,0
+8.170,0,0,0,0,0,0,0,0
+9.177,0,0,0,0,0,0,0,0
+10.174,0,0,0,0,0,0,0,0
+11.181,0,0,0,0,0,0,0,0
+12.172,0,0,0,0,0,0,0,0
+13.181,0,0,0,0,0,0,0,0
+14.172,0,0,0,0,0,0,0,0
+15.178,0,0,0,0,0,0,0,0
+16.176,0,0,0,0,0,0,0,0
+17.184,0,0,0,0,0,0,0,0
+18.170,0,0,0,0,0,0,0,0
+19.177,0,0,0,0,0,0,0,0
+20.185,0,0,0,0,0,0,0,0
+21.169,0,0,0,0,0,0,0,0
+22.172,0,0,0,0,0,0,0,0
+23.173,0,0,0,0,0,0,0,0
+24.174,0,0,0,0,0,0,0,0
+25.178,0,0,0,0,0,0,0,0
+26.181,0,0,0,0,0,0,0,0
+27.178,0,0,0,0,0,0,0,0
+28.176,0,0,0,0,0,0,0,0
+29.179,0,0,0,0,0,0,0,0
+30.178,0,0,0,0,0,0,0,0
+31.174,0,0,0,0,0,0,0,0
+32.183,0,0,0,0,0,0,0,0
+33.179,0,0,0,0,0,0,0,0
+34.178,0,0,0,0,0,0,0,0
+35.176,0,0,0,0,0,0,0,0
+36.178,0,0,0,0,0,0,0,0
+37.177,0,0,0,0,0,0,0,0
+38.171,0,0,0,0,0,0,0,0
+39.179,0,0,0,0,0,0,0,0
+40.175,0,0,0,0,0,0,0,0
+41.171,0,0,0,0,0,0,0,0
+42.171,0,0,0,0,0,0,0,0
+43.171,0,0,0,0,0,0,0,0
+44.173,0,0,0,0,0,0,0,0
+45.174,0,0,0,0,0,0,0,0
+46.182,0,0,0,0,0,0,0,0
+47.169,0,0,0,0,0,0,0,0
+48.171,0,0,0,0,0,0,0,0
+49.179,0,0,0,0,0,0,0,0
+50.171,0,0,0,0,0,0,0,0
+51.173,0,0,0,0,0,0,0,0
+52.172,0,0,0,0,0,0,0,0
+53.171,0,0,0,0,0,0,0,0
+54.177,0,0,0,0,0,0,0,0
+55.170,0,0,0,0,0,0,0,0
+56.172,0,0,0,0,0,0,0,0
+57.169,0,0,0,0,0,0,0,0
+58.177,0,0,0,0,0,0,0,0
+59.169,0,0,0,0,0,0,0,0
+60.170,0,0,0,0,0,0,0,0
+61.170,0,0,0,0,0,0,0,0
+62.180,0,0,0,0,0,0,0,0
+63.181,0,0,0,0,0,0,0,0
+64.172,0,0,0,0,0,0,0,0
+65.172,0,0,0,0,0,0,0,0
+66.172,0,0,0,0,0,0,0,0
+67.182,0,0,0,0,0,0,0,0
+68.173,0,0,0,0,0,0,0,0
+69.172,0,0,0,0,0,0,0,0
+70.174,0,0,0,0,0,0,0,0
+71.172,0,0,0,0,0,0,0,0
+72.180,0,0,0,0,0,0,0,0
+73.179,0,0,0,0,0,0,0,0
+74.169,0,0,0,0,0,0,0,0
+75.180,0,0,0,0,0,0,0,0
+76.177,0,0,0,0,0,0,0,0
+77.176,0,0,0,0,0,0,0,0
+78.177,0,0,0,0,0,0,0,0
+79.171,0,0,0,0,0,0,0,0
+80.178,0,0,0,0,0,0,0,0
+81.178,0,0,0,0,0,0,0,0
+81.676,0,0,0,0,0,0,0,0
+8.6.5.8. Concurrent Flows
+
+Timestamp,TCP,UDP,SCTP,Total,Super Flow
+Seconds,Flows,,,,
+0,0,0,0,0,0
+0.181,0,0,0,0,0
+1.179,0,0,0,0,1
+2.179,0,0,0,0,1
+3.178,0,0,0,0,1
+4.171,0,0,0,0,1
+5.178,0,0,0,0,1
+6.177,0,0,0,0,1
+7.174,0,0,0,0,1
+8.170,0,0,0,0,1
+9.177,0,0,0,0,1
+10.174,0,0,0,0,1
+11.181,0,0,0,0,1
+12.172,0,0,0,0,1
+13.181,0,0,0,0,1
+14.172,0,0,0,0,1
+15.178,0,0,0,0,1
+16.176,0,0,0,0,1
+17.184,0,0,0,0,1
+18.170,0,0,0,0,1
+19.177,0,0,0,0,1
+20.185,0,0,0,0,1
+21.169,0,0,0,0,1
+22.172,0,0,0,0,1
+23.173,0,0,0,0,1
+24.174,0,0,0,0,1
+25.178,0,0,0,0,1
+26.181,0,0,0,0,1
+27.178,0,0,0,0,1
+28.176,0,0,0,0,1
+29.179,0,0,0,0,1
+30.178,0,0,0,0,1
+31.174,0,0,0,0,1
+32.183,0,0,0,0,1
+33.179,0,0,0,0,1
+34.178,0,0,0,0,1
+35.176,0,0,0,0,1
+36.178,0,0,0,0,1
+37.177,0,0,0,0,1
+38.171,0,0,0,0,1
+39.179,0,0,0,0,1
+40.175,0,0,0,0,1
+41.171,0,0,0,0,1
+42.171,0,0,0,0,1
+43.171,0,0,0,0,1
+44.173,0,0,0,0,1
+45.174,0,0,0,0,1
+46.182,0,0,0,0,1
+47.169,0,0,0,0,1
+48.171,0,0,0,0,1
+49.179,0,0,0,0,1
+50.171,0,0,0,0,1
+51.173,0,0,0,0,1
+52.172,0,0,0,0,1
+53.171,0,0,0,0,1
+54.177,0,0,0,0,1
+55.170,0,0,0,0,1
+56.172,0,0,0,0,1
+57.169,0,0,0,0,1
+58.177,0,0,0,0,1
+59.169,0,0,0,0,1
+60.170,0,0,0,0,1
+61.170,0,0,0,0,1
+62.180,0,0,0,0,0
+63.181,0,0,0,0,0
+64.172,0,0,0,0,0
+65.172,0,0,0,0,0
+66.172,0,0,0,0,0
+67.182,0,0,0,0,0
+68.173,0,0,0,0,0
+69.172,0,0,0,0,0
+70.174,0,0,0,0,0
+71.172,0,0,0,0,0
+72.180,0,0,0,0,0
+73.179,0,0,0,0,0
+74.169,0,0,0,0,0
+75.180,0,0,0,0,0
+76.177,0,0,0,0,0
+77.176,0,0,0,0,0
+78.177,0,0,0,0,0
+79.171,0,0,0,0,0
+80.178,0,0,0,0,0
+81.178,0,0,0,0,0
+8.6.5.9. Flow Rates
+
+Timestamp,TCP rate,UDP rate,SCTP rate,Total rate,Super Flow rate
+Seconds,Flows/s,,,,
+0,0.00,0.00,0.00,0.00,0.00
+0.181,0.00,0.00,0.00,0.00,0.00
+1.179,0.00,0.00,0.00,0.00,1.002
+2.179,0.00,0.00,0.00,0.00,1
+3.178,0.00,0.00,0.00,0.00,0.00
+4.171,0.00,0.00,0.00,0.00,1.007
+5.178,0.00,0.00,0.00,0.00,0.00
+6.177,0.00,0.00,0.00,0.00,1.001
+7.174,0.00,0.00,0.00,0.00,0.00
+8.170,0.00,0.00,0.00,0.00,1.004
+9.177,0.00,0.00,0.00,0.00,0.9930
+10.174,0.00,0.00,0.00,0.00,0.00
+11.181,0.00,0.00,0.00,0.00,0.9930
+12.172,0.00,0.00,0.00,0.00,0.00
+13.181,0.00,0.00,0.00,0.00,0.9911
+14.172,0.00,0.00,0.00,0.00,0.00
+15.178,0.00,0.00,0.00,0.00,0.9940
+16.176,0.00,0.00,0.00,0.00,1.002
+17.184,0.00,0.00,0.00,0.00,0.00
+18.170,0.00,0.00,0.00,0.00,1.014
+19.177,0.00,0.00,0.00,0.00,0.00
+20.185,0.00,0.00,0.00,0.00,0.9921
+21.169,0.00,0.00,0.00,0.00,0.00
+22.172,0.00,0.00,0.00,0.00,0.9970
+23.173,0.00,0.00,0.00,0.00,0.9990
+24.174,0.00,0.00,0.00,0.00,0.00
+25.178,0.00,0.00,0.00,0.00,0.9960
+26.181,0.00,0.00,0.00,0.00,0.00
+27.178,0.00,0.00,0.00,0.00,1.003
+28.176,0.00,0.00,0.00,0.00,0.00
+29.179,0.00,0.00,0.00,0.00,0.9970
+30.178,0.00,0.00,0.00,0.00,1.001
+31.174,0.00,0.00,0.00,0.00,0.00
+32.183,0.00,0.00,0.00,0.00,0.9911
+33.179,0.00,0.00,0.00,0.00,0.00
+34.178,0.00,0.00,0.00,0.00,1.001
+35.176,0.00,0.00,0.00,0.00,0.00
+36.178,0.00,0.00,0.00,0.00,0.9980
+37.177,0.00,0.00,0.00,0.00,1.001
+38.171,0.00,0.00,0.00,0.00,0.00
+39.179,0.00,0.00,0.00,0.00,0.9921
+40.175,0.00,0.00,0.00,0.00,0.00
+41.171,0.00,0.00,0.00,0.00,1.004
+42.171,0.00,0.00,0.00,0.00,0.00
+43.171,0.00,0.00,0.00,0.00,1
+44.173,0.00,0.00,0.00,0.00,0.9980
+45.174,0.00,0.00,0.00,0.00,0.00
+46.182,0.00,0.00,0.00,0.00,0.9921
+47.169,0.00,0.00,0.00,0.00,0.00
+48.171,0.00,0.00,0.00,0.00,0.9980
+49.179,0.00,0.00,0.00,0.00,0.00
+50.171,0.00,0.00,0.00,0.00,1.008
+51.173,0.00,0.00,0.00,0.00,0.9980
+52.172,0.00,0.00,0.00,0.00,0.00
+53.171,0.00,0.00,0.00,0.00,1.001
+54.177,0.00,0.00,0.00,0.00,0.00
+55.170,0.00,0.00,0.00,0.00,1.007
+56.172,0.00,0.00,0.00,0.00,0.00
+57.169,0.00,0.00,0.00,0.00,1.003
+58.177,0.00,0.00,0.00,0.00,0.00
+59.169,0.00,0.00,0.00,0.00,1.008
+60.170,0.00,0.00,0.00,0.00,0.9990
+61.170,0.00,0.00,0.00,0.00,0.00
+62.180,0.00,0.00,0.00,0.00,0.00
+63.181,0.00,0.00,0.00,0.00,0.00
+64.172,0.00,0.00,0.00,0.00,0.00
+65.172,0.00,0.00,0.00,0.00,0.00
+66.172,0.00,0.00,0.00,0.00,0.00
+67.182,0.00,0.00,0.00,0.00,0.00
+68.173,0.00,0.00,0.00,0.00,0.00
+69.172,0.00,0.00,0.00,0.00,0.00
+70.174,0.00,0.00,0.00,0.00,0.00
+71.172,0.00,0.00,0.00,0.00,0.00
+72.180,0.00,0.00,0.00,0.00,0.00
+73.179,0.00,0.00,0.00,0.00,0.00
+74.169,0.00,0.00,0.00,0.00,0.00
+75.180,0.00,0.00,0.00,0.00,0.00
+76.177,0.00,0.00,0.00,0.00,0.00
+77.176,0.00,0.00,0.00,0.00,0.00
+78.177,0.00,0.00,0.00,0.00,0.00
+79.171,0.00,0.00,0.00,0.00,0.00
+80.178,0.00,0.00,0.00,0.00,0.00
+81.178,0.00,0.00,0.00,0.00,0.00
+8.6.5.10. ARP
+Timestamp,Request TX,Reply RX,Request RX,Reply TX,Bad Length,Ignored Request,Ignored Reply,Duplicate Address
+Seconds,Frames,,,,,,,
+1.179,2,0,0,0,0,0,0,0
+2.179,3,0,0,0,0,0,0,0
+3.178,4,0,0,0,0,0,0,0
+4.171,5,0,0,0,0,0,0,0
+5.178,6,0,0,0,0,0,0,0
+6.177,7,0,0,0,0,0,0,0
+7.174,8,0,0,0,0,0,0,0
+8.170,9,0,0,0,0,0,0,0
+9.177,10,0,0,0,0,0,0,0
+10.174,11,0,0,0,0,0,0,0
+11.181,12,0,0,0,0,0,0,0
+12.172,13,0,0,0,0,0,0,0
+13.181,14,0,0,0,0,0,0,0
+14.172,15,0,0,0,0,0,0,0
+15.178,16,0,0,0,0,0,0,0
+16.176,17,0,0,0,0,0,0,0
+17.184,18,0,0,0,0,0,0,0
+18.170,19,0,0,0,0,0,0,0
+19.177,20,0,0,0,0,0,0,0
+20.185,21,0,0,0,0,0,0,0
+21.169,22,0,0,0,0,0,0,0
+22.172,23,0,0,0,0,0,0,0
+23.173,24,0,0,0,0,0,0,0
+24.174,25,0,0,0,0,0,0,0
+25.178,26,0,0,0,0,0,0,0
+26.181,27,0,0,0,0,0,0,0
+27.178,28,0,0,0,0,0,0,0
+28.176,29,0,0,0,0,0,0,0
+29.179,30,0,0,0,0,0,0,0
+30.178,31,0,0,0,0,0,0,0
+31.174,32,0,0,0,0,0,0,0
+32.183,33,0,0,0,0,0,0,0
+33.179,34,0,0,0,0,0,0,0
+34.178,35,0,0,0,0,0,0,0
+35.176,36,0,0,0,0,0,0,0
+36.178,37,0,0,0,0,0,0,0
+37.177,38,0,0,0,0,0,0,0
+38.171,39,0,0,0,0,0,0,0
+39.179,40,0,0,0,0,0,0,0
+40.175,41,0,0,0,0,0,0,0
+41.171,42,0,0,0,0,0,0,0
+42.171,43,0,0,0,0,0,0,0
+43.171,44,0,0,0,0,0,0,0
+44.173,45,0,0,0,0,0,0,0
+45.174,46,0,0,0,0,0,0,0
+46.182,47,0,0,0,0,0,0,0
+47.169,48,0,0,0,0,0,0,0
+48.171,49,0,0,0,0,0,0,0
+49.179,50,0,0,0,0,0,0,0
+50.171,51,0,0,0,0,0,0,0
+51.173,52,0,0,0,0,0,0,0
+52.172,53,0,0,0,0,0,0,0
+53.171,54,0,0,0,0,0,0,0
+54.177,55,0,0,0,0,0,0,0
+55.170,56,0,0,0,0,0,0,0
+56.172,57,0,0,0,0,0,0,0
+57.169,58,0,0,0,0,0,0,0
+58.177,59,0,0,0,0,0,0,0
+59.169,60,0,0,0,0,0,0,0
+60.170,61,0,0,0,0,0,0,0
+61.170,62,0,0,0,0,0,0,0
+62.180,63,0,0,0,0,0,0,0
+63.181,64,0,0,0,0,0,0,0
+64.172,65,0,0,0,0,0,0,0
+65.172,66,0,0,0,0,0,0,0
+66.172,66,0,0,0,0,0,0,0
+67.182,66,0,0,0,0,0,0,0
+68.173,66,0,0,0,0,0,0,0
+69.172,66,0,0,0,0,0,0,0
+70.174,66,0,0,0,0,0,0,0
+71.172,66,0,0,0,0,0,0,0
+72.180,66,0,0,0,0,0,0,0
+73.179,66,0,0,0,0,0,0,0
+74.169,66,0,0,0,0,0,0,0
+75.180,66,0,0,0,0,0,0,0
+76.177,66,0,0,0,0,0,0,0
+77.176,66,0,0,0,0,0,0,0
+78.177,66,0,0,0,0,0,0,0
+79.171,66,0,0,0,0,0,0,0
+80.178,66,0,0,0,0,0,0,0
+81.178,66,0,0,0,0,0,0,0
+81.676,66,0,0,0,0,0,0,0
+8.6.5.10.1. ARP: 1
+Timestamp,Request TX,Reply RX,Request RX,Reply TX,Bad Length,Ignored Request,Ignored Reply,Duplicate Address
+Seconds,Frames,,,,,,,
+1.179,2,0,0,0,0,0,0,0
+2.179,3,0,0,0,0,0,0,0
+3.178,4,0,0,0,0,0,0,0
+4.171,5,0,0,0,0,0,0,0
+5.178,6,0,0,0,0,0,0,0
+6.177,7,0,0,0,0,0,0,0
+7.174,8,0,0,0,0,0,0,0
+8.170,9,0,0,0,0,0,0,0
+9.177,10,0,0,0,0,0,0,0
+10.174,11,0,0,0,0,0,0,0
+11.181,12,0,0,0,0,0,0,0
+12.172,13,0,0,0,0,0,0,0
+13.181,14,0,0,0,0,0,0,0
+14.172,15,0,0,0,0,0,0,0
+15.178,16,0,0,0,0,0,0,0
+16.176,17,0,0,0,0,0,0,0
+17.184,18,0,0,0,0,0,0,0
+18.170,19,0,0,0,0,0,0,0
+19.177,20,0,0,0,0,0,0,0
+20.185,21,0,0,0,0,0,0,0
+21.169,22,0,0,0,0,0,0,0
+22.172,23,0,0,0,0,0,0,0
+23.173,24,0,0,0,0,0,0,0
+24.174,25,0,0,0,0,0,0,0
+25.178,26,0,0,0,0,0,0,0
+26.181,27,0,0,0,0,0,0,0
+27.178,28,0,0,0,0,0,0,0
+28.176,29,0,0,0,0,0,0,0
+29.179,30,0,0,0,0,0,0,0
+30.178,31,0,0,0,0,0,0,0
+31.174,32,0,0,0,0,0,0,0
+32.183,33,0,0,0,0,0,0,0
+33.179,34,0,0,0,0,0,0,0
+34.178,35,0,0,0,0,0,0,0
+35.176,36,0,0,0,0,0,0,0
+36.178,37,0,0,0,0,0,0,0
+37.177,38,0,0,0,0,0,0,0
+38.171,39,0,0,0,0,0,0,0
+39.179,40,0,0,0,0,0,0,0
+40.175,41,0,0,0,0,0,0,0
+41.171,42,0,0,0,0,0,0,0
+42.171,43,0,0,0,0,0,0,0
+43.171,44,0,0,0,0,0,0,0
+44.173,45,0,0,0,0,0,0,0
+45.174,46,0,0,0,0,0,0,0
+46.182,47,0,0,0,0,0,0,0
+47.169,48,0,0,0,0,0,0,0
+48.171,49,0,0,0,0,0,0,0
+49.179,50,0,0,0,0,0,0,0
+50.171,51,0,0,0,0,0,0,0
+51.173,52,0,0,0,0,0,0,0
+52.172,53,0,0,0,0,0,0,0
+53.171,54,0,0,0,0,0,0,0
+54.177,55,0,0,0,0,0,0,0
+55.170,56,0,0,0,0,0,0,0
+56.172,57,0,0,0,0,0,0,0
+57.169,58,0,0,0,0,0,0,0
+58.177,59,0,0,0,0,0,0,0
+59.169,60,0,0,0,0,0,0,0
+60.170,61,0,0,0,0,0,0,0
+61.170,62,0,0,0,0,0,0,0
+62.180,63,0,0,0,0,0,0,0
+63.181,64,0,0,0,0,0,0,0
+64.172,65,0,0,0,0,0,0,0
+65.172,66,0,0,0,0,0,0,0
+66.172,66,0,0,0,0,0,0,0
+67.182,66,0,0,0,0,0,0,0
+68.173,66,0,0,0,0,0,0,0
+69.172,66,0,0,0,0,0,0,0
+70.174,66,0,0,0,0,0,0,0
+71.172,66,0,0,0,0,0,0,0
+72.180,66,0,0,0,0,0,0,0
+73.179,66,0,0,0,0,0,0,0
+74.169,66,0,0,0,0,0,0,0
+75.180,66,0,0,0,0,0,0,0
+76.177,66,0,0,0,0,0,0,0
+77.176,66,0,0,0,0,0,0,0
+78.177,66,0,0,0,0,0,0,0
+79.171,66,0,0,0,0,0,0,0
+80.178,66,0,0,0,0,0,0,0
+81.178,66,0,0,0,0,0,0,0
+81.676,66,0,0,0,0,0,0,0
+8.6.5.11. Router
+Timestamp,Router Discards,Unroutable IP Address,Bad IP Checksum,Bad Layer 4 Checksum,Bad IP Version,Bad IP Length,Bad IP Header Length,Bad IP Fragment,Bad IP TTL,Bad Ethernet FCS,No RX Queue,Unknown Ethertype
+Seconds,Frames,,,,,,,,,,,
+0,1,0,0,0,0,0,0,0,0,0,0,0
+0.181,1,0,0,0,0,0,0,0,0,0,0,0
+1.179,2,0,0,0,0,0,0,0,0,0,0,0
+2.179,2,0,0,0,0,0,0,0,0,0,0,0
+3.178,3,0,0,0,0,0,0,0,0,0,0,0
+4.171,3,0,0,0,0,0,0,0,0,0,0,0
+5.178,4,0,0,0,0,0,0,0,0,0,0,0
+6.177,4,0,0,0,0,0,0,0,0,0,0,0
+7.174,5,0,0,0,0,0,0,0,0,0,0,0
+8.170,5,0,0,0,0,0,0,0,0,0,0,0
+9.177,6,0,0,0,0,0,0,0,0,0,0,0
+10.174,6,0,0,0,0,0,0,0,0,0,0,0
+11.181,7,0,0,0,0,0,0,0,0,0,0,0
+12.172,7,0,0,0,0,0,0,0,0,0,0,0
+13.181,8,0,0,0,0,0,0,0,0,0,0,0
+14.172,8,0,0,0,0,0,0,0,0,0,0,0
+15.178,9,0,0,0,0,0,0,0,0,0,0,0
+16.176,9,0,0,0,0,0,0,0,0,0,0,0
+17.184,10,0,0,0,0,0,0,0,0,0,0,0
+18.170,10,0,0,0,0,0,0,0,0,0,0,0
+19.177,11,0,0,0,0,0,0,0,0,0,0,0
+20.185,11,0,0,0,0,0,0,0,0,0,0,0
+21.169,12,0,0,0,0,0,0,0,0,0,0,0
+22.172,12,0,0,0,0,0,0,0,0,0,0,0
+23.173,13,0,0,0,0,0,0,0,0,0,0,0
+24.174,13,0,0,0,0,0,0,0,0,0,0,0
+25.178,14,0,0,0,0,0,0,0,0,0,0,0
+26.181,14,0,0,0,0,0,0,0,0,0,0,0
+27.178,15,0,0,0,0,0,0,0,0,0,0,0
+28.176,15,0,0,0,0,0,0,0,0,0,0,0
+29.179,16,0,0,0,0,0,0,0,0,0,0,0
+30.178,16,0,0,0,0,0,0,0,0,0,0,0
+31.174,17,0,0,0,0,0,0,0,0,0,0,0
+32.183,17,0,0,0,0,0,0,0,0,0,0,0
+33.179,18,0,0,0,0,0,0,0,0,0,0,0
+34.178,18,0,0,0,0,0,0,0,0,0,0,0
+35.176,19,0,0,0,0,0,0,0,0,0,0,0
+36.178,19,0,0,0,0,0,0,0,0,0,0,0
+37.177,20,0,0,0,0,0,0,0,0,0,0,0
+38.171,20,0,0,0,0,0,0,0,0,0,0,0
+39.179,21,0,0,0,0,0,0,0,0,0,0,0
+40.175,21,0,0,0,0,0,0,0,0,0,0,0
+41.171,22,0,0,0,0,0,0,0,0,0,0,0
+42.171,22,0,0,0,0,0,0,0,0,0,0,0
+43.171,23,0,0,0,0,0,0,0,0,0,0,0
+44.173,23,0,0,0,0,0,0,0,0,0,0,0
+45.174,24,0,0,0,0,0,0,0,0,0,0,0
+46.182,24,0,0,0,0,0,0,0,0,0,0,0
+47.169,25,0,0,0,0,0,0,0,0,0,0,0
+48.171,25,0,0,0,0,0,0,0,0,0,0,0
+49.179,26,0,0,0,0,0,0,0,0,0,0,0
+50.171,26,0,0,0,0,0,0,0,0,0,0,0
+51.173,27,0,0,0,0,0,0,0,0,0,0,0
+52.172,27,0,0,0,0,0,0,0,0,0,0,0
+53.171,28,0,0,0,0,0,0,0,0,0,0,0
+54.177,28,0,0,0,0,0,0,0,0,0,0,0
+55.170,29,0,0,0,0,0,0,0,0,0,0,0
+56.172,29,0,0,0,0,0,0,0,0,0,0,0
+57.169,30,0,0,0,0,0,0,0,0,0,0,0
+58.177,30,0,0,0,0,0,0,0,0,0,0,0
+59.169,31,0,0,0,0,0,0,0,0,0,0,0
+60.170,31,0,0,0,0,0,0,0,0,0,0,0
+61.170,32,0,0,0,0,0,0,0,0,0,0,0
+62.180,32,0,0,0,0,0,0,0,0,0,0,0
+63.181,33,0,0,0,0,0,0,0,0,0,0,0
+64.172,33,0,0,0,0,0,0,0,0,0,0,0
+65.172,34,0,0,0,0,0,0,0,0,0,0,0
+66.172,34,0,0,0,0,0,0,0,0,0,0,0
+67.182,35,0,0,0,0,0,0,0,0,0,0,0
+68.173,35,0,0,0,0,0,0,0,0,0,0,0
+69.172,36,0,0,0,0,0,0,0,0,0,0,0
+70.174,36,0,0,0,0,0,0,0,0,0,0,0
+71.172,37,0,0,0,0,0,0,0,0,0,0,0
+72.180,37,0,0,0,0,0,0,0,0,0,0,0
+73.179,38,0,0,0,0,0,0,0,0,0,0,0
+74.169,38,0,0,0,0,0,0,0,0,0,0,0
+75.180,39,0,0,0,0,0,0,0,0,0,0,0
+76.177,39,0,0,0,0,0,0,0,0,0,0,0
+77.176,40,0,0,0,0,0,0,0,0,0,0,0
+78.177,40,0,0,0,0,0,0,0,0,0,0,0
+79.171,41,0,0,0,0,0,0,0,0,0,0,0
+80.178,41,0,0,0,0,0,0,0,0,0,0,0
+81.178,42,0,0,0,0,0,0,0,0,0,0,0
+81.676,42,0,0,0,0,0,0,0,0,0,0,0
+8.6.5.11.1. Router: 1
+Timestamp,Router Discards,Unroutable IP Address,Bad IP Checksum,Bad Layer 4 Checksum,Bad IP Version,Bad IP Length,Bad IP Header Length,Bad IP Fragment,Bad IP TTL,Bad Ethernet FCS,No RX Queue,Unknown Ethertype
+Seconds,Frames,,,,,,,,,,,
+0,1,0,0,0,0,0,0,0,0,0,0,0
+0.181,1,0,0,0,0,0,0,0,0,0,0,0
+1.179,2,0,0,0,0,0,0,0,0,0,0,0
+2.179,2,0,0,0,0,0,0,0,0,0,0,0
+3.178,3,0,0,0,0,0,0,0,0,0,0,0
+4.171,3,0,0,0,0,0,0,0,0,0,0,0
+5.178,4,0,0,0,0,0,0,0,0,0,0,0
+6.177,4,0,0,0,0,0,0,0,0,0,0,0
+7.174,5,0,0,0,0,0,0,0,0,0,0,0
+8.170,5,0,0,0,0,0,0,0,0,0,0,0
+9.177,6,0,0,0,0,0,0,0,0,0,0,0
+10.174,6,0,0,0,0,0,0,0,0,0,0,0
+11.181,7,0,0,0,0,0,0,0,0,0,0,0
+12.172,7,0,0,0,0,0,0,0,0,0,0,0
+13.181,8,0,0,0,0,0,0,0,0,0,0,0
+14.172,8,0,0,0,0,0,0,0,0,0,0,0
+15.178,9,0,0,0,0,0,0,0,0,0,0,0
+16.176,9,0,0,0,0,0,0,0,0,0,0,0
+17.184,10,0,0,0,0,0,0,0,0,0,0,0
+18.170,10,0,0,0,0,0,0,0,0,0,0,0
+19.177,11,0,0,0,0,0,0,0,0,0,0,0
+20.185,11,0,0,0,0,0,0,0,0,0,0,0
+21.169,12,0,0,0,0,0,0,0,0,0,0,0
+22.172,12,0,0,0,0,0,0,0,0,0,0,0
+23.173,13,0,0,0,0,0,0,0,0,0,0,0
+24.174,13,0,0,0,0,0,0,0,0,0,0,0
+25.178,14,0,0,0,0,0,0,0,0,0,0,0
+26.181,14,0,0,0,0,0,0,0,0,0,0,0
+27.178,15,0,0,0,0,0,0,0,0,0,0,0
+28.176,15,0,0,0,0,0,0,0,0,0,0,0
+29.179,16,0,0,0,0,0,0,0,0,0,0,0
+30.178,16,0,0,0,0,0,0,0,0,0,0,0
+31.174,17,0,0,0,0,0,0,0,0,0,0,0
+32.183,17,0,0,0,0,0,0,0,0,0,0,0
+33.179,18,0,0,0,0,0,0,0,0,0,0,0
+34.178,18,0,0,0,0,0,0,0,0,0,0,0
+35.176,19,0,0,0,0,0,0,0,0,0,0,0
+36.178,19,0,0,0,0,0,0,0,0,0,0,0
+37.177,20,0,0,0,0,0,0,0,0,0,0,0
+38.171,20,0,0,0,0,0,0,0,0,0,0,0
+39.179,21,0,0,0,0,0,0,0,0,0,0,0
+40.175,21,0,0,0,0,0,0,0,0,0,0,0
+41.171,22,0,0,0,0,0,0,0,0,0,0,0
+42.171,22,0,0,0,0,0,0,0,0,0,0,0
+43.171,23,0,0,0,0,0,0,0,0,0,0,0
+44.173,23,0,0,0,0,0,0,0,0,0,0,0
+45.174,24,0,0,0,0,0,0,0,0,0,0,0
+46.182,24,0,0,0,0,0,0,0,0,0,0,0
+47.169,25,0,0,0,0,0,0,0,0,0,0,0
+48.171,25,0,0,0,0,0,0,0,0,0,0,0
+49.179,26,0,0,0,0,0,0,0,0,0,0,0
+50.171,26,0,0,0,0,0,0,0,0,0,0,0
+51.173,27,0,0,0,0,0,0,0,0,0,0,0
+52.172,27,0,0,0,0,0,0,0,0,0,0,0
+53.171,28,0,0,0,0,0,0,0,0,0,0,0
+54.177,28,0,0,0,0,0,0,0,0,0,0,0
+55.170,29,0,0,0,0,0,0,0,0,0,0,0
+56.172,29,0,0,0,0,0,0,0,0,0,0,0
+57.169,30,0,0,0,0,0,0,0,0,0,0,0
+58.177,30,0,0,0,0,0,0,0,0,0,0,0
+59.169,31,0,0,0,0,0,0,0,0,0,0,0
+60.170,31,0,0,0,0,0,0,0,0,0,0,0
+61.170,32,0,0,0,0,0,0,0,0,0,0,0
+62.180,32,0,0,0,0,0,0,0,0,0,0,0
+63.181,33,0,0,0,0,0,0,0,0,0,0,0
+64.172,33,0,0,0,0,0,0,0,0,0,0,0
+65.172,34,0,0,0,0,0,0,0,0,0,0,0
+66.172,34,0,0,0,0,0,0,0,0,0,0,0
+67.182,35,0,0,0,0,0,0,0,0,0,0,0
+68.173,35,0,0,0,0,0,0,0,0,0,0,0
+69.172,36,0,0,0,0,0,0,0,0,0,0,0
+70.174,36,0,0,0,0,0,0,0,0,0,0,0
+71.172,37,0,0,0,0,0,0,0,0,0,0,0
+72.180,37,0,0,0,0,0,0,0,0,0,0,0
+73.179,38,0,0,0,0,0,0,0,0,0,0,0
+74.169,38,0,0,0,0,0,0,0,0,0,0,0
+75.180,39,0,0,0,0,0,0,0,0,0,0,0
+76.177,39,0,0,0,0,0,0,0,0,0,0,0
+77.176,40,0,0,0,0,0,0,0,0,0,0,0
+78.177,40,0,0,0,0,0,0,0,0,0,0,0
+79.171,41,0,0,0,0,0,0,0,0,0,0,0
+80.178,41,0,0,0,0,0,0,0,0,0,0,0
+81.178,42,0,0,0,0,0,0,0,0,0,0,0
+81.676,42,0,0,0,0,0,0,0,0,0,0,0
+8.7. System Controller 0 statistics
+8.7.1. Component Description
+Component: aggregate_statisticsThis component measures aggregate system and network statistics.
+Component,Resource Used
+System Controller 0 statistics,sc0
+8.7.2. Detail
+8.7.2.1. System Resource Usage
+
+Timestamp,CPU Usage,Memory Usage,Disk Usage
+Seconds,Percent,,
+0.175,111.43,149.69,17.65
+1.167,12.05,74.82,8.83
+2.167,10.15,74.82,8.83
+3.167,8.08,74.81,8.83
+4.167,10.19,74.81,8.83
+5.167,8.08,74.80,8.83
+6.167,9.95,74.84,8.83
+7.167,13.66,74.85,8.83
+8.167,10.40,74.85,8.83
+9.167,8.87,74.85,8.83
+10.167,8.67,74.85,8.83
+11.167,9.50,74.83,8.83
+12.169,10.33,74.82,8.83
+13.168,10.20,74.83,8.83
+14.167,9.60,74.86,8.83
+15.167,9.90,74.86,8.83
+16.167,10.50,74.86,8.83
+17.167,7.53,74.86,8.83
+18.167,15.58,74.87,8.83
+19.167,8.50,74.85,8.83
+20.177,8.08,74.86,8.83
+21.170,10.10,74.89,8.83
+22.168,9.63,74.90,8.83
+23.167,6.57,74.90,8.83
+24.168,10.89,74.90,8.83
+25.167,8.63,74.90,8.83
+26.167,10.50,74.90,8.83
+27.167,11.76,74.89,8.83
+28.167,10.42,74.91,8.83
+29.167,18,74.93,8.83
+30.167,9.45,74.93,8.83
+31.167,11.22,74.93,8.83
+32.167,7.49,74.93,8.83
+33.167,9.55,74.93,8.83
+34.167,8.59,74.91,8.83
+35.167,8.50,74.90,8.83
+36.167,12.69,74.95,8.83
+37.167,8.65,74.95,8.83
+38.167,11,74.97,8.83
+39.167,6.06,74.98,8.83
+40.167,8.12,74.98,8.83
+41.167,9.47,74.96,8.83
+42.167,10.27,74.96,8.83
+43.167,8.72,74.95,8.83
+44.169,11.82,74.98,8.83
+45.168,13.50,74.99,8.83
+46.167,10.20,75,8.83
+47.167,10.10,75,8.83
+48.167,23.43,75.01,8.83
+49.167,28.72,74.99,8.83
+50.168,7.85,75,8.83
+51.167,10.55,75.03,8.83
+52.168,8.67,75.03,8.83
+53.167,8.79,75.04,8.83
+54.167,9.50,75.04,8.83
+55.168,11.73,75.07,8.83
+56.167,14.57,75.02,8.83
+57.167,7.29,75.02,8.83
+58.167,9.63,75.02,8.83
+59.167,8.87,75.05,8.83
+60.167,10.20,75.05,8.83
+61.167,8.42,75.04,8.83
+62.168,6.60,75.04,8.83
+63.167,10.05,75.04,8.83
+64.168,8.63,75.01,8.83
+65.168,7.14,75.01,8.83
+66.167,9.14,75.05,8.83
+67.177,7.61,75.05,8.83
+68.167,6.56,75.05,8.83
+69.167,7.61,75.05,8.83
+70.168,9.95,75.05,8.83
+71.167,8.42,75.04,8.83
+72.167,9.90,75.03,8.83
+73.167,9.84,75.02,8.83
+74.168,7.11,75.06,8.83
+75.167,8.50,75.07,8.83
+76.169,8,75.07,8.83
+77.167,6.57,75.07,8.83
+78.167,8.60,75.07,8.83
+79.167,10.73,75.05,8.83
+80.167,9.55,75.05,8.83
+81.167,10.84,75.09,8.83
+81.685,9.80,74.22,8.83

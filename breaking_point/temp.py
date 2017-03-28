@@ -1,35 +1,14 @@
-import json
-from logging import Logger
-from cloudshell.tg.ixia.breaking_point.flows.bp_autoload_flow import BPAutoload
-from cloudshell.tg.ixia.breaking_point.rest_api.rest_session_manager import RestSessionManager
-import requests
+import csv
 
-url = "https://10.5.1.127/api/v1/auth/session"
-hostname = '10.5.1.127'
-username = 'admin'
-password = 'admin'
-logger = Logger('dsds')
-# json_data = {'username': 'admin', 'password': 'admin1'}
-# headers = {'Content-Type': 'application/json'}
+from StringIO import StringIO
 
-manager = RestSessionManager(hostname, username, password, logger)
-
-# l_response = requests.post(url, json=json_data, verify=False)
-# cookies = l_response.cookies
-# cookies=None
-
-flow = BPAutoload(manager, logger)
-# result = flow.get_port_status()
-result = flow.do_autoload()
-print(result)
-
-# with manager.new_session() as session:
-#     port_url = "https://10.5.1.127/api/v1/bps/ports"
-#     result = session.request_get(port_url)
-#     print(result)
-
-# port_response = requests.get(port_url, cookies=cookies, verify=False)
-#
-# data = port_response.json()
-# # data = json.dumps(port_response.json())
-# print(data)
+if __name__ == '__main__':
+    # f_name = '0VM_RESTART_CS_AS_31.csv'
+    # ff = open('0VM_RESTART_CS_AS_31.csv', 'r')
+    # reader = csv.DictReader(ff)
+    # for row in reader:
+    #     print row
+    dd = {'Test N':123, 'GG':{'Hello':'World'}}
+    io = StringIO()
+    # gg = csv.DictWriter(io)
+    # print gg.

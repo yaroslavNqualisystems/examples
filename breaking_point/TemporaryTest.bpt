@@ -1,0 +1,285 @@
+<modelExport swconfig="version:8.20.0 build number:293495 strikebuild:292260" serialno="BPSC4VM0000"
+             schemaver="293495.292260">
+    <testmodel group="1" network="TestNeighborhood" dut="BreakingPoint Default" bandwidth="100" bandwidthPercent="1"
+               duration="80" name="TemporaryTest" result="" maxBandwidth="10000" rcvBandwidth="100"
+               rcvBandwidthPercent="1" rcvMaxBandwidth="10000" schemaver="293495.292260" author="admin"
+               createdBy="admin" createdOn="2017-02-27T02:43:39.018 PST" timestamp="2017-02-27T02:43:39.018 PST"
+               class="custom" revision="1" saved="false" canSave="false" valid="warning">
+        <interface number="1" bandwidthPercent="1" rcvBandwidthPercent="1" bandwidth="100" rcvBandwidth="100"
+                   maxBandwidth="10000"/>
+        <component type="clientsim" id="all" useDefaultCriteria="false">
+            <realBandwidth resourcePercentage="33" name="all">
+                <interface number="1" sndMbps="100" rcvMbps="100" mtu="576" currentmtu="1500" speed="10000"/>
+                <struct id="resourcePercentage">
+                    <param id="npComponents">25.00000</param>
+                    <param id="npSimultaneousFlows">0.00010</param>
+                    <param id="npFlowsPerSecond">2.00000</param>
+                    <param id="npComponentOverrideWeight">0.00000</param>
+                </struct>
+                <param id="duration">80</param>
+            </realBandwidth>
+            <timeline>
+                <timesegment type="steady" size="60">
+                    <label>
+                        <string>Steady State</string>
+                    </label>
+                </timesegment>
+                <timesegment type="down" size="20">
+                    <label>
+                        <string>Ramp Down</string>
+                    </label>
+                </timesegment>
+            </timeline>
+            <interfaces>
+                <interface type="external" domain="default"/>
+                <interface type="client" domain="default" number="1"/>
+            </interfaces>
+            <tags>
+                <tag type="server" id="Lab Server"/>
+                <tag type="client" id="Lab Client"/>
+            </tags>
+            <label>
+                <string>Cleanup data</string>
+            </label>
+            <description>
+                <string>Removes any files left over from last test.</string>
+            </description>
+            <struct id="rateDist">
+                <param id="unlimited">false</param>
+                <param id="scope">per_if</param>
+                <param id="unit">mbps</param>
+                <param id="type">constant</param>
+                <param id="min">100</param>
+                <param id="max">100</param>
+            </struct>
+            <struct id="ip">
+                <param id="ttl">32</param>
+                <param id="tos">0</param>
+            </struct>
+            <param id="delayStart">00:00:00</param>
+            <struct id="rampUpProfile">
+                <param id="type">calculated</param>
+                <param id="min">1</param>
+                <param id="max">1</param>
+                <param id="increment">1</param>
+                <param id="interval">00:00:01</param>
+            </struct>
+            <struct id="app">
+                <param id="streamsPerSuperflow">8</param>
+                <param id="removedns">false</param>
+                <param id="fidelity">normal</param>
+                <param id="replace_streams">true</param>
+            </struct>
+            <struct id="loadprofile">
+                <param id="name">None</param>
+                <param id="label"/>
+            </struct>
+            <struct id="tcp">
+                <param id="mss">1460</param>
+                <param id="aging_time">0</param>
+                <param id="reset_at_end">true</param>
+                <param id="retry_quantum_ms">250</param>
+                <param id="retries">3</param>
+                <param id="delay_acks">false</param>
+                <param id="initial_receive_window">5792</param>
+                <param id="add_timestamps">true</param>
+                <param id="handshake_data">false</param>
+                <param id="aging_time_data_type">aging_time_data_type_sc</param>
+                <param id="tcp_window_scale">0</param>
+                <param id="shutdown_data">false</param>
+                <param id="initial_congestion_window">4</param>
+                <param id="ecn">support_ecn</param>
+                <param id="raw_flags">-1</param>
+                <param id="tcp_connect_delay_ms">0</param>
+                <param id="tcp_keepalive_timer">0</param>
+            </struct>
+            <param id="superflow">Resiliency Init Server</param>
+            <struct id="rampDist">
+                <param id="upBehavior">full</param>
+                <param id="synRetryMode">obey_retry</param>
+                <param id="up">00:00:00</param>
+                <param id="steadyBehavior">hold</param>
+                <param id="steady">00:01:00</param>
+                <param id="downBehavior">full</param>
+                <param id="down">00:00:20</param>
+            </struct>
+            <struct id="srcPortDist">
+                <param id="type">range</param>
+                <param id="min">1024</param>
+                <param id="max">1024</param>
+            </struct>
+            <struct id="sessions">
+                <param id="max">1</param>
+                <param id="maxPerSecond">1</param>
+                <param id="openFast">false</param>
+                <param id="closeFast">false</param>
+                <param id="target">1</param>
+                <param id="targetPerSecond">1</param>
+                <param id="targetMatches">0</param>
+                <param id="maxActive">0</param>
+                <param id="engine">advanced</param>
+                <param id="emphasis">balanced</param>
+                <param id="allocationOverride">auto</param>
+                <param id="statDetail">maximum</param>
+            </struct>
+            <struct id="ip6">
+                <param id="hop_limit">64</param>
+                <param id="traffic_class">0</param>
+                <param id="flowlabel">0</param>
+            </struct>
+        </component>
+        <exerciseit duration="300"/>
+        <params>
+            <param origval="1" currval="1" enabled="true" id="maxFlowCreationRate">100</param>
+            <param origval="100.0" currval="100.0" enabled="true" id="totalBandwidth">100</param>
+            <param origval="1" currval="1" enabled="true" id="maximumConcurrentFlows">100</param>
+            <param origval="0" currval="0" enabled="false" id="totalAttacks">100</param>
+            <param origval="200" currval="200" enabled="true" id="totalAddresses">100</param>
+            <param origval="1.0" currval="1.0" enabled="true" id="samplePeriod">100</param>
+        </params>
+        <summary>
+            <param id="totalUniqueSuperflows">1</param>
+            <param id="totalUniqueStrikes">0</param>
+            <param id="totalSubnets">2</param>
+            <param id="totalMacAddresses">200</param>
+            <param id="requiredMTU">576</param>
+        </summary>
+        <label>
+            <string>TemporaryTest</string>
+        </label>
+        <description>
+            <string>This test will remove any leftovers from the last test.</string>
+        </description>
+    </testmodel>
+    <network name="TestNeighborhood" interfaceCount="1" resiliencyClass="resiliency" schemaver="293495.292260"
+             author="admin" createdBy="admin" createdOn="2017-02-27T02:41:34.166 PST"
+             timestamp="2017-02-27T04:36:31.681 PST" class="custom" revision="7" saved="true" canSave="true"
+             namechanged="false">
+        <tpid interface="1" vlan_key="outer_vlan">8100</tpid>
+        <tpid interface="2" vlan_key="outer_vlan">8100</tpid>
+        <domain name="default" external="true">
+            <subnet behind_snapt="false" proxy="false" ip_v="4" type="external">
+                <range min="192.168.215.200" max="192.168.215.200"/>
+                <params/>
+                <composition>
+                    <stack type="ip_external_hosts" id="External Hosts extv5_default"/>
+                </composition>
+            </subnet>
+            <tag id="Lab Server"/>
+            <tag id="ext_default"/>
+            <endpoints>External Hosts extv5_default</endpoints>
+        </domain>
+        <domain name="Test_dst_tag" external="false" interface="1" mtu="1500" ignorepause="false">
+            <subnet behind_snapt="false" proxy="false" l2="02:1A:C5:F5:00:00" netaddr="192.168.223.0" netmask="24"
+                    gateway="192.168.223.1" ip_v="4" type="hosts" isipsec="false" enable_stats="false" mac_count="150">
+                <range min="192.168.223.2" max="192.168.223.151"/>
+                <params/>
+                <composition>
+                    <stack type="ip_static_hosts" id="ip_static_hosts 2"/>
+                    <stack type="interface" id="dstIntTest"/>
+                </composition>
+                <createdFrom>ip_static_hosts 2</createdFrom>
+            </subnet>
+            <tag id="Test_dst_tag"/>
+            <endpoints>ip_static_hosts 2</endpoints>
+        </domain>
+        <domain name="Test_src_tag" external="false" interface="2" mtu="1500" ignorepause="false">
+            <subnet behind_snapt="false" proxy="false" l2="02:1A:C5:03:00:00" netaddr="192.168.215.0" netmask="24"
+                    gateway="192.168.215.254" ip_v="4" type="hosts" isipsec="false" enable_stats="false"
+                    mac_count="199">
+                <range min="192.168.215.1" max="192.168.215.199"/>
+                <params/>
+                <composition>
+                    <stack type="ip_static_hosts" id="Static Hosts i1_default"/>
+                    <stack type="interface" id="srcIntTest"/>
+                </composition>
+                <createdFrom>Static Hosts i1_default</createdFrom>
+            </subnet>
+            <tag id="Test_src_tag"/>
+            <endpoints>Static Hosts i1_default</endpoints>
+        </domain>
+        <connections>
+            <connection>
+                <subnet domain="Test_src_tag" interface="2" external="false" vlan="0"/>
+                <subnet domain="default" external="true" vlan="0"/>
+            </connection>
+        </connections>
+        <networkModel>
+            <element type="interface">
+                <string id="id">dstIntTest</string>
+                <int id="number">1</int>
+                <boolean id="duplicate_mac_address">false</boolean>
+                <mac_address id="mac_address">02:1a:c5:f5:00:00</mac_address>
+                <int id="mtu">1500</int>
+                <boolean id="use_vnic_mac_address">true</boolean>
+                <enum id="vlan_key">outer_vlan</enum>
+                <boolean id="ignore_pause_frames">false</boolean>
+                <string id="description">test_SRC</string>
+            </element>
+            <element type="ip_static_hosts">
+                <string id="id">Static Hosts i1_default</string>
+                <tags id="tags">
+                    <tag id="Test_src_tag"/>
+                </tags>
+                <ip_address id="ip_address">192.168.215.1</ip_address>
+                <int id="netmask">24</int>
+                <int id="count">199</int>
+                <ip_address id="gateway_ip_address">192.168.215.254</ip_address>
+                <reference id="default_container">srcIntTest</reference>
+                <boolean id="behind_snapt">false</boolean>
+                <int id="psn_netmask">8</int>
+                <int id="maxmbps_per_host"/>
+                <boolean id="enable_stats">false</boolean>
+                <boolean id="proxy">false</boolean>
+                <enum id="ip_selection_type">random_ip</enum>
+            </element>
+            <element type="ip_external_hosts">
+                <string id="id">External Hosts extv5_default</string>
+                <tags id="tags">
+                    <tag id="Lab Server"/>
+                    <tag id="ext_default"/>
+                </tags>
+                <ip_address id="ip_address">192.168.215.200</ip_address>
+                <int id="count">1</int>
+                <boolean id="behind_snapt">false</boolean>
+                <boolean id="proxy">false</boolean>
+            </element>
+            <element type="interface">
+                <int id="mtu">1500</int>
+                <string id="id">srcIntTest</string>
+                <boolean id="use_vnic_mac_address">true</boolean>
+                <int id="number">2</int>
+                <enum id="vlan_key">outer_vlan</enum>
+                <mac_address id="mac_address">02:1a:c5:03:00:00</mac_address>
+                <boolean id="ignore_pause_frames">false</boolean>
+                <string id="description">test_DST</string>
+            </element>
+            <element type="ip_static_hosts">
+                <boolean id="behind_snapt">false</boolean>
+                <enum id="ip_selection_type">random_ip</enum>
+                <string id="id">ip_static_hosts 2</string>
+                <boolean id="enable_stats">false</boolean>
+                <boolean id="proxy">false</boolean>
+                <int id="count">150</int>
+                <int id="psn_netmask">8</int>
+                <reference id="default_container">dstIntTest</reference>
+                <ip_address id="ip_address">192.168.223.2</ip_address>
+                <ip_address id="gateway_ip_address">192.168.223.1</ip_address>
+                <int id="netmask">24</int>
+                <tags id="tags">
+                    <tag id="Test_dst_tag"/>
+                </tags>
+            </element>
+            <connections>
+                <connection>
+                    <endpoint>Static Hosts i1_default</endpoint>
+                    <endpoint>External Hosts extv5_default</endpoint>
+                </connection>
+            </connections>
+        </networkModel>
+        <params/>
+        <label>
+            <string>TestNeighborhood</string>
+        </label>
+    </network>
+</modelExport>

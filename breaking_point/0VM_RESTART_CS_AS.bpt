@@ -1,4 +1,4 @@
-<modelExport swconfig="version:8.20.0 build number:293495 strikebuild:292260" serialno="BPSC4VM0000"
+<modelExport swconfig="version:%%8.20.0 build number:293495 strikebuild:292260" serialno="BPSC4VM0000"
              schemaver="293495.292260">
     <testmodel network="BreakingPoint Resiliency Server" dut="BreakingPoint Default" bandwidth="0"
                name="0VM_RESTART_CS_AS" result="" rcvBandwidth="0" schemaver="293495.292260" class="canned">
