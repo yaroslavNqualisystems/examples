@@ -1,0 +1,12 @@
+<modelExport swconfig="version:8.20.0 build number:293495 strikebuild:292260" serialno="BPSC4VM0000" schemaver="293495.292260"><testmodel network="BreakingPoint Switching" dut="BreakingPoint Default" bandwidth="0" duration="0" name="Breakingpoint LTE High Attachment Rate Example" result="" rcvBandwidth="0" testLabType="lte" schemaver="293495.292260" class="canned"><exerciseit duration="300" /><lteLab numUE="1048576" imsi_base="240011234567000" num_dedicated_bearers="3" msisdn_base="001123456782319" appProfile="BreakingPoint Empty" apn="internet" numEnodeB="1" netaddr="10.0.1.0" netmask="24" gateway="10.0.1.1" startingIP="10.0.1.18" dnsServerIP="10.0.1.3" domainName="example.org" pdn_netaddr="10.1.1.0" pdn_netmask="24" pdn_gateway="10.1.1.1" pdn_startingIP="10.1.1.3" pdn_router="10.1.1.2" pdn_numHosts="200" duration="00:15:00" dataRate="1000" secretKey="12FF98428EF13AE823AE9B23B23428EF" secretKeyStep="1" operatorVariant="8FB21E23AE9123923AE428F8FB3428EF" sctp_over_udp="false" sctp_sport="0" plmn_mcc="111" plmn_mnc="12" alloc_rate="0"><mme>10.0.1.2</mme></lteLab><params><param origval="0" currval="0" id="maxFlowCreationRate">100</param><param origval="0.0" currval="0" id="totalBandwidth">100</param><param origval="0" currval="0" id="maximumConcurrentFlows">100</param><param origval="0" currval="0" id="totalAttacks">100</param><param origval="0" currval="0" id="totalAddresses">100</param><param origval="1.0" currval="1.0" id="samplePeriod">100</param></params><summary><param id="totalUniqueSuperflows">0</param><param id="totalUniqueStrikes">0</param><param id="totalSubnets">0</param><param id="totalMacAddresses">0</param><param id="requiredMTU">0</param></summary><label><string>Breakingpoint LTE High Attachment Example</string></label><description><string>This test simulates
+				data traffic carried over the Evolved
+				Packet
+				Core or EPC. During the
+				test, a set of eNodeBs (cell towers)
+				attach
+				to the configured MME
+				(network manager), then UEs (cell
+				phones/devices) attach at a high
+				rate, create bearers and transmit
+				data traffic according to the
+				configured Application Profile.</string></description></testmodel></modelExport>

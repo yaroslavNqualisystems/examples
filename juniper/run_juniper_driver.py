@@ -92,7 +92,7 @@ context.resource.attributes['host'] = address
 context.resource.attributes['Enable Password'] = enable_password
 context.resource.attributes['Port'] = port
 # context.resource.attributes['Backup Location'] = 'tftp://172.25.10.96/AireOS_test'
-context.resource.attributes['Backup Location'] = 'ftp://junos:junos@192.168.85.23'
+context.resource.attributes['Backup Location'] = 'ftp://juniper:juniper@192.168.85.16'
 context.resource.address = address
 # context.connectivity = ConnectivityContext()
 # context.connectivity.admin_auth_token = auth_key
@@ -129,9 +129,9 @@ if __name__ == '__main__':
         # out = driver.get_inventory(context)
         # print(inv)
         # out = driver.save(context, '', '', None)
-        # out = driver.restore(context, 'ftp://junos:junos@192.168.85.23/dsada-running-040117-144312', None, None, None)
+        out = driver.restore(context, 'ftp://juniper:juniper@192.168.85.16/dsada-running-300317-184311', None, None, None)
         # out = driver.load_firmware(context, 'dsadas', None)
-        out = driver.send_custom_command(context, 'show interfaces')
+        # out = driver.send_custom_command(context, 'show interfaces')
         print(out)
 
         # inventory = driver.get_inventory(context)

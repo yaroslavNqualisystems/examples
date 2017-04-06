@@ -1,0 +1,100 @@
+<modelExport swconfig="version:8.20.0 build number:293495 strikebuild:292260" serialno="BPSC4VM0000"
+             schemaver="293495.292260">
+    <testmodel dut="BreakingPoint Default" bandwidth="0" name="DDOS" result="" rcvBandwidth="0" testLabType="ddos"
+               schemaver="293495.292260" category="IP" class="canned">
+        <exerciseit duration="240"/>
+        <ddosLab>
+            <labTopology>
+                <type>inline</type>
+                <externalHost/>
+                <externalCount/>
+                <clientIP>
+                    <address>81.128.0.1</address>
+                    <mask>24</mask>
+                    <gateway>81.128.0.2</gateway>
+                </clientIP>
+                <serverIP>
+                    <address>81.128.0.2</address>
+                    <mask>24</mask>
+                    <gateway>81.128.0.1</gateway>
+                </serverIP>
+                <clientIPv6>
+                    <address>201::1</address>
+                    <mask>64</mask>
+                    <gateway>201::2</gateway>
+                </clientIPv6>
+                <serverIPv6>
+                    <address>201::2</address>
+                    <mask>64</mask>
+                    <gateway>201::1</gateway>
+                </serverIPv6>
+            </labTopology>
+            <backgroundTraffic>
+                <startDelay>0</startDelay>
+                <appProfile>BreakingPoint Enterprise</appProfile>
+                <duration>100</duration>
+                <clientIP>
+                    <address>191.96.206.1</address>
+                    <mask>24</mask>
+                    <count>254</count>
+                    <countryCodes>
+                        <countryCode>US</countryCode>
+                    </countryCodes>
+                </clientIP>
+                <serverIP>
+                    <address>25.0.0.1</address>
+                    <mask>8</mask>
+                    <count>32</count>
+                    <countryCodes>
+                        <countryCode>GB</countryCode>
+                    </countryCodes>
+                </serverIP>
+                <objective>
+                    <type>mbps</type>
+                    <minDataRate>256</minDataRate>
+                    <maxSimultaneousFlows>200000</maxSimultaneousFlows>
+                    <maxFlowsPerSecond>50000</maxFlowsPerSecond>
+                </objective>
+            </backgroundTraffic>
+            <attackTraffic>
+                <attack testId="LOIC HTTP DoS Attack">
+                    <name>appsim_1</name>
+                    <label>DDoS LOIC HTTP</label>
+                    <type>test</type>
+                    <duration>60</duration>
+                    <startDelay>23</startDelay>
+                    <clientIP>
+                        <address>122.52.0.1</address>
+                        <mask>14</mask>
+                        <count>262144</count>
+                        <countryCodes>
+                            <countryCode>PH</countryCode>
+                        </countryCodes>
+                    </clientIP>
+                    <serverIP>
+                        <address>25.0.0.1</address>
+                        <mask>8</mask>
+                        <count>32</count>
+                        <countryCodes>
+                            <countryCode>GB</countryCode>
+                        </countryCodes>
+                    </serverIP>
+                    <objective>
+                        <type>fps</type>
+                        <minDataRate>512</minDataRate>
+                        <maxSimultaneousFlows>500000</maxSimultaneousFlows>
+                        <maxFlowsPerSecond>32000</maxFlowsPerSecond>
+                    </objective>
+                </attack>
+            </attackTraffic>
+        </ddosLab>
+        <params/>
+        <summary/>
+        <label>
+            <string>DDoS</string>
+        </label>
+        <description>
+            <string>This test is the (for now) dummy DDoS lab template</string>
+        </description>
+    </testmodel>
+</modelExport>

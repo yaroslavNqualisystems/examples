@@ -66,7 +66,9 @@ if __name__ == '__main__':
     # driver = BreakingPointChassisDriver()
     driver = BreakingPointControllerDriver()
     # test_file = 'TemporaryTest.bpt'
+    # test_file = 'Blog_Post_2010-08-20_HTTP_DDoS_Flood_test.bpt'
     test_file = '0VM_RESTART_CS_AS.bpt'
+    # test_file = 'DDOS.bpt'
     context = get_context()
     api = create_api_instance(context)
     api.DecryptPassword = lambda pw: type('Password', (object,), {'Value': pw})
@@ -82,4 +84,5 @@ if __name__ == '__main__':
         driver.start_traffic(context, 'False')
         time.sleep(5)
         driver.stop_traffic(context)
-        print(driver.get_statistics(context, 'summary', 'json'))
+        # driver.keep_alive(context, object())
+        # print(driver.get_statistics(context, 'summary', 'json'))

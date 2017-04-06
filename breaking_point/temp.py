@@ -1,14 +1,30 @@
 import csv
 
 from StringIO import StringIO
+from fcntl import fcntl
+import os
+import time
+import re
+import portalocker
+
+
+class FileBasedLock(object):
+    def __init__(self, lock_file_path):
+        if os.path.exists(lock_file_path):
+            self.__file_descriptor = open(lock_file_path, 'r')
+        else:
+            self.__file_descriptor = open(lock_file_path, 'w')
+
+    def __enter__(self):
+        portalocker.lock(self.__file_descriptor, portalocker.LOCK_EX)
+
+    def __exit__(self, exc_type, exc_val, exc_tb):
+        self.__file_descriptor.close()
+
 
 if __name__ == '__main__':
-    # f_name = '0VM_RESTART_CS_AS_31.csv'
-    # ff = open('0VM_RESTART_CS_AS_31.csv', 'r')
-    # reader = csv.DictReader(ff)
-    # for row in reader:
-    #     print row
-    dd = {'Test N':123, 'GG':{'Hello':'World'}}
-    io = StringIO()
-    # gg = csv.DictWriter(io)
-    # print gg.
+    ff = '.ttt.lock'
+
+    with FileBasedLock(ff):
+        print('dsdsd')
+        # time.sleep(20)

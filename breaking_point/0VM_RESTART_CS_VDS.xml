@@ -1,9 +1,8 @@
-<modelExport swconfig="version:%%8.20.0 build number:293495 strikebuild:292260" serialno="BPSC4VM0000"
+<modelExport swconfig="version:8.20.0 build number:293495 strikebuild:292260" serialno="BPSC4VM0000"
              schemaver="293495.292260">
-    <testmodel network="BreakingPoint Switching" dut="BreakingPoint Default" bandwidth="0"
-               name="0VM_RESTART_CS_AS" result="" rcvBandwidth="0" schemaver="293495.292260" class="canned">
+    <testmodel network="BreakingPoint Resiliency VDS" dut="BreakingPoint Default" bandwidth="0"
+               name="0VM_RESTART_CS_VDS" result="" rcvBandwidth="0" schemaver="293495.292260" class="canned">
         <interface number="1"/>
-        <interface number="2"/>
         <component type="clientsim" id="all" useDefaultCriteria="false">
             <tags>
                 <tag type="server" id="Lab Server"/>
@@ -103,7 +102,7 @@
         <params/>
         <summary/>
         <label>
-            <string>Cleanup Application Server</string>
+            <string>Cleanup Virtual Desktop Server</string>
         </label>
         <description>
             <string>This test will remove any leftovers from the last test.</string>
